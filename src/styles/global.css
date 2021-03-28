@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-gray {
+    @apply rounded py-2 px-4 text-white hover:bg-sharpfin-blue bg-sharpfin-gray font-bold block;
+}
+
+.menu-item {
+    @apply border-b-2 border-transparent hover:border-blue-400 hover:text-blue-400 pb-2;
+}
+
+
+.custom-shape-divider-top-1616622048 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1616622048 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1616746745 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1616746745 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1616746745 .shape-fill {
+    fill: #222731;
+}
+
+.custom-shape-divider-top-1616775068 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1616775068 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1616775068 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+.custom-shape-divider-top-1616849429 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1616849429 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1616849429 .shape-fill {
+    fill: #0094DD;
+}
+
+.custom-shape-divider-bottom-1616916981 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1616916981 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1616916981 .shape-fill {
+    fill: #0094DD;
+}
