@@ -25,7 +25,7 @@ const Articles = ({ data }) => {
         <div>
             <div className="grid justify-center  mt-20">
                 <h1 className="text-4xl text-center font-bold mb-12">Latest news</h1>
-                <div className="flex flex-nowrap gap-10 overflow-scroll pl-10">
+                <div className="flex flex-nowrap gap-10 overflow-scroll md:overflow-hidden pl-10">
                     {articles.map(a => (
                         <div key={a.title} className="mt-5 flex-shrink-0 bg-white border shadow-lg rounded-xl w-96 p-10 transform cursor-pointer duration-500 hover:-translate-y-2">
                             {!a?.image && <div className="h-44 w-44 mx-auto mb-5 flex justify-center items-center"><NewsIcon className="w-28 h-28 " /></div>}

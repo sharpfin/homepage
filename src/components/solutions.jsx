@@ -9,14 +9,14 @@ import { Link } from 'gatsby'
 
 const Solutions = () => {
     return (
-        <div className="bg-sharpfin-gray pb-10 ">
+        <div className="bg-sharpfin-gray pb-10">
             <div className="custom-shape-divider-top-1616622048">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path fill="#fff" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" className="shape-fill"></path>
                 </svg>
             </div>
             <h2 className="text-white text-4xl text-center font-bold">What we offer</h2>
-            <div className="flex flex-wrap justify-center p-10 gap-10 container">
+            <div className="flex flex-wrap justify-center p-10 gap-10 container mx-auto">
 
                 <Link to="/solutions#wealthmanagement" className="bg-white p-5 transform rounded w-96 duration-500 md:hover:-translate-y-2">
                     <WealthManagementIcon className="w-32 mx-auto mb-5" />
