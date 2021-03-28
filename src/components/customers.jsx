@@ -27,7 +27,7 @@ const Customers = ({ data }) => {
 
   const left = () => {
     let val = selectedCustomerIndex - 1;
-    if (val >= 0 ) {
+    if (val >= 0) {
       setSelectedCustomerIndex(val)
     } else {
       setSelectedCustomerIndex(customers.length - 1)
@@ -56,9 +56,7 @@ const Customers = ({ data }) => {
       <div className="grid justify-center gap-10 mx-5">
 
         <div className="flex bg-gray-100 rounded-2xl p-5 md:p-10 ">
-          <button className="flex-none focus:outline-none" onClick={left}>
-            <ChevronLeft fill="gray" className="w-12 h-12 text-gray-200"/>
-          </button>
+
           <div className="bg-gray-100 grid gap-5 rounded-sm  max-w-3xl">
             <QuoteIcon className="w-12 justify-self-center" />
             <p className="text-center text-lg">{customer.word}</p>
@@ -69,19 +67,23 @@ const Customers = ({ data }) => {
                 <p className="text-gray-500">{customer.title}</p>
               </div>
             </div>
-            <div className="flex gap-2 justify-self-center">
+            <div className="flex gap-2 justify-self-center items-center">
+              <button className="flex-none focus:outline-none" onClick={left}>
+                <ChevronLeft fill="gray" className="w-8 h-8 text-gray-200" />
+              </button>
               {[...Array(customers.length).keys()].map(index => (
                 <div key={index}>
                   {index === selectedCustomerIndex && <Dot className="w-3" />}
-                  {index !== selectedCustomerIndex && <DotCircle className="w-3"/>}
+                  {index !== selectedCustomerIndex && <DotCircle className="w-3" />}
                 </div>
               ))}
+              <button className="flex-none focus:outline-none" onClick={right}>
+                <ChevronRight fill="gray" className="w-8 h-8 text-gray-400" />
+              </button>
             </div>
           </div>
 
-          <button className="flex-none focus:outline-none" onClick={right}>
-            <ChevronRight fill="gray" className="w-12 h-12 text-gray-400"/>
-          </button>
+
         </div>
       </div>
     </div>

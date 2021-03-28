@@ -40,9 +40,9 @@ const Articles = ({ data }) => {
             <div className="bg-sharpfin-blue grid justify-center pb-20 pt-44">
                 <h1 className="text-4xl text-white font-bold text-center">Never miss a thing</h1>
                 <p className="text-white  text-center">subscribe to our newsletter</p>
-                <div className="flex p-5">
-                    <input placeholder="Email" className="rounded-l-lg p-2 pl-4 flex-grow border-2 md:w-96 border-white"></input>
-                    <button className="flex-none rounded-r-lg font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">Subscribe</button>
+                <div className="flex flex-col md:flex-row p-5">
+                    <input placeholder="Email" className=" rounded-t-lg md:rounded-t-none md:rounded-l-lg p-2 pl-4  border-2 md:w-96 border-white"></input>
+                    <button className="flex-none rounded-b-lg md:rounded-b-none md:rounded-r-lg font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">Subscribe</button>
                 </div>
                 <p className="text-center text-white mb-5">or</p>
                 <button className="flex items-center rounded-lg w-max justify-self-center font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">
