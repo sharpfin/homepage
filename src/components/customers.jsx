@@ -60,7 +60,7 @@ const Customers = ({ data }) => {
           <div className="bg-gray-100 grid gap-5 rounded-sm  max-w-3xl">
             <QuoteIcon className="w-12 justify-self-center" />
             <p className="text-center text-lg">{customer.word}</p>
-            <div className="flex items-center  justify-self-center gap-5 mb-5">
+            <div className="flex items-center justify-self-center space-x-5 mb-5">
               <Img fluid={customer.fluid} className="w-28 circle" />
               <div>
                 <p className="font-bold text-lg">{customer.name}</p>
