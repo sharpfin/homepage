@@ -7,14 +7,14 @@ const Banks = ({ data }) => {
     return (
         <div className="grid justify-center bg-sharpfin-gray gap-5 py-32">
             <h3 className="text-center font-bold text-4xl text-white">Connected to <span className="italic">your</span> favourite bank</h3>
-            <div className="md:rounded-lg bg-white p-10 md:gap-20 flex justify-center gap-10 items-center flex-wrap">
+            <div className="rounded-lg bg-white mx-5 p-10 md:gap-20 flex justify-center gap-10 items-center flex-wrap">
                 <Img fluid={data.ubs.childImageSharp.fluid} className="object-fill flex-shrink-0 w-44 h-16" />
                 <Img fluid={data.avanza.childImageSharp.fluid} className="flex-shrink-0 w-44 h-16" />
                 <Img fluid={data.nordnet.childImageSharp.fluid} className="flex-shrink-0 w-44 h-16 " />
                 <Img fluid={data.seb.childImageSharp.fluid} className="flex-shrink-0 w-44 h-32" />
             </div>
             <div className="justify-self-center ">
-                <div className="flex gap-5 items-center justify-center px-5 mb-2">
+                <div className="flex gap-2 items-center justify-center px-5 mb-2">
                     <p className="text-white text-xl font-bold justify-self-center">A bank missing?</p>
                     <button className="inline border-2 border-transparent hover:border-white bg-sharpfin-blue hover:bg-sharpfin-gray px-5 py-2 md:text-lg text-white font-bold rounded" onClick={() => scrollTo('#contact')}>
                         Tell us

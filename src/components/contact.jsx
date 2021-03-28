@@ -9,7 +9,7 @@ const Contact = () => {
                     <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
                 </svg>
             </div>
-            <div className="md:bg-white max-w-xl mx-auto py-10 my-20 md:rounded-2xl md:shadow-lg px-20 md:border">
+            <div className="md:bg-white max-w-xl mx-auto py-10 my-20 md:rounded-2xl md:shadow-lg px-5 md:px-20 md:border">
                 <h1 className="text-center font-bold text-4xl mb-10">Contact us</h1>
                 <form className="grid gap-5">
                     <div>
