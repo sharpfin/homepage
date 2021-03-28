@@ -23,7 +23,7 @@ const Articles = ({ data }) => {
 
     return (
         <div>
-            <div className="grid justify-center mx-auto mt-20">
+            <div className="grid justify-center  mt-20">
                 <h1 className="text-4xl text-center font-bold mb-12">Latest news</h1>
                 <div className="flex flex-nowrap gap-10 overflow-scroll pl-10">
                     {articles.map(a => (
@@ -37,18 +37,20 @@ const Articles = ({ data }) => {
                 </div>
             </div>
             <div className="h-72 bg-sharpfin-blue -mt-72"></div>
-            <div className="bg-sharpfin-blue grid justify-center pb-20 pt-44">
+            <div className="bg-sharpfin-blue flex flex-col items-center justify-center pb-20 pt-44">
                 <h1 className="text-4xl text-white font-bold text-center">Never miss a thing</h1>
                 <p className="text-white  text-center">subscribe to our newsletter</p>
-                <div className="flex flex-col md:flex-row p-5">
-                    <input placeholder="Email" className=" rounded-t-lg md:rounded-t-none md:rounded-l-lg p-2 pl-4  border-2 md:w-96 border-white"></input>
-                    <button className="flex-none rounded-b-lg md:rounded-b-none md:rounded-r-lg font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">Subscribe</button>
-                </div>
+
+                <form className="p-5 grid">
+                    <input id="email2" placeholder="Email" className="rounded-t-lg md:rounded-t-none md:rounded-l-lg py-2 pl-4 border-2 md:w-96 border-white" />
+                    <button type="submit" className="flex-none rounded-b-lg md:rounded-b-none md:rounded-r-lg font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">Subscribe</button>
+                </form>
+
                 <p className="text-center text-white mb-5">or</p>
                 <button className="flex items-center rounded-lg w-max justify-self-center font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">
                     Read all news
                     <ChevronRight className="inline" />
-                    </button>
+                </button>
             </div>
         </div>
     )
@@ -56,8 +58,8 @@ const Articles = ({ data }) => {
 
 export default function ArticlesWrapper(props) {
     return (
-      <StaticQuery
-        query={graphql`
+        <StaticQuery
+            query={graphql`
             query {
                 file(relativePath: { eq: "christian.webp" }) {
                     childImageSharp {
@@ -68,7 +70,7 @@ export default function ArticlesWrapper(props) {
                 }
             }
         `}
-        render={data => <Articles data={data} {...props} />}
-      />
+            render={data => <Articles data={data} {...props} />}
+        />
     )
 }

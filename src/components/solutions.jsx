@@ -9,7 +9,7 @@ import { Link } from 'gatsby'
 
 const Solutions = () => {
     return (
-        <div className="bg-sharpfin-gray pb-10 grid justify-center">
+        <div className="bg-sharpfin-gray pb-10 ">
             <div className="custom-shape-divider-top-1616622048">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path fill="#fff" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" className="shape-fill"></path>
@@ -49,10 +49,10 @@ const Solutions = () => {
                 </Link>
             </div>
 
-            <div className="flex justify-center py-10 px-20">
+            <div className="flex justify-center py-10 px-5">
                 <Link to="/solutions">
-                    <button className="border-2 border-transparent hover:border-white bg-sharpfin-blue flex items-center hover:bg-sharpfin-gray px-5 py-2 md:text-lg text-white font-bold rounded">
-                        Learn more about our solutions <ChevronRight className="inline" />
+                    <button className="border-2 border-transparent hover:border-white bg-sharpfin-blue flex items-center hover:bg-sharpfin-gray px-5 py-2 text-lg text-white font-bold rounded">
+                        Learn more <ChevronRight />
                     </button>
                 </Link>
             </div>

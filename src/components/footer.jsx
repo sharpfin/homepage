@@ -6,7 +6,7 @@ import FacebookIcon from '../images/facebook.svg'
 const Footer = () => {
     return (
         <div className="p-20 grid gap-10 bg-sharpfin-gray">
-            <div className="flex gap-5 mx-auto ">
+            <div className="flex gap-5 justify-self-center ">
                 <a href="https://www.linkedin.com/company/sharpfin-ab"><LinkedInIcon className="w-10 h-10" /></a>
                 <a href="https://www.facebook.com/sharpfinfs"><FacebookIcon className="w-10 h-10" /></a>
             </div>
