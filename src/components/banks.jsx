@@ -14,7 +14,7 @@ const Banks = ({ data }) => {
                 <Img fluid={data.seb.childImageSharp.fluid} className="flex-shrink-0 w-44 h-32" />
             </div>
             <div className="justify-self-center ">
-                <div className="flex gap-2 items-center justify-center px-5 mb-2">
+                <div className="flex space-x-2 items-center justify-center px-5 mb-2">
                     <p className="text-white text-xl font-bold justify-self-center">A bank missing?</p>
                     <button className="inline border-2 border-transparent hover:border-white bg-sharpfin-blue hover:bg-sharpfin-gray px-5 py-2 md:text-lg text-white font-bold rounded" onClick={() => scrollTo('#contact')}>
                         Tell us

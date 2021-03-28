@@ -22,8 +22,8 @@ const SolutionsPage = () => {
                     <div className="border-b mt-10 pb-5">
                         <h1 className="text-4xl font-bold text-center">Solutions</h1>
                     </div>
-                    <div id="wealthmanagement" className="border-b py-20 mx-5 flex-col md:flex-row flex gap-10 justify-center md:justify-around items-center">
-                        <div className="grid gap-5">
+                    <div id="wealthmanagement" className="border-b py-20 mx-5 flex-col md:flex-row flex md:space-x-10 justify-center md:justify-around items-center">
+                        <div className="grid gap-5 mt-5 md:mt-0">
                             <h3 className="text-3xl font-bold">Wealth Management</h3>
                             <p className="font-bold">Sharpfin Wealth Manager features our easy-to-use order and portfolio manager</p>
                             <ul className="list-disc list-inside grid gap-2">
@@ -34,9 +34,9 @@ const SolutionsPage = () => {
                         </div>
                         <WealthManagementIcon className="w-44 h-44 flex-shrink-0 order-first md:order-none" />
                     </div>
-                    <div id="advisory" className="border-b py-20 mx-5 flex-col md:flex-row flex gap-10 justify-center md:justify-around items-center">
+                    <div id="advisory" className="border-b py-20 mx-5 flex-col md:flex-row flex md:space-x-10 justify-center md:justify-around items-center">
                         <AdvisoryIcon className="w-44 h-44 flex-shrink-0" />
-                        <div className="grid gap-5">
+                        <div className="grid gap-5 mt-5 md:mt-0">
                             <h3 className="text-3xl font-bold">Advisory</h3>
                             <p className="font-bold">Utilise Sharpfin Advisory to:</p>
                             <ul className="list-disc list-inside grid gap-2">
@@ -46,8 +46,8 @@ const SolutionsPage = () => {
                             </ul>
                         </div>
                     </div>
-                    <div id="riskmanagement" className="border-b py-20 mx-5 flex-col md:flex-row flex gap-10 justify-center md:justify-around items-center">
-                        <div className="grid gap-5">
+                    <div id="riskmanagement" className="border-b py-20 mx-5 flex-col md:flex-row flex md:space-x-10 justify-center md:justify-around items-center">
+                        <div className="grid gap-5 mt-5 md:mt-0">
                             <h3 className="text-3xl font-bold">Risk Management</h3>
                             <p className="font-bold">With Sharpfin Risk Manager you can control your investment restrictions by using</p>
                             <ul className="list-disc list-inside grid gap-2">
@@ -58,8 +58,8 @@ const SolutionsPage = () => {
                         </div>
                         <RiskManagementIcon className="w-44 h-44 flex-shrink-0 order-first md:order-none" />
                     </div>
-                    <div id="wealthadministration" className="border-b py-20 mx-5 flex-col md:flex-row flex gap-10 justify-center md:justify-around items-center">
-                        <div className="grid gap-5">
+                    <div id="wealthadministration" className="border-b py-20 mx-5 flex-col md:flex-row md:space-x-10 justify-center md:justify-around items-center">
+                        <div className="grid gap-5 mt-5 md:mt-0">
                             <h3 className="text-3xl font-bold">Wealth Administration</h3>
                             <p className="font-bold">Sharpfin Wealth Administrator cuts cost and increases quality in your administration by utilising user friendly functionality for:</p>
                             <ul className="list-disc list-inside grid gap-2">
@@ -72,7 +72,7 @@ const SolutionsPage = () => {
                     </div>
                     <div id="referencedata" className="py-20 px-5 flex-col md:flex-row flex gap-10 justify-center md:justify-around items-center">
                         <ReferenceDataIcon className="w-44 h-44 flex-shrink-0 order-first md:order-none" />
-                        <div className="grid gap-5">
+                        <div className="grid gap-5 mt-5 md:mt-0">
                             <h3 className="text-3xl font-bold">Reference Data</h3>
                             <p className="font-bold">This module is the very heart of the Sharpfin application, the keystone for its other modules. The Sharpfin Reference Data module features:</p>
                             <ul className="list-disc list-inside grid gap-2">

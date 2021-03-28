@@ -12,7 +12,7 @@ const Header = ({data}) => {
           <Img fluid={data.file.childImageSharp.fluid} className="w-44" />
         </Link>
         <nav>
-            <ul className="md:flex gap-5 hidden md:visible font-bold items-center text-sharpfin-gray">
+            <ul className="md:flex space-x-5 hidden md:visible font-bold items-center text-sharpfin-gray">
                 <li><Link to="/solutions" className="menu-item">Solutions</Link></li>
                 <li><a href="/" className="menu-item">Blog</a></li>
                 <li><a href="/" className="menu-item">Career</a></li>

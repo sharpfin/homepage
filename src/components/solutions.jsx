@@ -16,15 +16,15 @@ const Solutions = () => {
                 </svg>
             </div>
             <h2 className="text-white text-4xl text-center font-bold">What we offer</h2>
-            <div className="flex flex-wrap justify-center p-10 gap-10 container mx-auto">
+            <div className="flex flex-wrap justify-center p-10 md:space-x-10 space-y-10 h-full container mx-auto">
 
-                <Link to="/solutions#wealthmanagement" className="bg-white p-5 transform rounded w-96 duration-500 md:hover:-translate-y-2">
+                <Link to="/solutions#wealthmanagement" className="mt-10 bg-white p-5 h-96 transform rounded w-96 duration-500 md:hover:-translate-y-2">
                     <WealthManagementIcon className="w-32 mx-auto mb-5" />
                     <h4 className="font-bold text-2xl mb-5 text-center">Wealth Manager</h4>
                     <p>Portfolio manager, order manager connected to proprietary trading systems and more.</p>
                 </Link>
 
-                <Link to="/solutions#advisory" className="bg-white p-5 transform rounded w-96 duration-500 md:hover:-translate-y-2">
+                <Link to="/solutions#advisory" className="bg-white p-5 transform h-96  rounded w-96 duration-500 md:hover:-translate-y-2">
                     <AdvisoryIcon className="w-32 mx-auto mb-5" />
                     <h4 className="font-bold text-2xl mb-5 text-center">Advisory</h4>
                     <p>Digitize all customer documentation in a simple and structured way. Then send them for digital signing seamlessly.</p>

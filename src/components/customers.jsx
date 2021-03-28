@@ -67,7 +67,7 @@ const Customers = ({ data }) => {
                 <p className="text-gray-500">{customer.title}</p>
               </div>
             </div>
-            <div className="flex gap-2 justify-self-center items-center">
+            <div className="flex space-x-2 justify-self-center items-center">
               <button className="flex-none focus:outline-none" onClick={left}>
                 <ChevronLeft fill="gray" className="w-8 h-8 text-gray-200" />
               </button>
