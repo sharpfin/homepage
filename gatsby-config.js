@@ -3,6 +3,7 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: "sharpfin",
+    siteUrl: "https://elastic-leavitt-4677d6.netlify.com"
   },
   flags: {
     DEV_SSR: false
