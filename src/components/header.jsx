@@ -14,7 +14,7 @@ const Header = ({data}) => {
         <nav>
             <ul className="md:flex space-x-5 hidden md:visible font-bold items-center text-sharpfin-gray">
                 <li><Link to="/solutions" className="menu-item">Solutions</Link></li>
-                <li><a href="/" className="menu-item">Blog</a></li>
+                <li><a href="/blog" className="menu-item">Blog</a></li>
                 <li><a href="/" className="menu-item">Career</a></li>
                 <button className="button-gray" onClick={() => scrollTo('#contact')}>
                     Contact Us

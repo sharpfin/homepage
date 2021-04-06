@@ -9,7 +9,15 @@ module.exports = {
     DEV_SSR: false
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown`,
+        path: `${__dirname}/src/markdown`,
+      },
+    },
     'gatsby-plugin-postcss',
+    "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
@@ -23,14 +31,7 @@ module.exports = {
         name: "images",
         path: path.join(__dirname, "src", "images"),
       },
-    }
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     name: "pages",
-    //     path: "./src/pages/",
-    //   },
-    //   __key: "pages",
-    // },
+    },
+
   ],
 };

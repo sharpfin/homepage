@@ -16,6 +16,38 @@ html {
     @apply border-b-2 border-transparent hover:border-blue-400 hover:text-blue-400 pb-2;
 }
 
+.blog-post {
+    p, li {
+        @apply mb-5
+    }
+
+    h4, h3, h2 {
+       @apply text-lg font-bold;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+.custom-shape-divider-top-1617720316 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1617720316 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-top-1617720316 .shape-fill {
+    fill: #222731;
+}
 
 .custom-shape-divider-top-1616622048 {
     width: 100%;

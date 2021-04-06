@@ -8,7 +8,7 @@ const Landing = () => {
         <span className="block">Better <span className="text-sharpfin-blue">technology</span> for</span>
         <span className="block">wealth managers</span>
       </h1>
-      <h3 className="text-center  md:text-2xl text-gray-500">Sharpfin speeds up and automates important administration processes in wealth management</h3>
+      <h3 className="text-center md:text-2xl text-gray-500">Sharpfin speeds up and automates important administration processes in wealth management</h3>
       <button className="button-gray w-44 justify-self-center" onClick={() => scrollTo('#contact')}>
         Get in touch!
         </button>

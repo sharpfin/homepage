@@ -1,11 +1,11 @@
 import * as React from "react"
 import { graphql, StaticQuery } from 'gatsby'
-import Img from "gatsby-image"
 import QuoteIcon from '../images/quote.svg'
 import ChevronRight from '../images/chevron-right-black.svg'
 import ChevronLeft from '../images/chevron-left.svg'
 import DotCircle from '../images/dot-circle.svg'
 import Dot from '../images/dot.svg'
+import Person from '../components/person'
 
 const Customers = ({ data }) => {
   const [selectedCustomerIndex, setSelectedCustomerIndex] = React.useState(0)
@@ -60,13 +60,7 @@ const Customers = ({ data }) => {
           <div className="bg-gray-100 grid gap-5 rounded-sm  max-w-3xl">
             <QuoteIcon className="w-12 justify-self-center" />
             <p className="text-center text-lg">{customer.word}</p>
-            <div className="flex items-center justify-self-center space-x-5 mb-5">
-              <Img fluid={customer.fluid} className="w-28 circle" />
-              <div>
-                <p className="font-bold text-lg">{customer.name}</p>
-                <p className="text-gray-500">{customer.title}</p>
-              </div>
-            </div>
+            <Person title={customer.title} name={customer.name} fluid={customer.fluid} />
             <div className="flex space-x-2 justify-self-center items-center">
               <button className="flex-none focus:outline-none" onClick={left}>
                 <ChevronLeft fill="gray" className="w-8 h-8 text-gray-200" />
