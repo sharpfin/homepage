@@ -30,7 +30,7 @@ const BlogPage = ({ data }) => {
 
 export const pageQuery = graphql`
     query {
-        allMdx(sort: {fields: frontmatter___date, order: DESC}, limit: 3) {
+        allMdx(sort: {fields: frontmatter___date, order: DESC}) {
             edges {
             node {
                 frontmatter {
