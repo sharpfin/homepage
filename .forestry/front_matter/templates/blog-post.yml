@@ -17,3 +17,5 @@ fields:
 - type: datetime
   name: date
   label: date
+pages:
+- src/markdown/consensus-asset-management-valjer-sharpfin-advisory-for-digitalisering-av-sina-kyc-processer.mdx
