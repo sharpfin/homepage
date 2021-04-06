@@ -1,0 +1,19 @@
+---
+label: blog post
+hide_body: false
+fields:
+- type: text
+  name: path
+  label: path
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: intro
+  label: intro
+- type: file
+  name: image
+  label: image
+- type: datetime
+  name: date
+  label: date
