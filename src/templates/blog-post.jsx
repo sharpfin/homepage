@@ -9,10 +9,8 @@ import Person from '../components/person'
 const Template = ({ data }) => {
     const mdx = data.mdx;
     return (
-        <Layout >
+        <Layout title={mdx.frontmatter.title}>
             <div className="max-w-4xl mx-auto mt-5 px-5">
-                <Img fluid={mdx.frontmatter.image.childImageSharp.fluid} className="rounded max-w-xl mx-auto"/>
-                <h1 className="text-4xl mt-10">{mdx.frontmatter.title}</h1>
                 <p className="text-lg italic mt-10 font-bold">{mdx.frontmatter.intro}</p>
                 <div className="blog-post mt-10 border-b pb-10">
                     <MDXRenderer>{mdx.body}</MDXRenderer>

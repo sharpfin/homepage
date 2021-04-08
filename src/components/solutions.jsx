@@ -1,9 +1,9 @@
 import * as React from "react"
-import WealthManagementIcon from '../images/wealth-management.svg'
-import AdvisoryIcon from '../images/advisory.svg'
-import RiskManagementIcon from '../images/risk-management.svg'
-import WealthAdministrationIcon from '../images/wealth-administration.svg'
-import ReferenceDataIcon from '../images/reference-data.svg'
+import WealthManagementIcon from '../images/icons/wm2.svg'
+import AdvisoryIcon from '../images/icons/advisory.svg'
+import RiskManagementIcon from '../images/icons/rm.svg'
+import WealthAdministrationIcon from '../images/icons/wa.svg'
+import ReferenceDataIcon from '../images/icons/rd.svg'
 import ChevronRight from '../images/chevron-right.svg'
 import { Link } from 'gatsby'
 
@@ -18,32 +18,36 @@ const Solutions = () => {
             <h2 className="text-white text-4xl text-center font-bold">What we offer</h2>
             <div className="flex flex-wrap justify-center p-10 md:space-x-10 space-y-10 h-full container mx-auto">
 
-                <Link to="/solutions#wealthmanagement" className="mt-10 bg-white p-5 h-96 transform rounded w-96 duration-500 md:hover:-translate-y-2">
-                    <WealthManagementIcon className="w-32 mx-auto mb-5" />
+                <Link to="/solutions#wealthmanagement" className="mt-10 bg-white p-5 transform rounded w-96 duration-500 hover:bg-green-200 ">
+                    <WealthManagementIcon className="mx-auto mb-5 w-36 transform group-" />
                     <h4 className="font-bold text-2xl mb-5 text-center">Wealth Manager</h4>
                     <p>Portfolio manager, order manager connected to proprietary trading systems and more.</p>
                 </Link>
 
-                <Link to="/solutions#advisory" className="bg-white p-5 transform h-96  rounded w-96 duration-500 md:hover:-translate-y-2">
-                    <AdvisoryIcon className="w-32 mx-auto mb-5" />
-                    <h4 className="font-bold text-2xl mb-5 text-center">Advisory</h4>
+                <Link to="/solutions#advisory" className="bg-white p-5 transform  rounded w-96 duration-500 md:hover:-translate-y-2">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="mx-auto top-0 z-10 h-44">
+                        <path fill="#93C5FD" d="M54.9,-20.8C61.8,3.4,51.6,30.3,34.4,41.4C17.1,52.5,-7.2,47.9,-29.6,33.4C-52,18.8,-72.5,-5.7,-67.3,-27.7C-62,-49.7,-31,-69.1,-3.5,-68C24,-66.9,48,-45.1,54.9,-20.8Z" transform="translate(100 100)" />
+                    </svg>
+                    <AdvisoryIcon className="w-24 mx-auto mb-5 z-20 top-0 -mt-36 " />
+
+                    <h4 className="font-bold text-2xl mb-5 text-center pt-5">Advisory</h4>
                     <p>Digitize all customer documentation in a simple and structured way. Then send them for digital signing seamlessly.</p>
                 </Link>
 
                 <Link to="/solutions#riskmanagement" className="bg-white p-5 transform rounded w-96 duration-500 md:hover:-translate-y-2">
-                    <RiskManagementIcon className="w-32 mb-5 mx-auto" />
+                    <RiskManagementIcon className="w-24 mb-5 mx-auto" />
                     <h4 className="font-bold text-2xl mb-5 text-center">Risk Manager</h4>
                     <p>Real time calculation of the most common risk measures.</p>
                 </Link>
 
                 <Link to="/solutions#wealthadministration" className="bg-white p-5 transform rounded w-96 duration-500 md:hover:-translate-y-2">
-                    <WealthAdministrationIcon className="w-32 mx-auto mb-5" />
+                    <WealthAdministrationIcon className="w-24 mx-auto mb-5" />
                     <h4 className="font-bold text-2xl mb-5 text-center">Wealth Administration</h4>
                     <p>Flexible engine to calculate management fees both for funds and client portfolios.</p>
                 </Link>
 
                 <Link to="/solutions#referencedata" className="bg-white p-5  rounded w-96 transform duration-500 md:hover:-translate-y-2">
-                    <ReferenceDataIcon className="w-32 mx-auto mb-5" />
+                    <ReferenceDataIcon className="w-24 mx-auto mb-5" />
                     <h4 className="font-bold text-2xl mb-5 text-center">Reference Data</h4>
                     <p>Ensures your data quality with high accuracy</p>
                 </Link>
