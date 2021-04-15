@@ -20,16 +20,16 @@ const Contact = ({top}) => {
                 <input type="hidden" name="bot-field" />
                     <input type="hidden" name="form-name" value="contact" />
                     <div>
-                        <label htmlFor="name" className="">Name</label>
-                        <input id="name" name="name" className="block p-2 border border-gray-300 pl-4 rounded w-full"></input>
+                        <label htmlFor="name" className="">Name*</label>
+                        <input id="name" name="name" required className="block p-2 border border-gray-300 pl-4 rounded w-full"></input>
                     </div>
                     <div>
-                        <label htmlFor="email" className="">Email</label>
-                        <input id="email" name="email" className="block p-2 border border-gray-300 pl-4 rounded w-full"></input>
+                        <label htmlFor="email" className="">Email*</label>
+                        <input id="email" pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" name="email" required className="block p-2 border border-gray-300 pl-4 rounded w-full"></input>
                     </div>
                     <div>
-                        <label htmlFor="message" className="">Message</label>
-                        <textarea id="message" name="message" type="texarea" className="block p-2 border border-gray-300 pl-4 rounded w-full h-44"></textarea>
+                        <label htmlFor="message" className="">Message*</label>
+                        <textarea id="message" name="message" type="texarea" required className="block p-2 border border-gray-300 pl-4 rounded w-full h-44"></textarea>
                     </div>
 
                     <button type="submit" className="justify-self-end bg-sharpfin-blue text-white font-bold px-5 py-2 rounded hover:bg-sharpfin-gray">Send</button>
