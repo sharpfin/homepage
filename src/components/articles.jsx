@@ -7,7 +7,7 @@ const Articles = ({ data }) => {
     return (
         <div>
             <div className="grid justify-center  mt-20">
-                <h1 className="text-4xl text-center font-bold mb-12">Latest news</h1>
+                <h1 className="text-4xl text-center font-bold mb-12">Read our latest news</h1>
                 <div className="flex flex-nowrap space-x-10 overflow-scroll md:overflow-hidden pl-10 items-stretch">
                     {data.allMdx.edges.map(({ node }) => (
                         <BlogCard

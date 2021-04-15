@@ -10,9 +10,9 @@ const Template = ({ data }) => {
     const mdx = data.mdx;
     return (
         <Layout title={mdx.frontmatter.title}>
-            <div className="max-w-4xl mx-auto mt-5 px-5">
+            <div className="max-w-3xl mx-auto mt-5 px-5">
                 <p className="text-lg italic mt-10 font-bold">{mdx.frontmatter.intro}</p>
-                <div className="blog-post mt-10 border-b pb-10">
+                <div className="blog-post mt-10 pb-10">
                     <MDXRenderer>{mdx.body}</MDXRenderer>
                 </div>
             </div>

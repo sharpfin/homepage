@@ -16,6 +16,11 @@ html {
     @apply border-b-2 border-transparent hover:border-blue-400 hover:text-blue-400 pb-2;
 }
 
+.menu-item-sm {
+    @apply text-gray-700 hover:text-blue-400 pb-2;
+}
+
+
 .blog-post {
     p, li {
         @apply mb-5

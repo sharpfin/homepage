@@ -14,39 +14,36 @@ const Solutions = ({ data }) => {
         {
             link: "/customer-solutions#familyoffices",
             fluid: data.family.childImageSharp.fluid,
-            title: "Family Offices",
+            title: "Family Office",
             text: "Free up your time utilizing Sharpfins consolidation of wealth management data throughout multiple sources."
         },
         {
             link: "/customer-solutions#assetmanagers",
             fluid: data.asset.childImageSharp.fluid,
-            title: "Independent Asset Managers",
+            title: "Independent Asset Manager",
             text: "Wealth management is possible with only one tool for customer onboarding, constant monitoring of KYC and AML, flexible portfolio management and branded customer reporting. Sharpfin is the proof."
         },
         {
             link: "/customer-solutions#advisors",
             fluid: data.pension.childImageSharp.fluid,
-            title: "Financial- and Pension advisors",
+            title: "Financial- and Pension advisor",
             text: "Sharpfins advisory portal helps you to significantly cut time in your advisory processes, all while making the results electronically traceable and with a seamless integration of electronic signatures."
         },
     ]
 
     return (
-        <div className="bg-sharpfin-gray pb-10 grid">
-            <div className="custom-shape-divider-top-1616622048">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path fill="#fff" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" className="shape-fill"></path>
-                </svg>
-            </div>
-            <h2 className="text-white text-4xl text-center font-bold">Our Value Proposition</h2>
+        <div className="bg-sharpfin-gray pb-10 pt-20 grid">
+
+            <h2 className="text-white text-4xl text-center font-bold">What do you do?</h2>
+            <p className="text-center text-white mt-2">This is how we help you achieve your goals</p>
             <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3 p-5 justify-self-center mt-10">
                 {customers.map(c => (
-                    <Link to={c.link} className="bg-white transform w-96 duration-300  hover:-translate-y-2 rounded-lg">
+                    <Link to={c.link} className="bg-white transform max-w-sm duration-300  hover:-translate-y-2 rounded-lg">
                         <div className="h-64">
-                            <Img fluid={c.fluid} className="mx-auto  h-64 rounded-t-lg" imgStyle={{ zIndex: `-1` }} />
-                            <h4 className="font-bold text-2xl -mt-44  mx-5 text-white text-center">{c.title}</h4>
+                            <Img fluid={c.fluid} className="mx-auto h-64 rounded-t-lg" imgStyle={{ zIndex: `-1` }} />
+                            <h4 className="font-bold text-2xl -mt-44 mx-5 text-white text-center">{c.title}</h4>
                         </div>
-                        <p className="p-5">{c.text}</p>
+                        <p className="p-5 text-center">{c.text}</p>
                     </Link>
                 ))}
             </div>
