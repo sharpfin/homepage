@@ -1,7 +1,7 @@
 import * as React from "react"
 import WealthManagementIcon from '../images/icons/wm.svg'
-import AdvisoryIcon from '../images/icons/advisory.svg'
-import RiskManagementIcon from '../images/icons/rm.svg'
+import AdvisoryIcon from '../images/icons/remote.svg'
+import RiskManagementIcon from '../images/icons/risk.svg'
 import WealthAdministrationIcon from '../images/icons/wa2.svg'
 import ReferenceDataIcon from '../images/icons/rd.svg'
 import ChevronRight from '../images/chevron-right.svg'
@@ -11,47 +11,48 @@ import Deliver from '../images/icons/deliver.svg'
 import { Link } from 'gatsby'
 
 const Solutions = () => {
+    const iconClasses="mx-auto mb-5 h-32";
     const solutions = [
         {
-            icon: <Portfolio className="mx-auto mb-5 h-32" />,
+            icon: <Portfolio className={iconClasses} />,
             title: "Aggregate portfolios",
             text: "Our portfolio manager aggregates your or you customers portfolios in a convenient way.",
             link: "/solutions#wealthmanagement"
         },
         {
-            icon: <WealthManagementIcon className="mx-auto mb-5 h-32" />,
+            icon: <WealthManagementIcon className={iconClasses} />,
             title: "Trade where you like",
             text: "We have connections to proprietary trading systems. Which lets you execute your trades in the trading software you love.",
             link: "/solutions#wealthmanagement"
         },
         {
-            icon:  <AdvisoryIcon className="h-32 mx-auto mb-5 z-20 " />,
+            icon:  <AdvisoryIcon className={iconClasses} />,
             title: "Totally remote customer onboarding",
             text: "Digitize all customer documentation in a simple and structured way. Then send them for digital signing seamlessly.",
             link: "/solutions#advisory"
         },
         {
-            icon:  <RiskManagementIcon className="h-32 mx-auto mb-5 z-20 " />,
+            icon:  <RiskManagementIcon className={iconClasses} />,
             title: "Monitor you risks",
             text: "Real time calculation of the most common risk measures.",
             link: "/solutions#riskmanagement"
         },
         {
-            icon:  <WealthAdministrationIcon className="h-32 mx-auto mb-5 z-20 " />,
+            icon:  <WealthAdministrationIcon className={iconClasses} />,
             title: "Get paid easily",
             text: "Utilise our flexible engine to calculate management fees both for funds and client portfolios.",
             link: "/solutions#wealthadministration"
         },
         {
-            icon:  <ReferenceDataIcon className="h-32 mx-auto mb-5 z-20 " />,
-            title: "Hight data quality",
-            text: "Sharpfin ensures your data quality with our proprietary reconciliation software.",
+            icon:  <Deliver className={iconClasses} />,
+            title: "Deliver customer data",
+            text: "Our customer portal makes it easy to deliver reports and other documents to your customers. Fully GPDR compliant.",
             link: "/solutions#referencedata"
         },
         {
-            icon:  <Deliver className="h-32 mx-auto mb-5 z-20 " />,
-            title: "Deliver customer data",
-            text: "Our customer portal makes it easy to deliver reports and other documents to your customers. Fully GPDR compliant.",
+            icon:  <ReferenceDataIcon className={iconClasses} />,
+            title: "High data quality",
+            text: "Sharpfin ensures your data quality with our reconciliation software.",
             link: "/solutions#referencedata"
         }
     ]
