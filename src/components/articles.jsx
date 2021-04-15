@@ -33,7 +33,7 @@ const Articles = ({ data }) => {
                 <h1 className="text-4xl text-white font-bold text-center">Never miss a thing</h1>
                 <p className="text-white text-center">subscribe to our newsletter</p>
                 <form className="p-5 flex space-y-2 md:space-y-0 md:space-x-2 md:flex-row flex-col w-full justify-center" method="post" netlify-honeypot="bot-field" data-netlify="true" name="newsletter">
-                    <input id="email2" placeholder="Email" className=" rounded-lg md:rounded-l-lg py-2 pl-4 border-2 md:w-96 border-white" />
+                    <input id="email2" name="email" placeholder="Email" className=" rounded-lg md:rounded-l-lg py-2 pl-4 border-2 md:w-96 border-white" />
                     <button type="submit" className=" rounded-lg md:rounded-r-lg font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">Subscribe</button>
                 </form>
             </div>
