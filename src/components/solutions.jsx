@@ -76,7 +76,7 @@ const Solutions = () => {
             <Divider />
             <div className="flex justify-center -mt-20 pb-10 px-5">
                 <Link to="/solutions">
-                    <button className="border-2 border-transparent hover:border-white bg-sharpfin-blue flex items-center hover:bg-sharpfin-gray px-5 py-2 text-lg text-white font-bold rounded">
+                    <button className="bg-sharpfin-blue flex items-center hover:bg-sharpfin-gray px-5 py-2 text-lg text-white font-bold rounded">
                         Learn more <ChevronRight />
                     </button>
                 </Link>
