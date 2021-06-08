@@ -7,6 +7,7 @@ import Customers from '../components/customers'
 import Articles from '../components/articles'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
+import Trusted from '../components/trusted'
 import SEO from '../components/SEO'
 
 const IndexPage = () => {
@@ -16,6 +17,7 @@ const IndexPage = () => {
       <Header light={true} />
       <main>
         <Landing />
+        <Trusted />
         <CustomerTypes2 />
         <Customers />
         <Solutions />

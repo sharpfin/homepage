@@ -12,10 +12,10 @@ const Landing = () => {
 
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl  font-bold text-sharpfin-gray text-center ">
-          <span className="block"> <span className="  italic text-sharpfin-blue">Reliable</span> technology for</span>
+          <span className="block"> <span className="  italic text-sharpfin-blue">Better</span> technology for</span>
           <span className="block">wealth managers</span>
         </h1>
-        <h3 className="text-center font-thin md:text-xl text-gray-500">Speed up and automate your administration processes</h3>
+        <h3 className="text-center font-thin md:text-xl text-gray-500">Digitize, accelerate and automate your administration processes</h3>
         <button className="rounded py-2 px-4 text-white hover:bg-sharpfin-blue bg-green-500 font-bold block justify-self-center" onClick={() => scrollTo('#contact')}>
           Request a demo today
         </button>

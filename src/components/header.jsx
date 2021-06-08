@@ -34,7 +34,7 @@ const Header = ({ data, light }) => {
     <header>
       <div className={`flex p-5 items-center justify-between md:justify-around ${light ? "bg-transparent" : "bg-sharpfin-gray"}`}>
         <Link to="/">
-          {light ? <LogoBlack className="w-36"/> : <Img fluid={light ? data.black.childImageSharp.fluid : data.white.childImageSharp.fluid} className="w-44" />}
+          {light ? <LogoBlack className="w-44"/> : <Img fluid={light ? data.black.childImageSharp.fluid : data.white.childImageSharp.fluid} className="w-44" />}
         </Link>
         <nav>
           <ul className={`md:flex space-x-5 hidden font-bold items-center ${light ? "text-black" : "text-white"}`}>

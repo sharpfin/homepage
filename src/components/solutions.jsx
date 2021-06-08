@@ -2,57 +2,57 @@ import * as React from "react"
 import WealthManagementIcon from '../images/icons/wm.svg'
 import AdvisoryIcon from '../images/icons/remote.svg'
 import RiskManagementIcon from '../images/icons/risk.svg'
-import WealthAdministrationIcon from '../images/icons/wa2.svg'
-import ReferenceDataIcon from '../images/icons/rd.svg'
+import WealthAdministrationIcon from '../images/icons/Brand1.svg'
+import ReferenceDataIcon from '../images/icons/Risk2.svg'
 import ChevronRight from '../images/chevron-right.svg'
 import Divider from '../images/flowy-divider.svg'
 import Portfolio from '../images/icons/portfolio.svg'
-import Deliver from '../images/icons/deliver.svg'
+import Deliver from '../images/icons/Brand2.svg'
 import { Link } from 'gatsby'
 
 const Solutions = () => {
     const iconClasses="mx-auto mb-5 h-32";
     const solutions = [
-        {
-            icon: <Portfolio className={iconClasses} />,
-            title: "Aggregate portfolios",
-            text: "Our portfolio manager aggregates your or you customers portfolios in a convenient way.",
-            link: "/solutions#wealthmanagement"
-        },
+        // {
+        //     icon: <Portfolio className={iconClasses} />,
+        //     title: "Aggregate portfolios",
+        //     text: "Our portfolio manager aggregates your or you customers portfolios in a convenient way.",
+        //     link: "/solutions#wealthmanagement"
+        // },
         {
             icon: <WealthManagementIcon className={iconClasses} />,
-            title: "Trade where you like",
-            text: "We have connections to proprietary trading systems. Which lets you execute your trades in the trading software you love.",
+            title: "Wealth consolidation",
+            text: "Sharpfin enables consolidation of both allocation and performance for your clients with holdings scattered across banks or with multiple depots in one bank.",
             link: "/solutions#wealthmanagement"
         },
         {
             icon:  <AdvisoryIcon className={iconClasses} />,
-            title: "Totally remote customer onboarding",
-            text: "Digitize all customer documentation in a simple and structured way. Then send them for digital signing seamlessly.",
+            title: "Remote client onboarding",
+            text: "Digitize all your customer documentation in a simple and structured way. Utilize our seamless integration with Scrive to sign remotely.",
             link: "/solutions#advisory"
         },
         {
             icon:  <RiskManagementIcon className={iconClasses} />,
             title: "Monitor you risks",
-            text: "Real time calculation of the most common risk measures.",
+            text: "We make sure that your clients holdings are in line with the agreed risk level at all times. Sharpfin offers constant real-time monitoring of your clients allocation and risks.",
             link: "/solutions#riskmanagement"
         },
         {
             icon:  <WealthAdministrationIcon className={iconClasses} />,
-            title: "Get paid easily",
-            text: "Utilise our flexible engine to calculate management fees both for funds and client portfolios.",
+            title: "Save administration time",
+            text: "Calculating your management fees can be a time consuming task especially if you offer performance fees or management fees based on daily asset under management. Using Sharpfin, this task is done within less than 5 seconds.",
             link: "/solutions#wealthadministration"
         },
         {
             icon:  <Deliver className={iconClasses} />,
-            title: "Deliver customer data",
-            text: "Our customer portal makes it easy to deliver reports and other documents to your customers. Fully GPDR compliant.",
+            title: "Strengthen your brand",
+            text: "By using our reporting or customer portal module you can move closer to your clients with branded, secure login to the system or tailor made client reporting.",
             link: "/solutions#referencedata"
         },
         {
             icon:  <ReferenceDataIcon className={iconClasses} />,
-            title: "High data quality",
-            text: "Sharpfin ensures your data quality with our reconciliation software.",
+            title: "Limit compliancy risk",
+            text: "Together with our partners we offer to monitor all your clients for PEP and money laundring on daily basis. You can easily manage this process through the Sharpfin user interface.",
             link: "/solutions#referencedata"
         }
     ]
