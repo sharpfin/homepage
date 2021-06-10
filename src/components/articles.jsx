@@ -2,14 +2,22 @@ import * as React from "react"
 import { graphql, StaticQuery } from 'gatsby'
 import ChevronRight from '../images/chevron-right.svg'
 import BlogCard from '../components/blog-card'
+import { LangContext } from './context'
+import LangLink from './LangLink'
 
 const Articles = ({ data }) => {
+    const { t, langKey } = React.useContext(LangContext)
+    const articles = data.allMdx.edges
+        .filter(({ node }) => {
+            return node.frontmatter.lang === langKey || node.frontmatter.lang === "all"
+        })
+
     return (
         <div>
             <div className="grid justify-center  mt-20">
-                <h1 className="text-4xl text-center font-bold mb-12">Read our latest news</h1>
+                <h1 className="text-4xl text-center font-bold mb-12">{t.sharpfin_insider.read}</h1>
                 <div className="flex flex-nowrap space-x-10 overflow-scroll md:overflow-hidden pl-10 items-stretch">
-                    {data.allMdx.edges.map(({ node }) => (
+                    {articles.map(({ node }) => (
                         <BlogCard
                             key={node.frontmatter.path}
                             title={node.frontmatter.title}
@@ -18,25 +26,26 @@ const Articles = ({ data }) => {
                             link={node.frontmatter.path} />
                     ))}
                 </div>
-
             </div>
 
             <div className="h-72 bg-sharpfin-blue -mt-72"></div>
             <div className="bg-sharpfin-blue pt-10 grid justify-center">
+                <LangLink to="sharpfin-insider">
                 <button className="flex t-20 items-center rounded-lg w-max justify-self-center font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">
-                    Read all news
+                    {t.sharpfin_insider.read_all}
                     <ChevronRight className="inline" />
                 </button>
+                </LangLink>
             </div>
 
             <div className="bg-sharpfin-blue flex flex-col items-center justify-center pb-20 pt-44">
-                <h1 className="text-4xl text-white font-bold text-center">Never miss a thing</h1>
-                <p className="text-white text-center">subscribe to our newsletter</p>
+                <h1 className="text-4xl text-white font-bold text-center">{t.sharpfin_insider.miss}</h1>
+                <p className="text-white text-center">{t.sharpfin_insider.subscribe_text}</p>
                 <form className="p-5 flex space-y-2 md:space-y-0 md:space-x-2 md:flex-row flex-col w-full justify-center" method="post" netlify-honeypot="bot-field" data-netlify="true" name="newsletter">
                     <input type="hidden" name="bot-field" />
                     <input type="hidden" name="form-name" value="newsletter" />
                     <input pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" id="email2" name="email" placeholder="Email" className=" rounded-lg md:rounded-l-lg py-2 pl-4 border-2 md:w-96 border-white" />
-                    <button type="submit" className=" rounded-lg md:rounded-r-lg font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">Subscribe</button>
+                    <button type="submit" className=" rounded-lg md:rounded-r-lg font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">{t.sharpfin_insider.subscribe_btn}</button>
                 </form>
             </div>
         </div>
@@ -48,7 +57,7 @@ export default function ArticlesWrapper(props) {
         <StaticQuery
             query={graphql`
             query {
-                allMdx(sort: {fields: frontmatter___date, order: DESC}, limit: 3) {
+                allMdx(sort: {fields: frontmatter___date, order: DESC}) {
                     edges {
                       node {
                         frontmatter {
@@ -56,6 +65,7 @@ export default function ArticlesWrapper(props) {
                           intro
                           date
                           path
+                          lang
                           image {
                             childImageSharp {
                               fluid(quality: 70) {
@@ -68,13 +78,6 @@ export default function ArticlesWrapper(props) {
                       }
                     }
                   }
-                file(relativePath: { eq: "christian.webp" }) {
-                    childImageSharp {
-                        fluid(quality: 70) {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
             }
         `}
             render={data => <Articles data={data} {...props} />}

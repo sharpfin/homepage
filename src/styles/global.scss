@@ -14,11 +14,28 @@ html {
 }
 
 .menu-item {
-    @apply border-b-2 border-transparent hover:border-blue-400 hover:text-blue-400 pb-2;
+    @apply border-b-2 border-transparent hover:text-blue-400;
 }
 
 .menu-item-sm {
     @apply text-gray-700 hover:text-blue-400 pb-2;
+}
+
+.menu-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.menu-dropdown {
+    position: relative;
+    display: inline-block;
+    &:hover {
+        .menu-dropdown-content {
+            display: grid;
+        }
+    }
 }
 
 
