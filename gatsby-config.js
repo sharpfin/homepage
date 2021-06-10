@@ -4,8 +4,7 @@ module.exports = {
   siteMetadata: {
     title: "Sharpfin",
     author: "Sharpfin",
-    description: "Sharpfin will help you realize your full potential with the next generation of wealth management software. ",
-    siteUrl: "http:localhost:8000/",
+    siteUrl: "https://condescending-mahavira-9858b9.netlify.app",
     image: "/sharpfin_fin_only_small.png"
   },
   flags: {
