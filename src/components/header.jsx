@@ -1,16 +1,17 @@
-import React, { useRef, useState, useEffect } from "react"
-import Img from "gatsby-image"
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { graphql, Link, StaticQuery } from 'gatsby';
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import MenuIconBlack from '../images/menu-black.svg'
-import MenuIconWhite from '../images/menu-white.svg'
-import LogoBlack from '../images/sharpfin_logo_black.svg'
-import LogoWhite from '../images/sharpfin_logo_white.svg'
-import LangLink from './LangLink'
-import { LangContext } from './context'
+import React, { useEffect, useRef, useState } from "react";
+import MenuIconBlack from '../images/menu-black.svg';
+import MenuIconWhite from '../images/menu-white.svg';
+import LogoBlack from '../images/sharpfin_logo_black.svg';
+import LogoWhite from '../images/sharpfin_logo_white.svg';
+import { LangContext } from './context';
+import LangLink from './LangLink';
 
 const Header = ({ data, light }) => {
   const { t, langKey } = React.useContext(LangContext)
+
+  const inverseLangKey = langKey === "sv" ? "en" : "sv"
 
   const [showMenu, setShowMenu] = useState(false);
   const divRef = useRef(null)
@@ -37,9 +38,9 @@ const Header = ({ data, light }) => {
 
   return (
     <header>
-      <div className={`flex p-5 items-center justify-between md:justify-around ${light ? "bg-transparent" : "bg-sharpfin-gray"}`}>
+      <div className={`flex p-5 h-32 items-center justify-between md:justify-around ${light ? "bg-transparent" : "bg-sharpfin-gray"}`}>
         <LangLink to="">
-          {light ? <LogoBlack className="w-48" /> : <LogoWhite className="w-48" />}
+          {light ? <LogoBlack className="w-48" /> : <LogoWhite className="w-52" />}
         </LangLink>
         <nav>
           <ul className={`md:flex space-x-5 hidden font-bold items-center ${light ? "text-black" : "text-white"}`}>
@@ -57,21 +58,22 @@ const Header = ({ data, light }) => {
               {t.general.contact}
             </button>
             </li>
-            <li className="menu-item"><Link to={langKey === "sv" ? "/" : "/sv"}>{langKey}</Link></li>
+            <li className="menu-item"><Link to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link></li>
           </ul>
-          <div className="md:hidden">
+          <div className="md:hidden ">
             <button ref={buttonRef}>
               {light ? <MenuIconBlack className="h-8 w-8 cursor-pointer" /> : <MenuIconWhite className="h-8 w-8 cursor-pointer" />}
             </button>
+
             {showMenu &&
-              <div ref={divRef} className="absolute  bg-white p-5 rounded right-5 border">
+              <div ref={divRef} className="absolute z-30 bg-white p-5 rounded right-5 border">
                 <ul className={`grid gap-2 items-center ${light ? "text-black" : "text-white"}`}>
                   <li><LangLink to="solutions" className="menu-item-sm">{t.solutions.title}</LangLink></li>
                   <li><LangLink to="asset-managers" className="menu-item-sm">{t.customer_page.asset_managers.title}</LangLink></li>
                   <li><LangLink to="family-offices" className="menu-item-sm">{t.customer_page.family_offices.title}</LangLink></li>
                   <li><LangLink to="financial-advisors" className="menu-item-sm">{t.customer_page.financial_advisors.title}</LangLink></li>
                   <li><LangLink to="sharpfin-insider" className="menu-item-sm">{t.sharpfin_insider.title}</LangLink></li>
-                  <li className="menu-item-sm"><Link to={langKey === "sv" ? "/" : "/sv"}>{langKey}</Link></li>
+                  <li className="menu-item"><Link to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link></li>
                   <button className="rounded mt-5 py-2 px-4 text-white bg-sharpfin-blue hover:bg-sharpfin-gray font-bold block;" onClick={() => scrollTo('#contact')}>
                     {t.general.contact}
                   </button>

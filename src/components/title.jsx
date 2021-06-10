@@ -1,5 +1,4 @@
-import * as React from "react"
-import scrollTo from 'gatsby-plugin-smoothscroll';
+import * as React from "react";
 
 const Title = ({ title }) => {
     return (

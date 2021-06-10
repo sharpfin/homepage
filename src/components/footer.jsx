@@ -9,8 +9,8 @@ const Footer = () => {
     return (
         <div className="p-20 grid gap-10 bg-sharpfin-gray">
             <div className="flex space-x-5 justify-self-center ">
-                <a href="https://www.linkedin.com/company/sharpfin-ab"><LinkedInIcon className="w-10 h-10" /></a>
-                <a href="https://www.facebook.com/sharpfinfs"><FacebookIcon className="w-10 h-10" /></a>
+                <a aria-label="linkedin" href="https://www.linkedin.com/company/sharpfin-ab"><LinkedInIcon className="w-10 h-10" /></a>
+                <a aria-label="facebook" href="https://www.facebook.com/sharpfinfs"><FacebookIcon className="w-10 h-10" /></a>
             </div>
             <div className="flex text-white justify-around w-full flex-wrap gap-10 text-center items-center">
                 <div>

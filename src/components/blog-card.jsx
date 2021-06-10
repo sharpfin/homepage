@@ -1,8 +1,7 @@
+import Img from "gatsby-image"
 import * as React from "react"
 import NewsIcon from '../images/news.svg'
-import Img from "gatsby-image"
 import LangLink from './LangLink'
-import {Link} from 'gatsby'
 
 const BlogCard = ({ title, fluid, intro, link }) => {
     return (

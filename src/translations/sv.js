@@ -17,7 +17,7 @@ const translations =  {
       sub_title: "Digitalisera, accelerera och automatisera dina administrativa processer"
     },
     header: {
-      customer: "Kunder"
+      customer: "Kunder",
     },
     solutions: {
       title: "Lösningar",

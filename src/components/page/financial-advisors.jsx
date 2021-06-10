@@ -23,7 +23,7 @@ const FinancialAdvisors = ({ data, langKey }) => {
                 </ul>
                 <p>{t.customer_page.financial_advisors.end}</p>
             </div>,
-        modules: ["adv"]
+        modules: ["adv", "port"]
     }
 
     return (

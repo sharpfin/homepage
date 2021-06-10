@@ -16,7 +16,7 @@ const AssetManagers = ({ data, langKey }) => {
                 <p>{t.customer_page.asset_managers.item_2}</p>
                 <p>{t.customer_page.asset_managers.item_3}</p>
             </div>,
-        modules: ["rep", "adv", "wm"]
+        modules: ["rep", "adv", "wm", "wa", "rm", "port"]
     }
 
     return (
@@ -31,20 +31,6 @@ export default function AssetManagersWrapper(props) {
         <StaticQuery
             query={graphql`
             query {
-                family: file(relativePath: { eq: "icons/family_office_small_blue.jpg" }) {
-                    childImageSharp {
-                        fluid(quality: 70) {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-                pension: file(relativePath: { eq: "icons/pension_advice_small_blue.jpg" }) {
-                  childImageSharp {
-                      fluid(quality: 70) {
-                          ...GatsbyImageSharpFluid
-                      }
-                  }
-                }
                 asset: file(relativePath: { eq: "icons/wealth_management_small_blue.jpg" }) {
                   childImageSharp {
                       fluid(quality: 70) {

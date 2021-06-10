@@ -7,7 +7,6 @@ import Context from '../components/context'
 
 const Template = (props) => {
   const mdx = props.data.mdx;
-  const id = props.pageContext.id;
   const langKey = props.pageContext.langKey;
 
   return (

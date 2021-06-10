@@ -102,6 +102,7 @@ const SolutionsPage = ({ langKey }) => {
                                 icon={solution.icon}
                                 text={solution.text}
                                 left={index % 2 === 0}
+                                smallIcon={true}
                                 className="my-44 max-w-5xl mx-auto" />
                         </div>
                     ))}

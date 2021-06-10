@@ -1,15 +1,12 @@
-import { graphql, StaticQuery } from 'gatsby';
 import React from "react";
 
 
-const SolutionView = ({ icon, title, sub_title, text, className, left }) => {
-
-
+const SolutionView = ({ icon, title, sub_title, text, className, left, smallIcon }) => {
 
     return (
-        <div className="max-w-6xl mx-auto" className={className}>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center justify-items-center">
-                <div className={`w-36 h-36 ${left ? 'md:order-2' : 'md:order-1'}`}>
+        <div className={`max-w-6xl mx-auto ${className}`}>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center justify-items-center">
+                <div className={`w-36 h-36 ${smallIcon ? '' : 'hidden lg:block'} ${left ? 'md:order-2' : 'md:order-1'}`}>
                     {icon}
                 </div>
                 <div className={`col-span-2 bg-sharpfin-gray text-white p-10 ${left ? 'md:order-1' : 'md:order-2'}`}>

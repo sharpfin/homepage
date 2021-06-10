@@ -1,10 +1,9 @@
-import * as React from "react"
 import { graphql, StaticQuery } from 'gatsby';
-import BlogCard from '../blog-card'
-import Layout from '../layout'
-import Title from "../title"
-import Context from '../context'
-import translations from '../../translations/translations'
+import * as React from "react";
+import translations from '../../translations/translations';
+import BlogCard from '../blog-card';
+import Context from '../context';
+import Layout from '../layout';
 
 const SharpfinInsider = ({ data, langKey }) => {
     const t = translations(langKey)

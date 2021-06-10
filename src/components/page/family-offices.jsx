@@ -15,7 +15,7 @@ const FamilyOffices = ({ data, langKey }) => {
                 <p>{t.customer_page.family_offices.item_1}</p>
                 <p>{t.customer_page.family_offices.item_2}</p>
             </div>,
-        modules: ["wm", "rm"]
+        modules: ["wm", "rm", "rep"]
     }
 
     return (
@@ -38,20 +38,6 @@ export default function FamilyOfficesWrapper(props) {
                         }
                     }
                 }
-                pension: file(relativePath: { eq: "icons/pension_advice_small_blue.jpg" }) {
-                  childImageSharp {
-                      fluid(quality: 70) {
-                          ...GatsbyImageSharpFluid
-                      }
-                  }
-                }
-                asset: file(relativePath: { eq: "icons/wealth_management_small_blue.jpg" }) {
-                  childImageSharp {
-                      fluid(quality: 70) {
-                          ...GatsbyImageSharpFluid
-                      }
-                  }
-              }
             }
         `}
             render={data => <FamilyOffices data={data} {...props} />}
