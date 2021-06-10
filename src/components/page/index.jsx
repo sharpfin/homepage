@@ -8,7 +8,7 @@ import Articles from '../articles'
 import Contact from '../contact'
 import Footer from '../footer'
 import Trusted from '../trusted'
-import Seo from '../Seo'
+import Seo from '../seo'
 import Context from '../context'
 import translations from '../../translations/translations'
 
