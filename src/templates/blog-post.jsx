@@ -2,7 +2,7 @@ import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import * as React from "react"
 import Layout from '../components/layout'
-import Seo from '../components/seo'
+import Seo from '../components/seo-thing'
 import Context from '../components/context'
 
 const Template = (props) => {

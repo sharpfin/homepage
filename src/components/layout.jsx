@@ -3,7 +3,7 @@ import Contact from '../components/contact'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import Title from '../components/title'
-import Seo from './seo'
+import Seo from './seo-thing'
 
 const Layout = ({ children, title }) => {
     return (

@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import {LangContext} from "./context"
 
-function Seo({ description, meta, title, image }) {
+const Seo = ({ description, meta, title, image }) => {
   const { t, langKey } = React.useContext(LangContext)
   const { site } = useStaticQuery(
     graphql`
