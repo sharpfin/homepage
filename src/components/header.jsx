@@ -5,6 +5,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import MenuIconBlack from '../images/menu-black.svg'
 import MenuIconWhite from '../images/menu-white.svg'
 import LogoBlack from '../images/sharpfin_logo_black.svg'
+import LogoWhite from '../images/sharpfin_logo_white.svg'
 import LangLink from './LangLink'
 import { LangContext } from './context'
 
@@ -38,7 +39,7 @@ const Header = ({ data, light }) => {
     <header>
       <div className={`flex p-5 items-center justify-between md:justify-around ${light ? "bg-transparent" : "bg-sharpfin-gray"}`}>
         <LangLink to="">
-          {light ? <LogoBlack className="w-44" /> : <Img fluid={light ? data.black.childImageSharp.fluid : data.white.childImageSharp.fluid} className="w-44" />}
+          {light ? <LogoBlack className="w-48" /> : <LogoWhite className="w-48" />}
         </LangLink>
         <nav>
           <ul className={`md:flex space-x-5 hidden font-bold items-center ${light ? "text-black" : "text-white"}`}>
