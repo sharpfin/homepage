@@ -45,7 +45,7 @@ const Articles = ({ data }) => {
                 <form className="p-5 flex space-y-2 md:space-y-0 md:space-x-2 md:flex-row flex-col w-full justify-center" method="post" netlify-honeypot="bot-field" data-netlify="true" name="newsletter">
                     <input type="hidden" name="bot-field" />
                     <input type="hidden" name="form-name" value="newsletter" />
-                    <input pattern="/^\S+@\S+$/" id="email2" name="email" placeholder="Email" className=" rounded-lg md:rounded-l-lg py-2 pl-4 border-2 md:w-96 border-white" />
+                    <input pattern="^\S+@\S+$" id="email2" name="email" placeholder="Email" className=" rounded-lg md:rounded-l-lg py-2 pl-4 border-2 md:w-96 border-white" />
                     <button type="submit" className=" rounded-lg md:rounded-r-lg font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">{t.sharpfin_insider.subscribe_btn}</button>
                 </form>
             </div>

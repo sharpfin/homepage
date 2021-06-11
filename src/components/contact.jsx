@@ -27,7 +27,7 @@ const Contact = ({top}) => {
                     </div>
                     <div>
                         <label htmlFor="email" className="">{t.contact.email}*</label>
-                        <input id="email" pattern="/^\S+@\S+$/" name="email" required className="block p-2 border border-gray-300 pl-4 rounded w-full"></input>
+                        <input id="email" pattern="^\S+@\S+$" name="email" required className="block p-2 border border-gray-300 pl-4 rounded w-full"></input>
                     </div>
                     <div>
                         <label htmlFor="message" className="">{t.contact.message}*</label>
