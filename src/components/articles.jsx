@@ -21,7 +21,7 @@ const Articles = ({ data }) => {
                         <BlogCard
                             key={node.frontmatter.path}
                             title={node.frontmatter.title}
-                            fluid={node.frontmatter.image.childImageSharp.fluid}
+                            fluid={node?.frontmatter?.image?.childImageSharp?.fluid}
                             intro={node.excerpt}
                             link={node.frontmatter.path} />
                     ))}
