@@ -1,10 +1,12 @@
 const path = require(`path`)
 
+const url = "https://condescending-mahavira-9858b9.netlify.app";
+
 module.exports = {
   siteMetadata: {
     title: "Sharpfin",
     author: "Sharpfin",
-    siteUrl: "https://condescending-mahavira-9858b9.netlify.app",
+    siteUrl: url,
     image: "/sharpfin_fin_only_small.png"
   },
   flags: {
@@ -21,8 +23,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: siteMetadata.siteUrl,
-        sitemap: siteMetadata.siteUrl + '/sitemap.xml',
+        host: url,
+        sitemap: url + '/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
