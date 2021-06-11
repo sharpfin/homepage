@@ -11,6 +11,7 @@ const Articles = ({ data }) => {
         .filter(({ node }) => {
             return node.frontmatter.lang === langKey || node.frontmatter.lang === "all"
         })
+        .slice(0, 3)
 
     return (
         <div>
@@ -22,7 +23,7 @@ const Articles = ({ data }) => {
                             key={node.frontmatter.path}
                             title={node.frontmatter.title}
                             fluid={node?.frontmatter?.image?.childImageSharp?.fluid}
-                            intro={node.excerpt}
+                            intro={node.frontmatter.intro}
                             link={node.frontmatter.path} />
                     ))}
                 </div>

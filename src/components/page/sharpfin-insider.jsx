@@ -23,7 +23,7 @@ const SharpfinInsider = ({ data, langKey }) => {
                                 key={node.frontmatter.path}
                                 title={node.frontmatter.title}
                                 fluid={node?.frontmatter?.image?.childImageSharp?.fluid}
-                                intro={node.excerpt}
+                                intro={node.frontmatter.intro}
                                 link={node.frontmatter.path} />
                         ))}
                     </div>
