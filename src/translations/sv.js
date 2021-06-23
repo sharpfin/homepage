@@ -5,14 +5,14 @@ const translations =  {
       learn_more: "Läs mer"
     },
     seo: {
-      description: "Sharpfin will help you realize your full potential with the next generation of wealth management software. ",
+      description: "Sharpfin hjälper dig att nå full utväxling med vår lättanvända och moderna lösning för kapitalförvaltare",
       home: "Hem"
     },
     landing: {
       title: {
         highlight: "Bättre",
         top: " teknologi för",
-        bottom: " förmögenhetsförvaltare"
+        bottom: " din kapitalförvaltning"
       },
       sub_title: "Digitalisera, accelerera och automatisera dina administrativa processer"
     },
@@ -20,27 +20,27 @@ const translations =  {
       customer: "Kunder",
     },
     solutions: {
-      title: "Lösningar",
+      title: "Funktioner",
       wm: {
-        title: "Wealth Manager",
-        sub_title: "Wealth Manager features our easy-to-use order and portfolio manager",
-        item_1: "Portfolio management views of your clients' holdings and possibility to aggregate many portfolios into consolidated views",
-        item_2: "Order manager connected to proprietary trading systems (e.g. Infront Finance) or arbitrary via FIX",
-        item_3: "Management of model portfolios and portfolio rebalancing to fully cover your discretionary wealth management"
+        title: "Förmögenhetsförvaltning",
+        sub_title: "Vår modul för förmögenhetsförvaltning ger dig ett komplett stöd för att sköta både din diskretionära och rådgivande förvaltning, inklusive:",
+        item_1: "Översikt över alla dina kunders innehav och möjlighet att få en konsoliderad vy över samtliga depåer hos kund, samtidigt.",
+        item_2: "Avancerad order-blotter med möjlighet att lägga ordrar via direkt hos handelssystemen (t.ex. Infront) eller via generella gränssnitt som FIX.",
+        item_3: "Förvaltning av modellportföljer i flera nivåer och möjlighet till rebalansering och blockhandel i aktier, ETF:er och fonder."
       },
       adv: {
-        title: "Advisory",
-        sub_title: "Sharpfin Advisory is a tool to fully digitize your advisory and customer onboarding processes including",
-        item_1: "Standard procedures to document your clients according to MiFID II or IDD regulations",
-        item_2: "Possibility to manage and evolve your client documentation directly in Sharpfin",
-        item_3: "Send documentation securely and electronically for digital signatures directly to your clients"
+        title: "Rådgivningsportal",
+        sub_title: "Sharpfins modul för rådgiving och \"Lär känna din kund\" innehåller bl.a.",
+        item_1: "Standardiserade processer för dokumentation av kund enligt MiFID II- och IDD-regelverken",
+        item_2: "Möjlighet att helt själv eller med vår hjälp förvalta din kunddokumentation direkt i systemet",
+        item_3: "Säkert utskick av dokumentation för elektronisk signering till kunder och anställda på bolaget"
       },
       rm: {
-        title: "Risk Manager",
-        sub_title: "With Risk Manager you can make sure that your clients are in line with the agreed risk by using our features for",
-        item_1: "Real time risk monitoring of your clients' holdings, using our flexible compliance rules engine",
-        item_2: "Real time calculation of the most common risk measures such as VaRand any risk reports according to your FSA's requirements",
-        item_3: "Pre and post trade risk calculations"
+        title: "Riskhantering",
+        sub_title: "Med Sharpfins modul för riskhantering kan du säkerställa att kunderna har överenskommen risknivå genom att använda funktionalitet för:",
+        item_1: "Monitorering i realtid av dina kunders allokering genom vår flexibla, egenutvecklade riskhanteringsmotor",
+        item_2: "Beräkning av de vanligaste riskmåtten som volatilitet och VaR för en fördjupad analys av dina kunders risknivå",
+        item_3: "Risksimuleringar före affär och körningar på daglig basis för att säkerställa att kunderna har rätt risk"
       },
       wa: {
         title: "Wealth Administrator",

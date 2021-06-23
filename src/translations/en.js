@@ -12,7 +12,7 @@ const translations = {
     title: {
       highlight: "Better",
       top: " technology for",
-      bottom: " wealth managers"
+      bottom: " your wealth management"
     },
     sub_title: "Digitize, accelerate and automate your administration processes"
   },
@@ -20,11 +20,11 @@ const translations = {
     customer: "Customers"
   },
   solutions: {
-    title: "Solutions",
+    title: "Features",
     wm: {
       title: "Wealth Manager",
-      sub_title: "Wealth Manager features our easy-to-use order and portfolio manager",
-      item_1: "Portfolio management views of your clients' holdings and possibility to aggregate many portfolios into consolidated views",
+      sub_title: "Wealth Manager provides you a state-of-the-art solution to handle your clients wealth; both discretionary and advisory, including",
+      item_1: "Portfolio management views of your clients' holdings and possibility to aggregate many portfolios into consolidated views.",
       item_2: "Order manager connected to proprietary trading systems (e.g. Infront Finance) or arbitrary via FIX",
       item_3: "Management of model portfolios and portfolio rebalancing to fully cover your discretionary wealth management"
     },
@@ -39,7 +39,7 @@ const translations = {
       title: "Risk Manager",
       sub_title: "With Risk Manager you can make sure that your clients are in line with the agreed risk by using our features for",
       item_1: "Real time risk monitoring of your clients' holdings, using our flexible compliance rules engine",
-      item_2: "Real time calculation of the most common risk measures such as VaRand any risk reports according to your FSA's requirements",
+      item_2: "Real time calculation of the most common risk measures such as VaR and any risk reports according to your FSA's requirements",
       item_3: "Pre and post trade risk calculations"
     },
     wa: {
