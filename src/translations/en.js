@@ -45,13 +45,13 @@ const translations = {
     wa: {
       title: "Wealth Administrator",
       sub_title: "Wealth Administrator cuts cost and increases quality in your administration by utilising user friendly functionality for",
-      item_1: "Flexible engine to calculate management fees for your client portfolios according to various fee structures",
+      item_1: "Calculating management fees for your client portfolios according to various fee structures",
       item_2: "Providing you an assessment of remaining liquidity on your client depots to make sure that there is room for deducting the fees",
-      item_3: "Extracting invoicing lists by pressing a button which can be sent to your bank for deduction of fees"
+      item_3: "Extracting invoicing lists by the click of a button which can be sent to your bank for deduction of fees"
     },
     rep: {
       title: "Reporting",
-      sub_title: "With Sharpfin Reporting you can create white labledclient reporting in your own corporate identity with possibilities to",
+      sub_title: "With Sharpfin Reporting you can create white labled client reporting in your own corporate identity with possibilities to",
       item_1: "Choose between a report on the depot level or consolidated throughout all your clients holdings",
       item_2: "Add indexes and benchmarks to compare your client’s performance",
       item_3: "Dynamically configure the report to include content relevant to different client needs"
@@ -60,7 +60,7 @@ const translations = {
       title: "Customer Portal",
       sub_title: "Our Customer Portal is your branded window of communication with your clients through our system. It features",
       item_1: "Secure client login with for example Swedish Bank ID or equivalents for foreign users",
-      item_2: "Uniquepossibility for the clients to see holdings from many depot banks consolidated which the banks themselves can not offer",
+      item_2: "Unique possibility for the clients to see holdings from many depot banks consolidated which the banks themselves can not offer",
       item_3: "A way to communicate with your clients in a GDPR-compliant way by posting relevant customer documentation in the portal"
     }
   },
@@ -68,7 +68,7 @@ const translations = {
     title: "What we can do for you",
     wc: {
       title: "Wealth consolidation",
-      text: "Sharpfin enables consolidation of both allocation and performance for your clients with holdings scattered across banks or with multiple depots in one bank."
+      text: "Sharpfin enables consolidation of both allocation and performance for your clients with holdings scattered across banks, with multiple depots in one bank or with your unlisted securities."
     },
     adv: {
       title: "Remote client onboarding",

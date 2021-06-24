@@ -43,52 +43,52 @@ const translations =  {
         item_3: "Risksimuleringar före affär och körningar på daglig basis för att säkerställa att kunderna har rätt risk"
       },
       wa: {
-        title: "Wealth Administrator",
-        sub_title: "Wealth Administrator cuts cost and increases quality in your administration by utilising user friendly functionality for",
-        item_1: "Flexible engine to calculate management fees for your client portfolios according to various fee structures",
-        item_2: "Providing you an assessment of remaining liquidity on your client depots to make sure that there is room for deducting the fees",
-        item_3: "Extracting invoicing lists by pressing a button which can be sent to your bank for deduction of fees"
+        title: "Förmögenhetsadministration",
+        sub_title: "Vår modul för förmögenhetsadministration ökar effektiviteten och reducerar kraftigt det manuella arbetet genom",
+        item_1: "En enkel och snabb beräkning av förvaltningsavgifter för olika frekvens och avgiftsstrukturer",
+        item_2: "Att visa hur mycket likviditet kvarstår på kunddepåerna efter dragna avgifter för att undvika att kunderna får negativa saldon",
+        item_3: "Att per knapptryck ta ut debiteringsunderlag som kan skickas till din depåbank för fakturering"
       },
       rep: {
-        title: "Reporting",
-        sub_title: "With Sharpfin Reporting you can create white labledclient reporting in your own corporate identity with possibilities to",
-        item_1: "Choose between a report on the depot level or consolidated throughout all your clients holdings",
-        item_2: "Add indexes and benchmarks to compare your client’s performance",
-        item_3: "Dynamically configure the report to include content relevant to different client needs"
+        title: "Rapportering",
+        sub_title: "Kommunicera med dina kunder i ditt företags grafiska profil och bildspråk genom vår anpassade rapportering",
+        item_1: "Välj mellan en rapport på enskild depå eller en konsoliderad rapport på en kunds alla tillgångar samlat",
+        item_2: "Lägg till jämförelseindex för att visa kunderna resultatet av din förvaltning",
+        item_3: "Konfiguera rapporterna dynamiskt för att anpassa innehållet för respektive kund"
       },
       port: {
-        title: "Customer Portal",
-        sub_title: "Our Customer Portal is your branded window of communication with your clients through our system. It features",
-        item_1: "Secure client login with for example Swedish Bank ID or equivalents for foreign users",
-        item_2: "Uniquepossibility for the clients to see holdings from many depot banks consolidated which the banks themselves can not offer",
-        item_3: "A way to communicate with your clients in a GDPR-compliant way by posting relevant customer documentation in the portal"
+        title: "Kundportal",
+        sub_title: "Vår kundportal blir som en förlängning av er hemsida och en kommunikationskanal till era kunder, helt i er grafiska profil",
+        item_1: "Säker inloggning med svenskt BankID eller likvärdig lösning för utländska användare",
+        item_2: "En unik möjlighet för era kunder att se innehav och avkastning konsoliderat för flera depåbanker eller onoterat, vilket ingen bank kan lösa",
+        item_3: "En säker kommunikationskanal där ni kan kommunicera känslig information med era kunder på ett GDPR-säkert sätt"
       }
     },
     short_solutions: {
         title: "Vad vi kan göra för dig",
         wc: {
-            title: "Wealth consolidation",
-            text: "Sharpfin enables consolidation of both allocation and performance for your clients with holdings scattered across banks or with multiple depots in one bank."
+            title: "Förmögenhetskonsolidering",
+            text: "Sharpfin möjligör både en konsolidering av avkastning och allokering för era kunder som har depåer på olika depåbanker, flera depåer hos samma bank eller en kombination av noterat och onoterat."
         },
         adv: {
-            title: "Remote client onboarding",
-            text: "Digitize all your customer documentation in a simple and structured way. Utilize our seamless integration with Scrive to sign remotely."
+            title: "Onboarda kunder på distans",
+            text: "Vi digitaliserar din KYC-, avtals och rådgivningsdokumentation och tillhandahåller sömlösa digitala underskrifter genom vårt samarbete med Scrive."
         },
         rm: {
-            title: "Monitor your risks",
-            text: "We make sure that your clients holdings are in line with the agreed risk level at all times. Sharpfin offers constant real-time monitoring of your clients allocation and risks."
+            title: "Hålla koll på dina risker",
+            text: "Säkerställ att dina kunder har överenskommen risknivå. Sharpfin tillhandhåller riskkontroller i realtid för dina kunders allokering."
         },
         wa: {
-            title: "Save administration time",
-            text: "Calculating your management fees can be a time consuming task especially if you offer performance fees or management fees based on daily asset under management. Using Sharpfin, this task is done within less than 5 seconds."
+            title: "Spara din administrationstid",
+            text: "Att beräkna och stämma av dina förvaltningsavgifter kan vara en tidsödande arbetsuppgift, särskilt om du har kunder med ett prestationsbaserat arvode eller förvaltningsarvode relativt förvaltat kapital mätt med dagliga mätpunkter. Med Sharpfin kan du göra tusentals avgitsberäkningar på mindre än fem sekunder."
         },
         brand: {
-            title: "Strengthen your brand",
-            text: "By using our reporting or customer portal module you can move closer to your clients with branded, secure login to the system or tailor made client reporting."
+            title: "Stärka ditt varumärke",
+            text: "Genom att använda vår kundportal eller kundrapportering kan du flytta närmare dina kunder genom att erbjuda avancerad information och rapporter helt i din grafiska profil."
         },
         cr: {
-          title: "Limit compliancy risk",
-          text: "Together with our partners we offer to monitor all your clients for PEP and money laundring on daily basis. You can easily manage this process through the Sharpfin user interface.",
+          title: "Minska din Compliance-risk",
+          text: "Tillsammans med våra partners kan vi dagligen hålla koll på rätt huvudman för dina kunder samt att de inte är PEP eller finns på sanktionslistor för penningtvätt. Informationen visas löpande i Sharpfins användargränssnitt.",
         }
     },
     customer_page: {
