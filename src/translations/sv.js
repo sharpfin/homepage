@@ -96,28 +96,29 @@ const translations =  {
       what: "Vad jobbar du med?",
       asset_managers: {
         title: "Kapitalförvaltning",
-        short: "Wealth management is possible with only one tool for customer onboarding, constant monitoring of KYC and AML, flexible portfolio management and branded customer reporting. Sharpfin is the proof.",
-        item_1: "Does your firm have an optimal balance of human and system capital to meet the increased pressure from regulations while providing the best service towards your clients?",
-        item_2: "Sharpfins SaaS solution serves Independent Asset Managers with technology that supports new client acquisition, automates reporting and free time up to provide even better investment advice for your clients.",
-        item_3: "Don't stand the risk of losing business entirely or being stuck in a non-profit waste land. Contact Sharpfin for a consultation, how our cloud-based technology can serve your continued growth for the future."
+
+        short: "Tro det eller ej, men kapitalförvaltning är möjligt med bara ett verktyg för onboarding av kunder, löpande monitorering av KYC & AML, flexibelt stöd för förmögenhetsförvaltning och anpassad kundrapportering. Sharpfin är beviset",
+        item_1: "Har ditt företag den bästa mixen av system och humankapital för att möta ett ökat tryck ifrån regelverk och samtidigt kunna ge dina kunder bästa möjliga service?",
+        item_2: "Sharpfins SaaS-lösning tillhandahåller värdepappersbolag en av världens mest moderna lösningar för dokumentation av nya kunder och automatiserad rapportering för att frigöra mer tid för dig att kunna fokusera på dina kunder.",
+        item_3: "Undvik risken att helt tappa din affär eller hamna i ett limbo av vikande intäkter. Kontakta Sharpfin för en konsultation om hur vår molnbaserade teknologi kan hjälpa er till fortsatt tillväxt både nu och i framtiden."
       },
       family_offices: {
         title: "Familjekontor",
-        short: "Free up your time utilizing Sharpfins consolidation of wealth management data throughout multiple sources.",
-        item_1: "Do you think it’s possible to deliver top class wealth management holding on to tedious manual processes for data scattered over multiple sources?",
-        item_2: "Imagine that a you had a cloud based solution that would consolidate all these data for you, empowering you to take control and free up time for you to make active investment decisions. Book a meeting and find out already today how Sharpfin Technologies puts a new standard for Family Office Wealth Management."
+        short: "Spara tid genom att låta Sharpfin konsolidera data ifrån olika källor för dig.",
+        item_1: "Tror du att det är möjligt att leverera förstklassig förvaltning genom att hålla fast i tidskrävande, manuella processer för data som ligger på alla möjliga olika ställen?",
+        item_2: "Tänk dig att du hade ett system som gjorde all datakonsolidering för dig, så att du i stället kunde fokusera på att fatta avvägda ivesteringsbeslut. Boka ett möte redan idag och ta reda på hur Sharpfins teknologi sätter en helt ny standard för förvaltning av tillgångar i Familjekontor."
       },
       financial_advisors: {
         title: "Pensionsrådgivare",
-        short: "Sharpfins advisory portal helps you to significantly cut time in your advisory processes, all while making the results electronically traceable and with a seamless integration of electronic signatures.",
-        item_1: "Do you ever have the feeling that regulatory paperwork takes up too much time of your meetings and that you hardly have any time left to focus on you clients’ financialneeds for the future?",
-        item_2: "Sharpfin helps pension and insurance companies to improve efficiency in their client meetings with up to 75% per meeting compared to previous solutions.",
-        item_3: "Our offering includes:",
-        list_1: "a completely digital advisory process",
-        list_2: "full electronic traceability",
-        list_3: "a complete set of documentation automatically generated and branded in yourcorporate identity, and",
-        list_4: "integration with electronic signatures via Scrive enabling you to serve your clients remote",
-        end: "Book a meeting to find out how we can help your organization."
+        short: "Sharpfins rådgivningsportal hjälper dig att kraftigt minmera tidsåtgången för din rådgivningsdokumentation och ser dessutom till att all dokumentation finns elektroniskt sökbar. Sömlös integration av elektroniska underskrigter möjliggör affärer på distans och en ytterligare höjning av effektiviteten.",
+        item_1: "Har du någon gång känslan av att all regulatorisk pappersexercis tar fokus ifrån själva rådgivningen och möjligheten för dig att hjälpa dina kunder med att säkra sitt framtida finansiella behov?",
+        item_2: "Sharpfin hjälper pensions- och försäkringsrådgivare öka effektiviteten med upp till 75% jämfört med tidigare lösningar.",
+        item_3: "Vårt erbjudande innebär:",
+        list_1: "en fullständigt digital rådgivningsprocess",
+        list_2: "full elektronisk spårbarhet",
+        list_3: "hela din rådgivningsdokumentation på ett ställe i din egen grafiska profil, och",
+        list_4: "integration med Scrive för elektroniska underskrifter för att kunna göra affärer med dina kunder även på distans.",
+        end: "Boka ett möte för att ta reda på hur vi kan hjälpa just er organisation."
       }
     },
     quotes: {
@@ -127,7 +128,7 @@ const translations =  {
         quote: "Med Sharpfin har vi hittat en leverantör med utomordentlig förståelse för vår affär och våra behov. Deras lösning höjer markant kvaliteten på vår kundrapportering och sparar mycket tid för vår förvaltning och administration."
       },
       wolf: {
-        title: "Regionschef, Privat Consult",
+        title: "Regionschef, Privatconsult GmbH",
         quote: "Jag älskar användarvänligheten hos Sharpfin Wealth Management Suite. Med Sharpfins flexibla riskfunktion har vi nu en bättre översikt över risken i våra kunders investeringar och därtill full historik av alla ändringar i systemet."
       }
     },
