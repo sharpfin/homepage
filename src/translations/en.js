@@ -10,8 +10,9 @@ const translations = {
   },
   landing: {
     title: {
-      highlight: "Better",
-      top: " technology for",
+      top: "Better",
+      highlight: " technology",
+      top2: " for",
       bottom: " your wealth management"
     },
     sub_title: "Digitize, accelerate and automate your administration processes"
@@ -137,7 +138,8 @@ const translations = {
     read_all: "Read all news",
     miss: "Never miss a thing",
     subscribe_text: "subscribe to our newsletter",
-    subscribe_btn: "Subscribe"
+    subscribe_btn: "Subscribe",
+    written: "Written"
   },
   contact: {
     email: "Email",

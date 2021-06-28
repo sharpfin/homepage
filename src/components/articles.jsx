@@ -15,21 +15,23 @@ const Articles = ({ data }) => {
 
     return (
         <div>
-            <div className="grid justify-center  mt-20">
-                <h1 className="text-4xl text-center font-bold mb-12">{t.sharpfin_insider.read}</h1>
-                <div className="flex flex-nowrap space-x-10 overflow-scroll md:overflow-hidden pl-10 items-stretch">
+
+            <div className="grid justify-center mt-20 pb-5">
+            <h1 className="text-4xl text-center font-bold mb-12 mx-5">{t.sharpfin_insider.read}</h1>
+                <div className="flex  flex-wrap justify-center items-center">
                     {articles.map(({ node }) => (
                         <BlogCard
+
                             key={node.frontmatter.path}
                             title={node.frontmatter.title}
                             fluid={node?.frontmatter?.image?.childImageSharp?.fluid}
                             intro={node.frontmatter.intro}
-                            link={node.frontmatter.path} />
+                            link={node.frontmatter.path}
+                            date={node.frontmatter.date} />
                     ))}
                 </div>
             </div>
 
-            <div className="h-72 bg-sharpfin-blue -mt-72"></div>
             <div className="bg-sharpfin-blue pt-10 grid justify-center">
                 <LangLink to="sharpfin-insider">
                 <button className="flex t-20 items-center rounded-lg w-max justify-self-center font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">
@@ -40,8 +42,8 @@ const Articles = ({ data }) => {
             </div>
 
             <div className="bg-sharpfin-blue flex flex-col items-center justify-center pb-20 pt-44">
-                <h1 className="text-4xl text-white font-bold text-center">{t.sharpfin_insider.miss}</h1>
-                <p className="text-white text-center">{t.sharpfin_insider.subscribe_text}</p>
+                <h1 className="text-4xl text-white font-bold text-center mx-5">{t.sharpfin_insider.miss}</h1>
+                <p className="text-white text-center mx-5">{t.sharpfin_insider.subscribe_text}</p>
                 <form className="p-5 flex space-y-2 md:space-y-0 md:space-x-2 md:flex-row flex-col w-full justify-center" method="post" netlify-honeypot="bot-field" data-netlify="true" name="newsletter">
                     <input type="hidden" name="bot-field" />
                     <input type="hidden" name="form-name" value="newsletter" />
@@ -64,7 +66,7 @@ export default function ArticlesWrapper(props) {
                         frontmatter {
                           title
                           intro
-                          date
+                          date(formatString: "YYYY MM DD")
                           path
                           lang
                           image {

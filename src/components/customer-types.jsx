@@ -30,7 +30,7 @@ const CustomerTypes = ({ data }) => {
 
     return (
         <div className="bg-sharpfin-gray py-44  grid">
-            <h2 className="text-white text-4xl text-center font-bold">{t.customer_page.what}</h2>
+            <h2 className="text-white text-4xl text-center font-bold mx-5">{t.customer_page.what}</h2>
             <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3 p-5 justify-self-center mt-10">
                 {customers.map(c => (
                     <LangLink key={c.title} to={c.link} className="bg-white transform max-w-sm duration-300  hover:-translate-y-2 rounded-lg">

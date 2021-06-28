@@ -51,12 +51,12 @@ const Solutions = () => {
         <div className="pb-10">
             <Divider />
 
-            <h2 className="text-4xl text-center -mt-20 pb-10 font-bold">{t.short_solutions.title}</h2>
-            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 justify-center p-10 pb-20 max-w-7xl mx-auto">
+            <h2 className="text-4xl text-center -mt-20 pb-10 font-bold mx-5">{t.short_solutions.title}</h2>
+            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 justify-center md:p-10 pb-20 max-w-7xl mx-auto">
                 {solutions.map(solution => (
                     <LangLink key={solution.title} to="solutions" className="mt-10 bg-white p-5 transform rounded max-w-sm duration-500 hover:bg-blue-50 ">
                         {solution.icon}
-                        <h4 className="font-bold text-2xl mb-5 text-center">{solution.title}</h4>
+                        <h4 className="font-bold text-xl md:text-2xl mb-5 text-center">{solution.title}</h4>
                         <p className="text-center">{solution.text}</p>
                     </LangLink>
                 ))}

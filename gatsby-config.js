@@ -46,6 +46,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-69056047-1",
+        head: true,
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-svg",
     "gatsby-plugin-smoothscroll",

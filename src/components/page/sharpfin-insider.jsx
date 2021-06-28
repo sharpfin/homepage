@@ -24,7 +24,8 @@ const SharpfinInsider = ({ data, langKey }) => {
                                 title={node.frontmatter.title}
                                 fluid={node?.frontmatter?.image?.childImageSharp?.fluid}
                                 intro={node.frontmatter.intro}
-                                link={node.frontmatter.path} />
+                                link={node.frontmatter.path}
+                                date={node.frontmatter.date} />
                         ))}
                     </div>
                 </div>
@@ -44,7 +45,7 @@ export default function SharpfinInsiderWrapper(props) {
                         frontmatter {
                         title
                         intro
-                        date
+                        date(formatString: "YYYY MM DD")
                         path
                         lang
                         image {

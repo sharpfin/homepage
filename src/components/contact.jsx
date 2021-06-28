@@ -17,7 +17,7 @@ const Contact = ({top}) => {
                 </svg>
             </div>
             <div className="bg-white md:bg-gray-50 max-w-xl mx-auto py-10 my-20 md:rounded-2xl md:shadow-lg px-5 md:px-20 md:border">
-                <h1 className="text-center font-bold text-4xl mb-10">{t.general.contact}</h1>
+                <h1 className="text-center font-bold text-4xl mb-10 mx-5">{t.general.contact}</h1>
                 <form className="grid gap-5" method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
                 <input type="hidden" name="bot-field" />
                     <input type="hidden" name="form-name" value="contact" />

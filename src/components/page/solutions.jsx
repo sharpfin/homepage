@@ -17,7 +17,7 @@ export const solutionData = (t) => {
             id: "wm",
             sub_title: t.solutions.wm.sub_title,
             text:
-                <ul className="list-disc list-inside grid gap-2">
+                <ul className="list-disc grid gap-2">
                     <li>{t.solutions.wm.item_1}</li>
                     <li>{t.solutions.wm.item_2}</li>
                     <li>{t.solutions.wm.item_3}</li>
@@ -29,7 +29,7 @@ export const solutionData = (t) => {
             id: "adv",
             sub_title: t.solutions.adv.sub_title,
             text:
-                <ul className="list-disc list-inside grid gap-2">
+                <ul className="list-disc grid gap-2">
                     <li>{t.solutions.adv.item_1}</li>
                     <li>{t.solutions.adv.item_2}</li>
                     <li>{t.solutions.adv.item_3}</li>
@@ -41,7 +41,7 @@ export const solutionData = (t) => {
             id: "rm",
             sub_title: t.solutions.rm.sub_title,
             text:
-                <ul className="list-disc list-inside grid gap-2">
+                <ul className="list-disc grid gap-2">
                     <li>{t.solutions.rm.item_1}</li>
                     <li>{t.solutions.rm.item_2}</li>
                     <li>{t.solutions.rm.item_3}</li>
@@ -53,7 +53,7 @@ export const solutionData = (t) => {
             id: "wa",
             sub_title: t.solutions.wa.sub_title,
             text:
-                <ul className="list-disc list-inside grid gap-2">
+                <ul className="list-disc grid gap-2">
                     <li>{t.solutions.wa.item_1}</li>
                     <li>{t.solutions.wa.item_2}</li>
                     <li>{t.solutions.wa.item_3}</li>
@@ -65,7 +65,7 @@ export const solutionData = (t) => {
             id: "rep",
             sub_title: t.solutions.rep.sub_title,
             text:
-                <ul className="list-disc list-inside grid gap-2">
+                <ul className="list-disc grid gap-2">
                     <li>{t.solutions.rep.item_1}</li>
                     <li>{t.solutions.rep.item_2}</li>
                     <li>{t.solutions.rep.item_3}</li>
@@ -77,7 +77,7 @@ export const solutionData = (t) => {
             id: "port",
             sub_title: t.solutions.port.sub_title,
             text:
-                <ul className="list-disc list-inside grid gap-2">
+                <ul className="list-disc grid gap-2">
                     <li>{t.solutions.port.item_1}</li>
                     <li>{t.solutions.port.item_2}</li>
                     <li>{t.solutions.port.item_3}</li>

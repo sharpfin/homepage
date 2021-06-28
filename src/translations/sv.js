@@ -10,9 +10,10 @@ const translations =  {
     },
     landing: {
       title: {
-        highlight: "Bättre",
-        top: " teknologi för",
-        bottom: " din kapitalförvaltning"
+        top: "Bättre",
+        highlight: " teknologi",
+        top2: " för",
+        bottom: " din kapital\u{00AD}förvaltning"
       },
       sub_title: "Digitalisera, accelerera och automatisera dina administrativa processer"
     },
@@ -22,7 +23,7 @@ const translations =  {
     solutions: {
       title: "Funktioner",
       wm: {
-        title: "Förmögenhetsförvaltning",
+        title: 'Förmögenhets\u{00AD}förvaltning',
         sub_title: "Vår modul för förmögenhetsförvaltning ger dig ett komplett stöd för att sköta både din diskretionära och rådgivande förvaltning, inklusive:",
         item_1: "Översikt över alla dina kunders innehav och möjlighet att få en konsoliderad vy över samtliga depåer hos kund, samtidigt.",
         item_2: "Avancerad order-blotter med möjlighet att lägga ordrar via direkt hos handelssystemen (t.ex. Infront) eller via generella gränssnitt som FIX.",
@@ -43,7 +44,7 @@ const translations =  {
         item_3: "Risksimuleringar före affär och körningar på daglig basis för att säkerställa att kunderna har rätt risk"
       },
       wa: {
-        title: "Förmögenhetsadministration",
+        title: "Förmögenhets\u{00AD}administration",
         sub_title: "Vår modul för förmögenhetsadministration ökar effektiviteten och reducerar kraftigt det manuella arbetet genom",
         item_1: "En enkel och snabb beräkning av förvaltningsavgifter för olika frekvens och avgiftsstrukturer",
         item_2: "Att visa hur mycket likviditet kvarstår på kunddepåerna efter dragna avgifter för att undvika att kunderna får negativa saldon",
@@ -67,12 +68,12 @@ const translations =  {
     short_solutions: {
         title: "Vad vi kan göra för dig",
         wc: {
-            title: "Förmögenhetskonsolidering",
+            title: "Förmögenhets\u{00AD}konsolidering",
             text: "Sharpfin möjligör både en konsolidering av avkastning och allokering för era kunder som har depåer på olika depåbanker, flera depåer hos samma bank eller en kombination av noterat och onoterat."
         },
         adv: {
             title: "Onboarda kunder på distans",
-            text: "Vi digitaliserar din KYC-, avtals och rådgivningsdokumentation och tillhandahåller sömlösa digitala underskrifter genom vårt samarbete med Scrive."
+            text: "Vi digitaliserar din KYC-, avtals och rådgivnings\u{00AD}dokumentation och tillhandahåller sömlösa digitala underskrifter genom vårt samarbete med Scrive."
         },
         rm: {
             title: "Hålla koll på dina risker",
@@ -96,7 +97,6 @@ const translations =  {
       what: "Vad jobbar du med?",
       asset_managers: {
         title: "Kapitalförvaltning",
-
         short: "Tro det eller ej, men kapitalförvaltning är möjligt med bara ett verktyg för onboarding av kunder, löpande monitorering av KYC & AML, flexibelt stöd för förmögenhetsförvaltning och anpassad kundrapportering. Sharpfin är beviset",
         item_1: "Har ditt företag den bästa mixen av system och humankapital för att möta ett ökat tryck ifrån regelverk och samtidigt kunna ge dina kunder bästa möjliga service?",
         item_2: "Sharpfins SaaS-lösning tillhandahåller värdepappersbolag en av världens mest moderna lösningar för dokumentation av nya kunder och automatiserad rapportering för att frigöra mer tid för dig att kunna fokusera på dina kunder.",
@@ -110,7 +110,7 @@ const translations =  {
       },
       financial_advisors: {
         title: "Pensionsrådgivare",
-        short: "Sharpfins rådgivningsportal hjälper dig att kraftigt minmera tidsåtgången för din rådgivningsdokumentation och ser dessutom till att all dokumentation finns elektroniskt sökbar. Sömlös integration av elektroniska underskrigter möjliggör affärer på distans och en ytterligare höjning av effektiviteten.",
+        short: "Sharpfins rådgivningsportal hjälper dig att kraftigt minmera tidsåtgången för din rådgivnings\u{00AD}dokumentation och ser dessutom till att all dokumentation finns elektroniskt sökbar. Sömlös integration av elektroniska underskrigter möjliggör affärer på distans och en ytterligare höjning av effektiviteten.",
         item_1: "Har du någon gång känslan av att all regulatorisk pappersexercis tar fokus ifrån själva rådgivningen och möjligheten för dig att hjälpa dina kunder med att säkra sitt framtida finansiella behov?",
         item_2: "Sharpfin hjälper pensions- och försäkringsrådgivare öka effektiviteten med upp till 75% jämfört med tidigare lösningar.",
         item_3: "Vårt erbjudande innebär:",
@@ -138,7 +138,8 @@ const translations =  {
       read_all: "Läs alla nyheter",
       miss: "Missa ingenting",
       subscribe_text: "prenumerera på vårat nyhetsbrev",
-      subscribe_btn: "Prenumerera"
+      subscribe_btn: "Prenumerera",
+      written: "Skriven"
     },
     contact: {
         email: "Email",
