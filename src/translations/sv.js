@@ -139,7 +139,7 @@ const translations =  {
       miss: "Missa ingenting",
       subscribe_text: "prenumerera på vårat nyhetsbrev",
       subscribe_btn: "Prenumerera",
-      written: "Skriven"
+      published: "Publicerad"
     },
     contact: {
         email: "Email",

@@ -21,7 +21,7 @@ const Template = (props) => {
           <p className="text-lg italic  font-bold">{mdx.frontmatter.intro}</p>
           <div className="blog-post mt-10 pb-10">
             <MDXRenderer>{mdx.body}</MDXRenderer>
-            <p className="italic">{t.sharpfin_insider.written + ' ' + mdx.frontmatter.date}</p>
+            <p className="italic">{t.sharpfin_insider.published + ': ' + mdx.frontmatter.date}</p>
           </div>
 
         </div>
