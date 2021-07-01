@@ -3,8 +3,8 @@ import * as React from "react";
 const Title = ({ title }) => {
     return (
         <div>
-            <div className="p-20 bg-sharpfin-gray text-white flex justify-center">
-                <h1 className="text-4xl font-bold max-w-6xl text-center leading-normal">{title}</h1>
+            <div className="p-5 md:p-20 bg-sharpfin-gray text-white flex justify-center">
+                <h1 className="text-3xl md:text-4xl font-bold max-w-6xl text-center leading-normal">{title}</h1>
             </div>
             <div className="custom-shape-divider-top-1617720316">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

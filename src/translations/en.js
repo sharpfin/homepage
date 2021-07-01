@@ -26,7 +26,7 @@ const translations = {
       title: "Wealth Manager",
       sub_title: "Wealth Manager provides you a state-of-the-art solution to handle your clients wealth; both discretionary and advisory, including:",
       item_1: "Portfolio management views of your clients' holdings with the possibility to aggregate multiple portfolios into various consolidated views.",
-      item_2: "•\tOrder management which connects to proprietary trading systems (e.g. Infront Finance) or via FIX",
+      item_2: "Order management which connects to proprietary trading systems (e.g. Infront Finance) or via FIX",
       item_3: "Management of model portfolios and portfolio rebalancing to fully cover your discretionary wealth management"
     },
     adv: {

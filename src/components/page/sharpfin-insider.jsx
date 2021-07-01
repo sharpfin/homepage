@@ -16,7 +16,7 @@ const SharpfinInsider = ({ data, langKey }) => {
     return (
         <Context langKey={langKey} >
             <Layout title={t.sharpfin_insider.title}>
-                <div className="max-w-7xl mx-auto mb-20 px-5">
+                <div className="max-w-7xl mx-auto mb-20">
                     <div className="grid xl:grid-cols-3 md:grid-cols-2 mt-10 gap-10 justify-items-center">
                         {articles.map(({ node }) => (
                             <BlogCard
