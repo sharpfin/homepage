@@ -40,6 +40,7 @@ html {
 
 
 .blog-post {
+    @apply break-words;
     p, li {
         @apply mb-5
     }
@@ -52,6 +53,9 @@ html {
         margin-bottom: 10px;
     }
 
+    a {
+        @apply text-sharpfin-blue overflow-auto;
+    }
 }
 
 
