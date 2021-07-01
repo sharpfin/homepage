@@ -10,14 +10,14 @@ const PersonContact = ({ name, title, email, phone }) => {
                 <div className="text-gray-500 mb-2 md:mb-0">{title}</div>
             </div>
             <div>
-                <div className="flex items-center mb-2">
+                {email && <div className="flex items-center mb-2">
                     <Mail className="w-6 h-6 mr-2" />
                     <span>{email}</span>
-                </div>
-                <div className="flex items-center">
+                </div>}
+                {phone && <div className="flex items-center">
                     <Phone className="w-6 h-6 mr-2" />
                     <span>{phone}</span>
-                </div>
+                </div>}
             </div>
         </div>
 
