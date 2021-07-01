@@ -73,7 +73,7 @@ const Header = ({ data, light }) => {
                   <li><LangLink to="family-offices" className="menu-item-sm">{t.customer_page.family_offices.title}</LangLink></li>
                   <li><LangLink to="financial-advisors" className="menu-item-sm">{t.customer_page.financial_advisors.title}</LangLink></li>
                   <li><LangLink to="sharpfin-insider" className="menu-item-sm">{t.sharpfin_insider.title}</LangLink></li>
-                  <li className="menu-item"><Link to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link></li>
+                  <li className="menu-item-sm"><Link to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link></li>
                   <button className="rounded mt-5 py-2 px-4 text-white bg-sharpfin-blue hover:bg-sharpfin-gray font-bold block;" onClick={() => scrollTo('#contact')}>
                     {t.general.contact}
                   </button>
