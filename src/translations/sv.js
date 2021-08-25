@@ -26,7 +26,7 @@ const translations =  {
         title: 'Förmögenhets\u{00AD}förvaltning',
         sub_title: "Vår modul för förmögenhetsförvaltning ger dig ett komplett stöd för att sköta både din diskretionära och rådgivande förvaltning, inklusive:",
         item_1: "Översikt över alla dina kunders innehav och möjlighet att få en konsoliderad vy över samtliga depåer hos kund, samtidigt.",
-        item_2: "Avancerad order-blotter med möjlighet att lägga ordrar via direkt hos handelssystemen (t.ex. Infront) eller via generella gränssnitt som FIX.",
+        item_2: "Avancerad order-blotter med möjlighet att lägga ordrar direkt hos handelssystemen (t.ex. Infront) eller via generella gränssnitt som FIX.",
         item_3: "Förvaltning av modellportföljer i flera nivåer och möjlighet till rebalansering och blockhandel i aktier, ETF:er och fonder."
       },
       adv: {
@@ -106,7 +106,7 @@ const translations =  {
         title: "Familjekontor",
         short: "Spara tid genom att låta Sharpfin konsolidera data ifrån olika källor för dig.",
         item_1: "Tror du att det är möjligt att leverera förstklassig förvaltning genom att hålla fast i tidskrävande, manuella processer för data som ligger på alla möjliga olika ställen?",
-        item_2: "Tänk dig att du hade ett system som gjorde all datakonsolidering för dig, så att du i stället kunde fokusera på att fatta avvägda ivesteringsbeslut. Boka ett möte redan idag och ta reda på hur Sharpfins teknologi sätter en helt ny standard för förvaltning av tillgångar i Familjekontor."
+        item_2: "Tänk dig att du hade ett system som gjorde all datakonsolidering för dig, så att du i stället kunde fokusera på att fatta avvägda investeringsbeslut. Boka ett möte redan idag och ta reda på hur Sharpfins teknologi sätter en helt ny standard för förvaltning av tillgångar i familjekontor."
       },
       financial_advisors: {
         title: "Pensionsrådgivare",
