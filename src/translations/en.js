@@ -32,7 +32,7 @@ const translations = {
     adv: {
       title: "Advisory",
       sub_title: "Advisory can fully digitize your advisory and customer onboarding processes including:",
-      item_1: "Standard procedures to document your information regardng your clients according to MiFID II or IDD regulations",
+      item_1: "Standard procedures to document your information regarding your clients according to MiFID II or IDD regulations",
       item_2: "Manage and evolve your client documentation directly in Sharpfin",
       item_3: "Send documentation securely and electronically for digital signatures directly to your clients"
     },
@@ -111,7 +111,7 @@ const translations = {
     financial_advisors: {
       title: "Financial- and Pension advisors",
       short: "Sharpfins advisory portal helps you to significantly cut time in your advisory processes, all while making the results electronically traceable and with a seamless integration of electronic signatures.",
-      item_1: "Do you ever have the feeling that regulatory paperwork takes up too much time of your meetings and that you hardly have any time left to focus on you clients’ financia lneeds for the future?",
+      item_1: "Do you ever have the feeling that regulatory paperwork takes up too much time of your meetings and that you hardly have any time left to focus on you clients’ financial needs for the future?",
       item_2: "Sharpfin helps pension and insurance companies to improve efficiency in their client meetings with up to 75% per meeting compared to previous solutions.",
       item_3: "Our offering includes:",
       list_1: "a completely digital advisory process",
