@@ -11,10 +11,12 @@ const Landing = () => {
 
   return (
     <div>
-      <div className="absolute md:top-32 top-56 w-full md:flex justify-center px-10 hidden" style={{ zIndex: '-1' }}>
-        <FadedLogo className="max-w-6xl"  />
+      <div className="absolute md:top-32 top-56 w-full md:inline px-10 hidden" style={{ zIndex: -1}}>
+        <div className="max-w-6xl mx-auto">
+          <FadedLogo className="w-full"  />
+        </div>
       </div>
-      <div className="grid gap-5 md:py-72 py-32 mx-5 " >
+      <div className="grid gap-5 md:py-72 py-32 mx-5 z-50 bg-transparent">
         <h1 className="text-2xl sm:text-5xl md:text-6xl  font-bold text-sharpfin-gray text-center ">
           <span className="block">{t.title.top}<span className="italic text-sharpfin-blue">{t.title.highlight}</span>{t.title.top2}</span>
           <span className="block">{t.title.bottom}</span>
