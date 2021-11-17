@@ -30,6 +30,10 @@ const Contact = ({top}) => {
                         <input id="email" pattern="^\S+@\S+$" name="email" required className="block p-2 border border-gray-300 pl-4 rounded w-full"></input>
                     </div>
                     <div>
+                        <label htmlFor="phone" className="">{t.contact.phone}</label>
+                        <input id="phone" pattern="[+,-, ,0-9]*" name="phone" className="block p-2 border border-gray-300 pl-4 rounded w-full"></input>
+                    </div>
+                    <div>
                         <label htmlFor="message" className="">{t.contact.message}*</label>
                         <textarea id="message" name="message" type="texarea" required className="block p-2 border border-gray-300 pl-4 rounded w-full h-44"></textarea>
                     </div>

@@ -145,7 +145,8 @@ const translations =  {
         email: "Email",
         name: "Namn",
         message: "Meddelande",
-        send: "Skicka"
+        send: "Skicka",
+        phone: "Telefon"
     },
     footer: {
         sales: "Sälj",
