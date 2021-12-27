@@ -1,10 +1,10 @@
 import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
-import scrollTo from 'gatsby-plugin-smoothscroll';
 import React, { useState } from "react";
 import translations from '../translations/translations';
 import { LangContext } from './context';
 import Layout from './layout';
+import LayoutContainer from './layout-container';
 import { solutionData } from "./page/solutions";
 import SolutionView from "./SolutionView";
 
@@ -16,41 +16,38 @@ const AssetManagers = ({ customer }) => {
         .filter(s => customer.modules.includes(s.id));
 
     return (
-
-        <Layout title={customer.title}>
-            <div className="max-w-6xl py-16 mb-20 mx-auto px-5 lg:px-0 grid justify-center gap-44">
-
-                <div className="grid xl:grid-cols-2 gap-10 max-w-xl xl:max-w-none ">
-                    <div className="grid gap-2 items-center order-2 xl:order-none">
+        <Layout >
+            <LayoutContainer title={customer.title}>
+                <div className="grid md:grid-cols-2 gap-10 ">
+                    <div className="grid gap-2 items-start order-2 md:order-none ">
                         {customer.content}
                     </div>
-                    <Img className="order-1 xl:order-none rounded" fluid={customer.fluid} />
+                    <Img className="order-1 md:order-none rounded" fluid={customer.fluid} />
                 </div>
 
-            </div>
-            <div className="mb-20">
-                <h2 className="text-4xl text-center font-bold mx-5 mb-10">{t.customer_page.modules}</h2>
-                <div className="flex  justify-center md:space-x-5 space-x-2 place-content-center  mb-10">
+            </LayoutContainer>
+            <LayoutContainer
+                title={t.customer_page.modules}
+                bgColorClass="bg-blue-50"
+            >
+                <div className={`flex mb-14 place-items-center`}>
                     {solutions.map((solution, index) => (
-                        <div aria-hidden="true" onClick={() => setSelectedSolution(index)} className={`grid gap-2 justify-items-center p-2 cursor-pointer ${index === selectedSolution ? "border-b-4 border-sharpfin-blue" : ""}`}>
-                            <div className={`mx-auto lg:p-2 w-8 h-8 lg:w-28 lg:h-28 `}  >{solution.icon}</div>
+                        <div aria-hidden="true" onClick={() => setSelectedSolution(index)} className={`grid gap-2 py-2 px-5 font-medium justify-items-center  cursor-pointer ${index === selectedSolution ? "border-2  rounded-lg bg-blue-100 border-white" : ""}`}>
+                            <div className={`mx-auto w-8 h-8 lg:h-22 lg:w-22`}>{solution.icon}</div>
                             <p className="text-sm lg:block hidden">{solution.title}</p>
                         </div>
                     ))}
                 </div>
 
                 <SolutionView
+                    left={true}
                     title={solutions[selectedSolution].title}
                     icon={solutions[selectedSolution].icon}
                     sub_title={solutions[selectedSolution].sub_title}
                     text={solutions[selectedSolution].text}
                     className="max-w-6xl mx-auto" />
-            </div>
-            <div className="grid justify-center mb-20">
-                <button onClick={() => scrollTo('#contact')} className="mt-5 justify-self-center bg-sharpfin-blue flex items-center hover:bg-sharpfin-gray px-5 py-2 text-white font-bold rounded">
-                    {t.general.request_demo}
-                </button>
-            </div>
+
+            </LayoutContainer>
         </Layout>
     )
 }

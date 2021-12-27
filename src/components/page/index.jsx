@@ -11,6 +11,7 @@ import Trusted from '../trusted'
 import Seo from '../seo-thing'
 import Context from '../context'
 import translations from '../../translations/translations'
+import Subscribe from '../subscribe'
 
 const IndexPage = ({langKey}) => {
     const t = translations(langKey)
@@ -18,14 +19,16 @@ const IndexPage = ({langKey}) => {
         <Context langKey={langKey} >
             <div>
                 <Seo title={t.seo.home} />
-                <Header light={true} langKey={langKey} />
+                <Header light={false} langKey={langKey} />
                 <main>
                     <Landing />
                     <Trusted />
                     <CustomerTypes />
                     <Quotes />
                     <Solutions />
+                    <Subscribe />
                     <Articles langKey={langKey} />
+
                     <Contact />
                     <Footer />
                 </main>

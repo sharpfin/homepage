@@ -1,30 +1,38 @@
 import { graphql } from "gatsby"
+import Img from 'gatsby-image'
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import * as React from "react"
-import Layout from '../components/layout'
-import Seo from '../components/seo-thing'
 import Context from '../components/context'
-import translations from '../translations/translations';
+import DateFormat from '../components/date-format'
+import Layout from '../components/layout'
+import LayoutContainer from "../components/layout-container"
+import Seo from '../components/seo-thing'
+import Subscribe from '../components/subscribe'
 
 const Template = (props) => {
   const mdx = props.data.mdx;
   const langKey = props.pageContext.langKey;
-  const t = translations(langKey);
-
 
   return (
     <Context langKey={langKey}>
-      <Layout title={mdx.frontmatter.title}>
+      <Layout>
         <Seo title={mdx.frontmatter.title} />
-        <div className="max-w-3xl mx-auto mt-5 px-5">
-
-          <p className="text-lg italic  font-bold">{mdx.frontmatter.intro}</p>
-          <div className="blog-post mt-10 pb-10">
-            <MDXRenderer>{mdx.body}</MDXRenderer>
-            <p className="italic">{t.sharpfin_insider.published + ': ' + mdx.frontmatter.date}</p>
+        <LayoutContainer>
+          <div className="flex justify-center -mt-8">
+            <div className="max-w-2xl grid gap-3">
+              {mdx.frontmatter?.image?.childImageSharp?.fluid && <div className="">
+                <Img fluid={mdx.frontmatter?.image?.childImageSharp?.fluid} className="-mx-5 sm:mx-0" />
+              </div>}
+              <h2 className={`text-4xl libre leading-snug font-bold `}>{mdx.frontmatter.title}</h2>
+              <DateFormat className="text-sm text-gray-500" date={mdx.frontmatter.date} />
+              <p className="text-lg leading-relaxed font-medium">{mdx.frontmatter.intro}</p>
+              <div className="blog-post leading-relaxed">
+                <MDXRenderer>{mdx.body}</MDXRenderer>
+              </div>
+            </div>
           </div>
-
-        </div>
+        </LayoutContainer>
+        <Subscribe />
       </Layout>
     </Context>
   )

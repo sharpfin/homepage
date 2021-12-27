@@ -9,6 +9,8 @@ import RiskIcon from "../../images/icons/risk.svg"
 import WealthAdministratorIcon from '../../images/icons/WealthAdministration.svg'
 import PortalIcon from '../../images/icons/Brand.svg'
 import ReportingIcon from '../../images/icons/reporting.svg'
+import Seo from '../seo-thing'
+import LayoutContainer from '../layout-container'
 
 export const solutionData = (t) => {
     return [
@@ -92,21 +94,25 @@ const SolutionsPage = ({ langKey }) => {
     const data = solutionData(t)
     return (
         <Context langKey={langKey} >
-            <Layout title={t.solutions.title}>
-                <div className="mx-auto my-20">
-                    {data.map((solution, index) => (
-                        <div>
-                            <SolutionView
-                                title={solution.title}
-                                sub_title={solution.sub_title}
-                                icon={solution.icon}
-                                text={solution.text}
-                                left={index % 2 === 0}
-                                smallIcon={true}
-                                className="my-44 max-w-5xl mx-auto" />
-                        </div>
-                    ))}
-                </div>
+            <Layout>
+                <Seo title={t.solutions.title} />
+                <LayoutContainer title={t.solutions.title}>
+
+                    <div className="grid gap-32">
+                        {data.map((solution, index) => (
+                            <div>
+                                <SolutionView
+                                    title={solution.title}
+                                    sub_title={solution.sub_title}
+                                    icon={solution.icon}
+                                    text={solution.text}
+                                    left={index % 2 === 0}
+                                    smallIcon={true}
+                                    className="" />
+                            </div>
+                        ))}
+                    </div>
+                </LayoutContainer>
             </Layout>
         </Context>
     )

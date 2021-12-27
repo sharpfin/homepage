@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import MenuIconBlack from '../images/menu-black.svg';
 import MenuIconWhite from '../images/menu-white.svg';
 import LogoBlack from '../images/sharpfin_logo_black.svg';
-import LogoWhite from '../images/sharpfin_logo_white.svg';
+import LogoWhite from '../images/sharpfin-logo-white-2.svg';
 import { LangContext } from './context';
 import LangLink from './LangLink';
 
@@ -37,13 +37,13 @@ const Header = ({ data, light }) => {
   }, [divRef, buttonRef, showMenu]);
 
   return (
-    <header>
-      <div className={`flex p-5 h-32 items-center justify-between md:justify-around ${light ? "bg-transparent" : "bg-sharpfin-gray"}`}>
+    <header className={`${light ? "bg-transparent" : "bg-sharpfin-gray"} font-medium flex justify-center`}>
+      <div className={`flex items-center screen-width w-full mx-5 my-5 justify-between`}>
         <LangLink to="">
-          {light ? <LogoBlack className="w-48" /> : <LogoWhite className="w-52" />}
+          {light ? <LogoBlack className="w-48" /> : <LogoWhite className="w-36 h-10" />}
         </LangLink>
         <nav>
-          <ul className={`md:flex space-x-5 hidden font-bold items-center ${light ? "text-black" : "text-white"}`}>
+          <ul className={`md:flex space-x-5 hidden  items-center ${light ? "text-black" : "text-white"}`}>
             <li className="menu-item"><LangLink to="solutions">{t.solutions.title}</LangLink></li>
             <div className="menu-dropdown cursor-pointer">
               <li className="menu-item">{t.header.customer}</li>
@@ -54,13 +54,13 @@ const Header = ({ data, light }) => {
               </div>
             </div>
             <li className="menu-item"><LangLink to="sharpfin-insider">{t.sharpfin_insider.title}</LangLink></li>
-            <li><button className="rounded py-2 px-4 text-white bg-sharpfin-blue hover:bg-sharpfin-gray font-bold block;" onClick={() => scrollTo('#contact')}>
+            <li><button className="rounded py-1 px-4 text-white border hover:border-sharpfin-blue border-white hover:bg-sharpfin-blue bg-sharpfin-gray  font-medium block;" onClick={() => scrollTo('#contact')}>
               {t.general.contact}
             </button>
             </li>
             <li className="menu-item"><Link to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link></li>
           </ul>
-          <div className="md:hidden ">
+          <div className="md:hidden">
             <button ref={buttonRef}>
               {light ? <MenuIconBlack className="h-8 w-8 cursor-pointer" /> : <MenuIconWhite className="h-8 w-8 cursor-pointer" />}
             </button>

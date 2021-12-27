@@ -2,8 +2,10 @@ import * as React from "react"
 import { graphql, StaticQuery } from 'gatsby'
 import ChevronRight from '../images/chevron-right.svg'
 import BlogCard from '../components/blog-card'
+import HighlightBlogCard from './blog-card-highlight'
 import { LangContext } from './context'
 import LangLink from './LangLink'
+import LayoutContainer from './layout-container'
 
 const Articles = ({ data }) => {
     const { t, langKey } = React.useContext(LangContext)
@@ -11,47 +13,54 @@ const Articles = ({ data }) => {
         .filter(({ node }) => {
             return node.frontmatter.lang === langKey || node.frontmatter.lang === "all"
         })
-        .slice(0, 3)
+        .slice(0, 5)
+
+    const highlight = articles.shift().node;
 
     return (
-        <div>
-
-            <div className="grid justify-center mt-20 pb-5">
-            <h1 className="text-4xl text-center font-bold mb-12 mx-5">{t.sharpfin_insider.read}</h1>
-                <div className="flex  flex-wrap justify-center items-center">
-                    {articles.map(({ node }) => (
-                        <BlogCard
-
-                            key={node.frontmatter.path}
-                            title={node.frontmatter.title}
-                            fluid={node?.frontmatter?.image?.childImageSharp?.fluid}
-                            intro={node.frontmatter.intro}
-                            link={node.frontmatter.path}
-                            date={node.frontmatter.date} />
-                    ))}
+        <LayoutContainer
+            title={t.sharpfin_insider.title}
+            titleColorClass={"text-sharpfin-gray"}
+            bgColorClass={"bg-white"}
+        >
+            <HighlightBlogCard
+                key={highlight.frontmatter.path}
+                title={highlight.frontmatter.title}
+                fluid={highlight?.frontmatter?.image?.childImageSharp?.fluid}
+                intro={highlight.frontmatter.intro}
+                link={highlight.frontmatter.path}
+                date={highlight.frontmatter.date}
+            />
+            <div className="grid grid-rows-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 my-14 border-b pb-14">
+                {articles.map(({ node }) => (
+                    <BlogCard
+                        key={node.frontmatter.path}
+                        title={node.frontmatter.title}
+                        fluid={node?.frontmatter?.image?.childImageSharp?.fluid}
+                        intro={node.frontmatter.intro}
+                        link={node.frontmatter.path}
+                        date={node.frontmatter.date} />
+                ))}
+            </div>
+            <LangLink to="sharpfin-insider" className="flex justify-end">
+                <div className="">
+                    <button className="bg-sharpfin-gray text-white font-medium px-4 py-2 rounded hover:bg-sharpfin-blue">
+                        <div className="flex">{t.sharpfin_insider.all_articles}<ChevronRight className="" /></div>
+                    </button>
                 </div>
-            </div>
+            </LangLink>
 
-            <div className="bg-sharpfin-blue pt-10 grid justify-center">
-                <LangLink to="sharpfin-insider">
-                <button className="flex t-20 items-center rounded-lg w-max justify-self-center font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">
-                    {t.sharpfin_insider.read_all}
-                    <ChevronRight className="inline" />
-                </button>
-                </LangLink>
-            </div>
 
-            <div className="bg-sharpfin-blue flex flex-col items-center justify-center pb-20 pt-44">
-                <h1 className="text-4xl text-white font-bold text-center mx-5">{t.sharpfin_insider.miss}</h1>
-                <p className="text-white text-center mx-5">{t.sharpfin_insider.subscribe_text}</p>
-                <form className="p-5 flex space-y-2 md:space-y-0 md:space-x-2 md:flex-row flex-col w-full justify-center" method="post" netlify-honeypot="bot-field" data-netlify="true" name="newsletter">
-                    <input type="hidden" name="bot-field" />
-                    <input type="hidden" name="form-name" value="newsletter" />
-                    <input pattern="^\S+@\S+$" id="email2" name="email" placeholder="Email" className=" rounded-lg md:rounded-l-lg py-2 pl-4 border-2 md:w-96 border-white" />
-                    <button type="submit" className=" rounded-lg md:rounded-r-lg font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">{t.sharpfin_insider.subscribe_btn}</button>
-                </form>
-            </div>
-        </div>
+            {/* <div className="bg-sharpfin-blue pt-10 grid justify-center">
+                    <LangLink to="sharpfin-insider">
+                        <button className="flex t-20 items-center rounded-lg w-max justify-self-center font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">
+                            {t.sharpfin_insider.read_all}
+                            <ChevronRight className="inline" />
+                        </button>
+                    </LangLink>
+                </div> */}
+
+        </LayoutContainer>
     )
 }
 

@@ -1,6 +1,23 @@
 const translations = {
+  month: (monthOfYear) => {
+    switch(monthOfYear) {
+      case 1: return "January"
+      case 2: return "February"
+      case 3: return "March"
+      case 4: return "April"
+      case 5: return "May"
+      case 6: return "June"
+      case 7: return "July"
+      case 8: return "August"
+      case 9: return "September"
+      case 10: return "October"
+      case 11: return "November"
+      case 12: return "December"
+      default: return "-"
+    }
+  },
   general: {
-    request_demo: "Request a demo today",
+    request_demo: "Request a demo",
     contact: "Contact us",
     learn_more: "Learn more"
   },
@@ -137,16 +154,19 @@ const translations = {
     read: "Read our latest news",
     read_all: "Read all news",
     miss: "Never miss a thing",
-    subscribe_text: "subscribe to our newsletter",
+    subscribe_text: "Subscribe to our newsletter",
     subscribe_btn: "Subscribe",
-    published: "Published"
+    published: "Published",
+    why_subscribe: "Subscribe to our newsletter. In Sharpfin Insider we share important updates, interesting articles, release notes and trade secrets. You don't wanna miss it.",
+    all_articles: "All Articles"
   },
   contact: {
     email: "Email",
     name: "Name",
     message: "Message",
     send: "Send",
-    phone: "Phone"
+    phone: "Phone",
+    know_more: "Do you want to know more? Send us a message below."
   },
   footer: {
     sales: "Sales",

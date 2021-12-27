@@ -3,6 +3,7 @@ import Img from 'gatsby-image';
 import * as React from "react";
 import { LangContext } from './context';
 import LangLink from './LangLink';
+import LayoutContainer from './layout-container';
 
 const CustomerTypes = ({ data }) => {
     const { t } = React.useContext(LangContext)
@@ -29,20 +30,26 @@ const CustomerTypes = ({ data }) => {
     ]
 
     return (
-        <div className="bg-sharpfin-gray py-44  grid">
-            <h2 className="text-white text-4xl text-center font-bold mx-5">{t.customer_page.what}</h2>
-            <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3 p-5 justify-self-center mt-10">
+        <LayoutContainer
+            title={t.customer_page.what}
+            titleColorClass="text-sharpfin-gray"
+            bgColorClass="bg-white"
+        >
+            <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3 justify-self-center ">
                 {customers.map(c => (
-                    <LangLink key={c.title} to={c.link} className="bg-white transform max-w-sm duration-300  hover:-translate-y-2 rounded-lg">
+                    <LangLink key={c.title} to={c.link} className="bg-white transform duration-300 border  hover:-translate-y-2 rounded">
                         <div className="h-64">
-                            <Img fluid={c.fluid} className="mx-auto h-64 rounded-t-lg" imgStyle={{ zIndex: `-1` }} />
-                            <h4 className="font-bold text-2xl -mt-44 mx-5 text-white text-center">{c.title}</h4>
+                            <Img fluid={c.fluid} className="mx-auto h-64 rounded-t" imgStyle={{ zIndex: `-1` }} />
                         </div>
-                        <p className="p-5 text-center">{c.text}</p>
+                        <div className="p-5">
+                            <h4 className="font-bold text-2xl mb-2">{c.title}</h4>
+                            <p className="">{c.text}</p>
+                        </div>
                     </LangLink>
                 ))}
             </div>
-        </div>
+
+        </LayoutContainer>
     )
 }
 

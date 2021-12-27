@@ -1,24 +1,23 @@
-import * as React from "react"
-import { graphql, StaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
+import { graphql, StaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
+import * as React from "react";
 import Estea from '../images/companies/estea_white.svg';
-import Pc from '../images/companies/pc.svg';
+import LayoutContainer from './layout-container';
 
 const Trusted = ({ data }) => {
     return (
-        <div className="bg-sharpfin-gray">
-            <div className="bg-sharpfin-blue p-20 grid justify-center">
-                {/* <h3 className="text-white text-center font-bold text-2xl">Trusted by</h3> */}
-                <div className="flex  flex-wrap justify-center items-center">
-                    <Estea className="h-12 m-10" />
-                    <Img fluid={data.nordnet.childImageSharp.fluid} className="w-44 m-10" />
-                    <Img fluid={data.consensus.childImageSharp.fluid} className="w-52 m-10" />
-                    <Img fluid={data.safe.childImageSharp.fluid} className="w-52 m-10" />
-                    <Pc className="w-52 m-10" />
-                </div>
-            </div>
+        <LayoutContainer
 
-        </div>
+            titleColorClass={"text-white"}
+            bgColorClass={"bg-sharpfin-blue"}
+        >
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 items-center justify-items-center lg:justify-items-start">
+                <Estea className="h-12" />
+                <Img fluid={data.nordnet.childImageSharp.fluid} className="w-44 " />
+                <Img fluid={data.consensus.childImageSharp.fluid} className="w-52" />
+                <Img fluid={data.safe.childImageSharp.fluid} className="w-52" />
+            </div>
+        </LayoutContainer>
     )
 }
 

@@ -2,11 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+.screen-width {
+    @apply max-w-6xl;
+}
 
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans';
+}
+
+.libre {
+    font-family: 'Libre Baskerville', monospace;
 }
 
 .jetbrains {
@@ -56,96 +67,4 @@ html {
     a {
         @apply text-sharpfin-blue overflow-auto;
     }
-}
-
-
-
-.custom-shape-divider-top-1617720316 {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    margin-top: -1px;
-}
-
-.custom-shape-divider-top-1617720316 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 50px;
-}
-
-.custom-shape-divider-top-1617720316 .shape-fill {
-    fill: #222731;
-}
-
-.custom-shape-divider-top-1616622048 {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    margin-top: -1px;
-}
-
-.custom-shape-divider-top-1616622048 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 100px;
-}
-
-.custom-shape-divider-top-1616746745 {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    margin-top: -1px;
-}
-
-.custom-shape-divider-top-1616746745 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 100px;
-}
-
-.custom-shape-divider-top-1616746745 .shape-fill {
-    fill: #222731;
-}
-
-
-.custom-shape-divider-top-1616849429 {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    margin-top: -1px;
-}
-
-.custom-shape-divider-top-1616849429 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1616849429 .shape-fill {
-    fill: #0094DD;
-}
-
-.custom-shape-divider-bottom-1616916981 {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    margin-top: -1px;
-}
-
-.custom-shape-divider-bottom-1616916981 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1616916981 .shape-fill {
-    fill: #0094DD;
 }

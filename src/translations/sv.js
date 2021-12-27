@@ -1,6 +1,23 @@
 const translations =  {
+  month: (monthOfYear) => {
+    switch(monthOfYear) {
+      case 1: return "Januari"
+      case 2: return "Februari"
+      case 3: return "Mars"
+      case 4: return "April"
+      case 5: return "Maj"
+      case 6: return "Juni"
+      case 7: return "Juli"
+      case 8: return "Augusti"
+      case 9: return "September"
+      case 10: return "Oktober"
+      case 11: return "November"
+      case 12: return "December"
+      default: return "-"
+    }
+  },
     general: {
-      request_demo: "Boka en demo idag",
+      request_demo: "Boka en demo",
       contact: "Kontakta oss",
       learn_more: "Läs mer"
     },
@@ -137,16 +154,19 @@ const translations =  {
       read: "Läs de senaste nyheterna",
       read_all: "Läs alla nyheter",
       miss: "Missa ingenting",
-      subscribe_text: "prenumerera på vårat nyhetsbrev",
+      subscribe_text: "Prenumerera på vårat nyhetsbrev",
       subscribe_btn: "Prenumerera",
-      published: "Publicerad"
+      published: "Publicerad",
+      why_subscribe: "Prenumerera på vårat nyhetsbrev. I Sharpfin Insider delar vi med oss av viktiga uppdateringar, intressanta artiklar, release notes och branschhemligheter. Det vill du inte missa. ",
+      all_articles: "Alla Artiklar"
     },
     contact: {
         email: "Email",
         name: "Namn",
         message: "Meddelande",
         send: "Skicka",
-        phone: "Telefon"
+        phone: "Telefon",
+        know_more: "Vill du veta mer? Skicka gärna ett meddelande nedan."
     },
     footer: {
         sales: "Sälj",

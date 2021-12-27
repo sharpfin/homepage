@@ -1,36 +1,59 @@
 import { graphql, StaticQuery } from 'gatsby';
 import * as React from "react";
-import translations from '../../translations/translations';
 import BlogCard from '../blog-card';
+import HighlightBlogCard from '../blog-card-highlight';
 import Context from '../context';
 import Layout from '../layout';
+import LayoutContainer from '../layout-container';
+import Subscribe from "../subscribe";
 
 const SharpfinInsider = ({ data, langKey }) => {
-    const t = translations(langKey)
 
     const articles = data.allMdx.edges
         .filter(({ node }) => {
             return node.frontmatter.lang === langKey || node.frontmatter.lang === "all"
         })
 
+    const highlight = articles.shift().node;
+
+
     return (
         <Context langKey={langKey} >
-            <Layout title={t.sharpfin_insider.title}>
-                <div className="max-w-7xl mx-auto mb-20">
-                    <div className="grid xl:grid-cols-3 md:grid-cols-2 mt-10 gap-10 justify-items-center">
-                        {articles.map(({ node }) => (
-                            <BlogCard
-                                key={node.frontmatter.path}
-                                title={node.frontmatter.title}
-                                fluid={node?.frontmatter?.image?.childImageSharp?.fluid}
-                                intro={node.frontmatter.intro}
-                                link={node.frontmatter.path}
-                                date={node.frontmatter.date} />
-                        ))}
-                    </div>
-                </div>
+            <Layout>
+                <LayoutContainer title={"Sharpfin insider"} bgColorClass="bg-white">
+                    {highlight && (<HighlightBlogCard
+                        key={highlight.frontmatter.path}
+                        title={highlight.frontmatter.title}
+                        fluid={highlight?.frontmatter?.image?.childImageSharp?.fluid}
+                        intro={highlight.frontmatter.intro}
+                        link={highlight.frontmatter.path}
+                        date={highlight.frontmatter.date} />)}
+                    <SmallPosts className="mt-14" posts={articles.slice(0, 4)} />
+                </LayoutContainer>
+
+                <Subscribe />
+
+                <LayoutContainer bgColorClass="bg-white">
+                    <SmallPosts posts={articles.slice(4, -1)} />
+                </LayoutContainer>
             </Layout>
         </Context>
+    )
+}
+
+const SmallPosts = ({ posts, className }) => {
+    return (
+        <div className={`grid xl:grid-cols-4 sm:grid-cols-2  gap-5 ${className}`}>
+            {posts.map(({ node }) => (
+                <BlogCard
+                    key={node.frontmatter.path}
+                    title={node.frontmatter.title}
+                    fluid={node?.frontmatter?.image?.childImageSharp?.fluid}
+                    intro={node.frontmatter.intro}
+                    link={node.frontmatter.path}
+                    date={node.frontmatter.date} />
+            ))}
+        </div>
     )
 }
 
