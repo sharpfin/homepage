@@ -18,7 +18,7 @@ const Template = (props) => {
       <Layout>
         <Seo title={mdx.frontmatter.title} />
         <LayoutContainer>
-          <div className="flex justify-center -mt-8">
+          <div className="flex justify-center -mt-20 sm:-mt-8">
             <div className="max-w-2xl grid gap-3">
               {mdx.frontmatter?.image?.childImageSharp?.fluid && <div className="">
                 <Img fluid={mdx.frontmatter?.image?.childImageSharp?.fluid} className="-mx-5 sm:mx-0" />
