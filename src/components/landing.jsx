@@ -23,7 +23,7 @@ const Landing = ({ data }) => {
             <span className="block">{t.title.top}<span className="">{t.title.highlight}</span>{t.title.top2}</span>
             <span className="block">{t.title.bottom}</span>
           </h1>
-          <h3 className="lg:text-xl text-white w-96 lg:w-full">{t.sub_title}</h3>
+          <h3 className="lg:text-xl text-white sm:w-96 lg:w-full">{t.sub_title}</h3>
           <div className="justify-self-start flex space-x-5">
             <button className="rounded py-2 px-4 text-white hover:bg-sharpfin-blue bg-transparent border-white border hover:border-sharpfin-blue font-medium block" onClick={() => scrollTo('#solutions')}>
               {translation.general.learn_more}
