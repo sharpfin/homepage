@@ -41,7 +41,7 @@ const CustomerTypes = ({ data }) => {
                         <div className="h-64">
                             <Img fluid={c.fluid} className="mx-auto h-64 rounded-t" imgStyle={{ zIndex: `-1` }} />
                         </div>
-                        <div className="p-5">
+                        <div className="p-5 text-sharpfin-gray">
                             <h4 className="font-bold text-2xl mb-2">{c.title}</h4>
                             <p className="">{c.text}</p>
                         </div>
@@ -58,21 +58,21 @@ export default function CustomerTypesWrapper(props) {
         <StaticQuery
             query={graphql`
               query {
-                  family: file(relativePath: { eq: "icons/family_office_small_blue.jpg" }) {
+                  family: file(relativePath: { eq: "icons/family.jpg" }) {
                       childImageSharp {
                           fluid(quality: 70) {
                               ...GatsbyImageSharpFluid
                           }
                       }
                   }
-                  pension: file(relativePath: { eq: "icons/pension_advice_small_blue.jpg" }) {
+                  pension: file(relativePath: { eq: "icons/human.jpg" }) {
                     childImageSharp {
                         fluid(quality: 70) {
                             ...GatsbyImageSharpFluid
                         }
                     }
                   }
-                  asset: file(relativePath: { eq: "icons/wealth_management_small_blue.jpg" }) {
+                  asset: file(relativePath: { eq: "icons/woman.jpg" }) {
                     childImageSharp {
                         fluid(quality: 70) {
                             ...GatsbyImageSharpFluid

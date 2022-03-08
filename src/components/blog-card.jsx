@@ -12,7 +12,7 @@ const BlogCard = ({ title, fluid, intro, link, date }) => {
             {fluid && <Img fluid={fluid} className="h-48 mx-auto" />}
             <div className="grid gap-2 mt-2">
                 <DateFormat className="text-sm" date={date} />
-                <h3 className="font-medium">{title}</h3>
+                <p className="font-medium">{title}</p>
             </div>
         </LangLink>
     )

@@ -31,7 +31,7 @@ export default function AssetManagersWrapper(props) {
         <StaticQuery
             query={graphql`
             query {
-                asset: file(relativePath: { eq: "icons/wealth_management_small_blue.jpg" }) {
+                asset: file(relativePath: { eq: "icons/woman.jpg" }) {
                   childImageSharp {
                       fluid(quality: 70) {
                           ...GatsbyImageSharpFluid

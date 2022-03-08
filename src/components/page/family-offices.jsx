@@ -31,7 +31,7 @@ export default function FamilyOfficesWrapper(props) {
         <StaticQuery
             query={graphql`
             query {
-                family: file(relativePath: { eq: "icons/family_office_small_blue.jpg" }) {
+                family: file(relativePath: { eq: "icons/family.jpg" }) {
                     childImageSharp {
                         fluid(quality: 70) {
                             ...GatsbyImageSharpFluid

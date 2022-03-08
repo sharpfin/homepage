@@ -37,7 +37,7 @@ const Header = ({ data, light }) => {
   }, [divRef, buttonRef, showMenu]);
 
   return (
-    <header className={`${light ? "bg-transparent" : "bg-sharpfin-gray"} font-medium flex justify-center`}>
+    <header className={`${light ? "bg-transparent" : "bg-sharpfin-gray"} font-medium flex justify-center `}>
       <div className={`flex items-center screen-width w-full mx-5 my-5 justify-between`}>
         <LangLink to="">
           {light ? <LogoBlack className="w-48" /> : <LogoWhite className="w-36 h-10" />}

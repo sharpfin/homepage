@@ -5,7 +5,7 @@ const LayoutContainer = ({id, title, titleColorClass, bgColorClass, children}) =
         <div id={id} className={`${bgColorClass} flex justify-center py-20`}>
 
             <div className="screen-width mx-5 w-full">
-                {title && (<h2 className={`text-4xl  ${children && "mb-14"} libre font-bold ${titleColorClass}`}>{title}</h2>)}
+                {title && (<h2 className={`text-4xl  ${children && "mb-14"} font-bold ${titleColorClass}`}>{title}</h2>)}
                 {children}
             </div>
         </div>

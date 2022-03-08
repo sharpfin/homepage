@@ -22,7 +22,7 @@ const AssetManagers = ({ customer }) => {
                     <div className="grid gap-2 items-start order-2 md:order-none ">
                         {customer.content}
                     </div>
-                    <Img className="order-1 md:order-none rounded" fluid={customer.fluid} />
+                    <Img className="order-1 md:order-none rounded h-96" fluid={customer.fluid} />
                 </div>
 
             </LayoutContainer>

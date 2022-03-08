@@ -39,7 +39,7 @@ export default function FinancialAdvisorsWrapper(props) {
         <StaticQuery
             query={graphql`
             query {
-                pension: file(relativePath: { eq: "icons/pension_advice_small_blue.jpg" }) {
+                pension: file(relativePath: { eq: "icons/human.jpg" }) {
                   childImageSharp {
                       fluid(quality: 70) {
                           ...GatsbyImageSharpFluid

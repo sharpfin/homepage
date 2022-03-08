@@ -27,12 +27,12 @@ const translations = {
   },
   landing: {
     title: {
-      top: "Better",
-      highlight: " technology",
-      top2: " for",
-      bottom: " your wealth management"
+      top: "Unleash the",
+      highlight: " power",
+      top2: "",
+      bottom: "of technology"
     },
-    sub_title: "Digitize, accelerate and automate your administration processes"
+    sub_title: "A modern solution that simplifies and empowers your Wealth Management"
   },
   header: {
     customer: "Customers"
@@ -102,7 +102,7 @@ const translations = {
     },
     brand: {
       title: "Strengthen your brand",
-      text: "By using our reporting or customer portal module you can move closer to your clients with branded, secure login to the system or tailor made client reporting."
+      text: "By using our reporting or customer portal function you can move closer to your clients with branded, secure login to the system or tailor made client reporting."
     },
     cr: {
       title: "Limit compliancy risk",
@@ -110,23 +110,23 @@ const translations = {
     }
   },
   customer_page: {
-    modules: "Commonly used modules",
+    modules: "Commonly used features",
     what: "What do you do?",
     asset_managers: {
-      title: "Asset Managers",
+      title: "Asset Manager",
       short: "Wealth management is possible with only one tool for customer onboarding, constant monitoring of KYC and AML, flexible portfolio management and branded customer reporting. Sharpfin is the proof.",
       item_1: "Does your firm have an optimal balance of human and system capital to meet the increased pressure from regulations while providing the best service towards your clients?",
       item_2: "Sharpfins SaaS solution serves Independent Asset Managers with technology that supports new client acquisition, automates reporting and free time up to provide even better investment advice for your clients.",
       item_3: "Don't stand the risk of losing business entirely or being stuck in a non-profit waste land. Contact Sharpfin for a consultation, how our cloud-based technology can serve your continued growth for the future."
     },
     family_offices: {
-      title: "Family Offices",
+      title: "Family Office",
       short: "Free up your time utilizing Sharpfins consolidation of wealth management data throughout multiple sources.",
       item_1: "Do you think it’s possible to deliver top class wealth management holding on to tedious manual processes for data scattered over multiple sources?",
       item_2: "Imagine that a you had a cloud based solution that would consolidate all these data for you, empowering you to take control and free up time for you to make active investment decisions. Book a meeting and find out already today how Sharpfin Technologies puts a new standard for Family Office Wealth Management."
     },
     financial_advisors: {
-      title: "Financial- and Pension advisors",
+      title: "Financial- and Pension advisor",
       short: "Sharpfins advisory portal helps you to significantly cut time in your advisory processes, all while making the results electronically traceable and with a seamless integration of electronic signatures.",
       item_1: "Do you ever have the feeling that regulatory paperwork takes up too much time of your meetings and that you hardly have any time left to focus on you clients’ financial needs for the future?",
       item_2: "Sharpfin helps pension and insurance companies to improve efficiency in their client meetings with up to 75% per meeting compared to previous solutions.",

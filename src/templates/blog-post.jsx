@@ -23,10 +23,10 @@ const Template = (props) => {
               {mdx.frontmatter?.image?.childImageSharp?.fluid && <div className="">
                 <Img fluid={mdx.frontmatter?.image?.childImageSharp?.fluid} className="-mx-5 sm:mx-0" />
               </div>}
-              <h2 className={`text-4xl libre leading-snug font-bold `}>{mdx.frontmatter.title}</h2>
+              <h2 className={`text-4xl leading-snug font-bold `}>{mdx.frontmatter.title}</h2>
               <DateFormat className="text-sm text-gray-500" date={mdx.frontmatter.date} />
-              <p className="text-lg leading-relaxed font-medium">{mdx.frontmatter.intro}</p>
-              <div className="blog-post leading-relaxed">
+              <p className="text-lg leading-relaxed font-semibold">{mdx.frontmatter.intro}</p>
+              <div className="blog-post leading-relaxed ">
                 <MDXRenderer>{mdx.body}</MDXRenderer>
               </div>
             </div>

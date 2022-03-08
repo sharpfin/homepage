@@ -27,12 +27,12 @@ const translations =  {
     },
     landing: {
       title: {
-        top: "Bättre",
-        highlight: " teknologi",
-        top2: " för",
-        bottom: " din kapital\u{00AD}förvaltning"
+        top: "Släpp lös ",
+        highlight: " teknikens",
+        top2: " ",
+        bottom: "fulla kraft"
       },
-      sub_title: "Digitalisera, accelerera och automatisera dina administrativa processer"
+      sub_title: "En modern lösning som förenklar och stärker din Kapitalförvaltning"
     },
     header: {
       customer: "Kunder",
@@ -110,7 +110,7 @@ const translations =  {
         }
     },
     customer_page: {
-      modules: "Vanliga moduler",
+      modules: "Vanliga funktioner",
       what: "Vad jobbar du med?",
       asset_managers: {
         title: "Kapitalförvaltning",
