@@ -172,6 +172,10 @@ const translations =  {
         sales: "Sälj",
         support: "Support",
         address: "Adress"
+    },
+    team: {
+      title: "Detta är Sharpfin",
+      title_short: "Om oss"
     }
 
   }

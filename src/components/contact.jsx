@@ -49,7 +49,7 @@ const Contact = ({ data }) => {
                         <PersonContact name="Support" title="Stockholm" phone="+46 (0)10 585 82 77" email="support@sharpfin.com" />
                         <div className="border-b pb-5">
                             <p className="font-bold">Address</p>
-                            <p>c/o Katalysen & Partners AB</p>
+                            <p>c/o Katalysen Ventures AB</p>
                             <p>c/o WeWork</p>
                             <p>Malmskillnadsgatan 32</p>
                             <p>111 51 Stockholm, Sweden</p>

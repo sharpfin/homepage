@@ -172,6 +172,10 @@ const translations = {
     sales: "Sales",
     support: "Support",
     address: "Address"
+  },
+  team: {
+    title: "Meet the Team",
+    title_short: "About us"
   }
 
 }

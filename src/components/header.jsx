@@ -45,6 +45,7 @@ const Header = ({ data, light }) => {
         <nav>
           <ul className={`md:flex space-x-5 hidden  items-center ${light ? "text-black" : "text-white"}`}>
             <li className="menu-item"><LangLink to="solutions">{t.solutions.title}</LangLink></li>
+
             <div className="menu-dropdown cursor-pointer">
               <li className="menu-item">{t.header.customer}</li>
               <div className="menu-dropdown-content p-5 shadow-lg rounded text-black gap-2 bg-white">
@@ -53,6 +54,7 @@ const Header = ({ data, light }) => {
                 <li><LangLink to="financial-advisors" className="menu-item">{t.customer_page.financial_advisors.title}</LangLink></li>
               </div>
             </div>
+            <li className="menu-item"><LangLink to="team">{t.team.title_short}</LangLink></li>
             <li className="menu-item"><LangLink to="sharpfin-insider">{t.sharpfin_insider.title}</LangLink></li>
             <li><button className="rounded py-1 px-4 text-white border hover:border-sharpfin-blue border-white hover:bg-sharpfin-blue bg-sharpfin-gray  font-medium block;" onClick={() => scrollTo('#contact')}>
               {t.general.contact}
@@ -73,6 +75,7 @@ const Header = ({ data, light }) => {
                   <li><LangLink to="family-offices" className="menu-item-sm">{t.customer_page.family_offices.title}</LangLink></li>
                   <li><LangLink to="financial-advisors" className="menu-item-sm">{t.customer_page.financial_advisors.title}</LangLink></li>
                   <li><LangLink to="sharpfin-insider" className="menu-item-sm">{t.sharpfin_insider.title}</LangLink></li>
+                  <li><LangLink to="team" className="menu-item-sm">{t.team.title_short}</LangLink></li>
                   <li className="menu-item-sm"><Link to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link></li>
                   <button className="rounded mt-5 py-2 px-4 text-white bg-sharpfin-blue hover:bg-sharpfin-gray font-bold block;" onClick={() => scrollTo('#contact')}>
                     {t.general.contact}
