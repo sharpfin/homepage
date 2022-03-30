@@ -52,12 +52,19 @@ html {
         @apply mb-5
     }
 
-    h4, h3, h2 {
-       @apply text-lg font-bold;
+    h2, h1 {
+        @apply text-xl font-bold text-sharpfin-gray mb-5 text-left;
+    }
+    h4, h3 {
+       @apply text-lg font-bold text-sharpfin-gray;
     }
 
     li {
         margin-bottom: 10px;
+    }
+
+    blockquote {
+        @apply text-white bg-sharpfin-blue rounded text-xl  text-center my-10 p-10  border-sharpfin-gray;
     }
 
     a {
