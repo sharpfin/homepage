@@ -1,5 +1,5 @@
 import { graphql, StaticQuery } from 'gatsby';
-import React from "react";
+import React, { useState } from "react";
 import Context from '../context';
 import Img from 'gatsby-image';
 import Layout from "../layout"
@@ -23,16 +23,15 @@ const Team = ({ data, langKey }) => {
             image: data.peter.childImageSharp.fluid
         },
         {
-            name: "Linnea Pihl Sandberg",
-            title: "Sales Representative",
-            image: data.linnea.childImageSharp.fluid
-        },
-        {
             name: "Kristina Ek",
             title: "CFO",
             image: data.kristina.childImageSharp.fluid
         },
-
+        {
+            name: "Linnea Pihl Sandberg",
+            title: "Sales Representative",
+            image: data.linnea.childImageSharp.fluid
+        },
         {
             name: "Simon Lindblom",
             title: "CTO",
@@ -46,15 +45,26 @@ const Team = ({ data, langKey }) => {
         }
     ]
 
+    const [gray, setGray] = useState(team.map(t => true))
+
+    const active = (index, val) => {
+        let list = team.map(t => true)
+        list[index] = val;
+        setGray(list)
+    }
 
     return (
         <Context langKey={langKey} >
             <Layout>
                 <LayoutContainer title={t.team.title}>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                        {team.map((member) => (
+                        {team.map((member, index) => (
                             <div>
-                                <Img fluid={member.image} className="h-96" imgStyle={{objectPosition: `top`}}/>
+                                <div className="h-96"  onMouseEnter={() => active(index, false)} onMouseLeave={() => active(index, true)}>
+                                    {gray[index] ?
+                                        <Img fluid={member.image} className="h-96" imgStyle={{objectPosition: `top`, filter: `grayscale(1)`}}/> :
+                                        <Img fluid={member.image} className="h-96" imgStyle={{objectPosition: `top`}}/>}
+                                </div>
                                 <div className="px-5 py-2 bg-sharpfin-blue">
                                     <p className="text-xl text-white">{member.name}</p>
                                     <p className="text-white ">{member.title}</p>
@@ -67,6 +77,8 @@ const Team = ({ data, langKey }) => {
             </Layout>
         </Context>)
 }
+
+
 
 
 export default function TeamWrapper(props) {
