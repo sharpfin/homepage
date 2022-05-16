@@ -20,11 +20,6 @@ export function dateConvert(date, t) {
 
 export default function DateFormat({date, className}) {
     const { t } = React.useContext(LangContext)
-    console.log(date)
-    const [d, setD] = React.useState(new Date(date?.replaceAll(" ", "-")))
-
-
-    console.log(d)
     return(
         <p className={`text-gray-500 ${className}`}>{dateConvert(date, t)}</p>
     );
