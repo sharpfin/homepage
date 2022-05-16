@@ -13,7 +13,7 @@ const HighlightBlogCard = ({ title, fluid, intro, link, date }) => {
                 {fluid && <Img fluid={fluid} className="" />}
             </div>
             <div className="grid gap-3">
-                <DateFormat date={date} />
+                <DateFormat date={date} className="text-sm"/>
                 <h3 className="font-bold text-4xl mb-3">{title}</h3>
                 <p className="">{intro}</p>
             </div>

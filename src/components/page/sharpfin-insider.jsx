@@ -68,7 +68,7 @@ export default function SharpfinInsiderWrapper(props) {
                         frontmatter {
                         title
                         intro
-                        date(formatString: "YYYY MM DD")
+                        date(formatString: "DD MMM, YYYY")
                         path
                         lang
                         image {

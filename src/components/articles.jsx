@@ -51,14 +51,6 @@ const Articles = ({ data }) => {
             </LangLink>
 
 
-            {/* <div className="bg-sharpfin-blue pt-10 grid justify-center">
-                    <LangLink to="sharpfin-insider">
-                        <button className="flex t-20 items-center rounded-lg w-max justify-self-center font-bold text-white bg-sharpfin-gray px-5 py-2 hover:bg-sharpfin-blue border-2 border-sharpfin-gray hover:border-white">
-                            {t.sharpfin_insider.read_all}
-                            <ChevronRight className="inline" />
-                        </button>
-                    </LangLink>
-                </div> */}
 
         </LayoutContainer>
     )
@@ -75,7 +67,7 @@ export default function ArticlesWrapper(props) {
                         frontmatter {
                           title
                           intro
-                          date(formatString: "YYYY MM DD")
+                          date(formatString: "DD MMM, YYYY")
                           path
                           lang
                           image {
