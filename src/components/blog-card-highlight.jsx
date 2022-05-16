@@ -8,7 +8,7 @@ import LangLink from './LangLink'
 const HighlightBlogCard = ({ title, fluid, intro, link, date }) => {
     return (
         <LangLink key={title} to={link} className="bg-white grid md:grid-cols-2 gap-5 items-start border-b pb-14" >
-            <div classname="max-h-sm">
+            <div className="max-h-sm">
                 {!fluid && <div className="h-48 w-44 mx-auto flex justify-center items-center"><NewsIcon className="w-28 h-28 " /></div>}
                 {fluid && <Img fluid={fluid} className="" />}
             </div>

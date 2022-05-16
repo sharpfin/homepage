@@ -5,7 +5,7 @@ import Header from '../components/header'
 import Title from '../components/title'
 import Seo from './seo-thing'
 
-const Layout = ({ children, title }) => {
+const Layout = ({ children, title = "" }) => {
     return (
         <div>
             <Header />
