@@ -5,14 +5,14 @@ import Header from '../components/header'
 import Title from '../components/title'
 import Seo from './seo-thing'
 
-const Layout = ({ children, title = "" }) => {
+const Layout = ({ children, title = "", className}) => {
     return (
         <div>
             <Header />
             <Seo title={title} />
             <main>
                 {title && <Title title={title} />}
-                <div>
+                <div className={className}>
                     {children}
                 </div>
                 <Contact top={true} />
