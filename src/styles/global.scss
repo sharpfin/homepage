@@ -25,7 +25,7 @@ html {
 }
 
 .menu-item-sm {
-    @apply text-gray-700 hover:text-blue-400 pb-2;
+    @apply text-gray-700 hover:text-white hover:bg-sharpfin-blue w-full px-2 py-1 rounded;
 }
 
 .menu-dropdown-content {

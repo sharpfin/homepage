@@ -43,44 +43,44 @@ const Header = ({ data, light }) => {
           {light ? <LogoBlack className="w-48" /> : <LogoWhite className="w-36 h-10" />}
         </LangLink>
         <nav>
-          <ul className={`md:flex space-x-5 hidden  items-center ${light ? "text-black" : "text-white"}`}>
-            <li className="menu-item"><LangLink to="solutions">{t.solutions.title}</LangLink></li>
+          <div className={`md:flex space-x-5 hidden  items-center ${light ? "text-black" : "text-white"}`}>
+            <span className="menu-item"><LangLink to="solutions">{t.solutions.title}</LangLink></span>
 
             <div className="menu-dropdown cursor-pointer">
-              <li className="menu-item">{t.header.customer}</li>
-              <div className="menu-dropdown-content p-5 shadow-lg rounded text-black gap-2 bg-white">
-                <li><LangLink to="asset-managers" className="menu-item">{t.customer_page.asset_managers.title}</LangLink></li>
-                <li><LangLink to="family-offices" className="menu-item">{t.customer_page.family_offices.title}</LangLink></li>
-                <li><LangLink to="financial-advisors" className="menu-item">{t.customer_page.financial_advisors.title}</LangLink></li>
+              <span className="menu-item">{t.header.customer}</span>
+              <div className="menu-dropdown-content p-1 shadow-lg rounded text-black gap-2 bg-white">
+                <LangLink to="asset-managers" className="menu-item-sm">{t.customer_page.asset_managers.title}</LangLink>
+                <LangLink to="family-offices" className="menu-item-sm">{t.customer_page.family_offices.title}</LangLink>
+                <LangLink to="financial-advisors" className="menu-item-sm">{t.customer_page.financial_advisors.title}</LangLink>
               </div>
             </div>
-            <li className="menu-item"><LangLink to="team">{t.team.title_short}</LangLink></li>
-            <li className="menu-item"><LangLink to="sharpfin-insider">{t.sharpfin_insider.title}</LangLink></li>
-            <li><button className="rounded py-1 px-4 text-white border hover:border-sharpfin-blue border-white hover:bg-sharpfin-blue bg-sharpfin-gray  font-medium block;" onClick={() => scrollTo('#contact')}>
+            <LangLink className="menu-item" to="team">{t.team.title_short}</LangLink>
+            <LangLink className="menu-item" to="sharpfin-insider">{t.sharpfin_insider.title}</LangLink>
+            <button className="rounded py-1 px-4 text-white border hover:border-sharpfin-blue border-white hover:bg-sharpfin-blue bg-sharpfin-gray  font-medium block;" onClick={() => scrollTo('#contact')}>
               {t.general.contact}
             </button>
-            </li>
-            <li className="menu-item"><Link to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link></li>
-          </ul>
+
+            <Link className="menu-item" to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link>
+          </div>
           <div className="md:hidden">
-            <button ref={buttonRef}>
+            <button ref={buttonRef} className="hover:bg-sharpfin-blue rounded">
               {light ? <MenuIconBlack className="h-8 w-8 cursor-pointer" /> : <MenuIconWhite className="h-8 w-8 cursor-pointer" />}
             </button>
 
             {showMenu &&
-              <div ref={divRef} className="absolute z-30 bg-white p-5 rounded right-5 border">
-                <ul className={`grid gap-2 items-center ${light ? "text-black" : "text-white"}`}>
-                  <li><LangLink to="solutions" className="menu-item-sm">{t.solutions.title}</LangLink></li>
-                  <li><LangLink to="asset-managers" className="menu-item-sm">{t.customer_page.asset_managers.title}</LangLink></li>
-                  <li><LangLink to="family-offices" className="menu-item-sm">{t.customer_page.family_offices.title}</LangLink></li>
-                  <li><LangLink to="financial-advisors" className="menu-item-sm">{t.customer_page.financial_advisors.title}</LangLink></li>
-                  <li><LangLink to="sharpfin-insider" className="menu-item-sm">{t.sharpfin_insider.title}</LangLink></li>
-                  <li><LangLink to="team" className="menu-item-sm">{t.team.title_short}</LangLink></li>
-                  <li className="menu-item-sm"><Link to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link></li>
-                  <button className="rounded mt-5 py-2 px-4 text-white bg-sharpfin-blue hover:bg-sharpfin-gray font-bold block;" onClick={() => scrollTo('#contact')}>
+              <div ref={divRef} className="absolute z-30 bg-white p-1 rounded right-5 border">
+                <div className={`grid gap-2 items-center ${light ? "text-black" : "text-white"}`}>
+                  <LangLink to="solutions" className="menu-item-sm">{t.solutions.title}</LangLink>
+                  <LangLink to="asset-managers" className="menu-item-sm">{t.customer_page.asset_managers.title}</LangLink>
+                  <LangLink to="family-offices" className="menu-item-sm">{t.customer_page.family_offices.title}</LangLink>
+                  <LangLink to="financial-advisors" className="menu-item-sm">{t.customer_page.financial_advisors.title}</LangLink>
+                  <LangLink to="sharpfin-insider" className="menu-item-sm">{t.sharpfin_insider.title}</LangLink>
+                  <LangLink to="team" className="menu-item-sm">{t.team.title_short}</LangLink>
+                  <Link className="menu-item-sm" to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link>
+                  <button className="rounded mt-5 py-2 px-4 text-white bg-sharpfin-gray hover:bg-sharpfin-blue font-bold block;" onClick={() => scrollTo('#contact')}>
                     {t.general.contact}
                   </button>
-                </ul>
+                </div>
               </div>
             }
           </div>

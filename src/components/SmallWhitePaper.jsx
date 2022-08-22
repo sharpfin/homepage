@@ -11,7 +11,7 @@ const SmallWhitePaper = ({ data }) => {
 
         <div className="relative">
             <BackgroundSvg className="absolute top-0 left-0 h-full w-full z-10" />
-            <LayoutContainer title="Read our Whitepaper!" titleColorClass={"text-sharpfin-gray"} className="">
+            <LayoutContainer title="You should read our whitepaper!" titleColorClass={"text-sharpfin-gray"} className="">
                 <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center ">
                     <div className="px-10 md:px-0 place-self-center md:place-self-auto z-20  ">
                         <Img className="shadow rounded w-72 " fluid={data.wp.childImageSharp.fluid} />
