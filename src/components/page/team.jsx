@@ -19,7 +19,7 @@ const Team = ({ data, langKey }) => {
         },
         {
             name: "Peter Bäck",
-            title: "Head of Sales",
+            title: "CRO",
             image: data.peter.childImageSharp.fluid
         },
         {
