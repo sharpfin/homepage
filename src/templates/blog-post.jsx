@@ -18,10 +18,10 @@ const Template = (props) => {
       <Layout>
         <Seo title={mdx.frontmatter.title} />
         <LayoutContainer>
-          <div className="flex justify-center -mt-20 sm:-mt-8">
+          <div className="flex justify-center -mt-20 sm:-mt-14">
             <div className="max-w-2xl grid gap-3">
               {mdx.frontmatter?.image?.childImageSharp?.fluid && <div className="">
-                <Img fluid={mdx.frontmatter?.image?.childImageSharp?.fluid} className="-mx-5 sm:mx-0" />
+                <Img fluid={mdx.frontmatter?.image?.childImageSharp?.fluid} className="-mx-5 sm:mx-0 sm:rounded" />
               </div>}
               <h1 className={`text-4xl leading-snug font-bold text-sharpfin-gray`}>{mdx.frontmatter.title}</h1>
               <DateFormat className="text-sm text-gray-500" date={mdx.frontmatter.date} />

@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 .screen-width {
@@ -14,11 +12,6 @@ html {
     font-family: 'Rubik', 'sans-serif';
     @apply tracking-wide
 }
-
-.libre {
-    font-family: 'Libre Baskerville', 'serif';
-}
-
 
 .menu-item {
     @apply border-b-2 border-transparent hover:text-blue-400;
@@ -51,16 +44,19 @@ html {
     p, li {
         @apply mb-5
     }
+    ol {
+        @apply list-decimal list-inside;
+    }
+
 
     h2, h1 {
         @apply text-xl font-bold text-sharpfin-gray mb-5 text-left;
     }
+    h1 {
+        @apply text-2xl;
+    }
     h4, h3 {
        @apply text-lg font-bold text-sharpfin-gray;
-    }
-
-    li {
-        margin-bottom: 10px;
     }
 
     blockquote {
