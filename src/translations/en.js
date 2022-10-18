@@ -176,6 +176,10 @@ const translations = {
   team: {
     title: "Meet the Team",
     title_short: "About us"
+  },
+  success: {
+    thanks: "Thanks for submitting!",
+    go_back: "Go back"
   }
 
 }

@@ -176,6 +176,10 @@ const translations =  {
     team: {
       title: "Detta är Sharpfin",
       title_short: "Om oss"
+    },
+    success: {
+      thanks: "Tack för att du skickade in!",
+      go_back: "Tillbaka"
     }
 
   }
