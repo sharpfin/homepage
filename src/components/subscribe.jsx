@@ -15,7 +15,7 @@ const Subscribe = ({ data }) => {
                 <div className="grid gap-14 md:grid-cols-2 items-center">
                     <p className="text-lg text-gray-400">{t.sharpfin_insider.why_subscribe}</p>
                     <div className="">
-                        <form className="grid gap-3 grid-cols-1" method="post" netlify-honeypot="bot-field" data-netlify="true" name="newsletter">
+                        <form className="grid gap-3 grid-cols-1" method="post" netlify-honeypot="bot-field" data-netlify="true" name="newsletter" action="/success">
                             <input type="hidden" name="bot-field" />
                             <input type="hidden" name="form-name" value="newsletter" />
                             <input pattern="^\S+@\S+$" id="email2" name="email" placeholder="Email" className="rounded md:rounded-l py-2 pl-4 border w-full " />

@@ -7,7 +7,7 @@ import { path_start } from '../translations/translations';
 
 const Contact = ({ data }) => {
     const { t, langKey } = React.useContext(LangContext)
-    const action = path_start(langKey) + '/success'
+
     return (
         <div>
             <LayoutContainer
@@ -24,7 +24,7 @@ const Contact = ({ data }) => {
             >
                 <div className="grid md:grid-cols-2 gap-10">
                     <div className="bg-sharpfin-gray text-white p-5 rounded">
-                        <form className="grid gap-10 md:p-5 lg:p-10" method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action={action}>
+                        <form className="grid gap-10 md:p-5 lg:p-10" method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action="/success">
                             <input type="hidden" name="bot-field" />
                             <input type="hidden" name="form-name" value="contact" />
                             <div>
