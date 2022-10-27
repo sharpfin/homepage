@@ -3,11 +3,14 @@ import Img from 'gatsby-image';
 import * as React from "react";
 import Estea from '../images/companies/estea_white.svg';
 import LayoutContainer from './layout-container';
+import {LangContext} from "./context"
+
 
 const Trusted = ({ data }) => {
+    const { t } = React.useContext(LangContext)
     return (
         <LayoutContainer
-
+            title={t.trusted.title}
             titleColorClass={"text-white"}
             bgColorClass={"bg-sharpfin-blue"}
         >

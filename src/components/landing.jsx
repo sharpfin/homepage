@@ -6,6 +6,7 @@ import LayoutContainer from "./layout-container";
 import Img from 'gatsby-image'
 import { StaticQuery } from 'gatsby';
 import { graphql } from 'gatsby'
+import LangLink from './LangLink';
 
 const Landing = ({ data }) => {
   const { langKey } = React.useContext(LangContext)
