@@ -27,7 +27,7 @@ const ReadWhitepaper = ({ data, langKey }) => {
                             </LangLink>
                         </div>
                     </div>
-                    <Img fluid={data.whitepaper.childImageSharp.fluid} className="w-72 rounded shadow-xl place-self-center order-1 md:order-2" />
+                    <Img fluid={data.whitepaper.childImageSharp.fluid} className="w-80 rounded shadow-xl place-self-center order-1 md:order-2" />
                 </div>
             </LayoutContainer>
         </div>
