@@ -5,7 +5,7 @@ import translations from '../../translations/translations'
 import Layout from '../layout';
 import LayoutContainer from '../layout-container'
 import Wave from '../../images/wave.png'
-import Pdf from '../../images/Sharpfin_Whitepaper_Trend-Report-2022.pdf'
+import Pdf from '../../images/Sharpfin_Whitepaper_Trend-Report-2023.pdf'
 
 
 
@@ -39,7 +39,7 @@ export default function WhitepaperWrapper(props) {
         <StaticQuery
             query={graphql`
             query {
-                whitepaper: file(relativePath: { eq: "whitepaper2.png" }) {
+                whitepaper: file(relativePath: { eq: "whitepaper.png" }) {
                   childImageSharp {
                       fluid(quality: 70) {
                           ...GatsbyImageSharpFluid

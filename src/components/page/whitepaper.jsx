@@ -14,7 +14,6 @@ const Whitepaper = ({ data, langKey }) => {
     return (
         <Context langKey={langKey} >
             <Layout>
-                {/* <Wave className="h-full absolute z-1 mt-20" /> */}
                 <div className="bg-cover mt-10" style={{ backgroundImage: `url(${Wave})`}}>
                     <LayoutContainer>
                         <div className="grid gap-10 lg:gap-32 -mt-20 lg:mt-0 lg:grid-cols-2 wave-bg" >
@@ -53,7 +52,7 @@ export default function WhitepaperWrapper(props) {
         <StaticQuery
             query={graphql`
             query {
-                whitepaper: file(relativePath: { eq: "whitepaper2.png" }) {
+                whitepaper: file(relativePath: { eq: "whitepaper.png" }) {
                   childImageSharp {
                       fluid(quality: 70) {
                           ...GatsbyImageSharpFluid
