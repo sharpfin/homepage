@@ -19,7 +19,7 @@ const Whitepaper = ({ data, langKey }) => {
                         <div className="grid gap-10 lg:gap-32 -mt-20 lg:mt-0 lg:grid-cols-2 wave-bg" >
                             <Img className="rounded shadow-lg w-96 place-self-center lg:w-full" fluid={data.whitepaper.childImageSharp.fluid} />
                             <div className="flex-col z-20">
-                                <h1 className="text-4xl font-bold mb-10">Sharpfin Trend Report - Your compass for digital currents in wealth management</h1>
+                                <h1 className="text-4xl font-bold mb-10">Sharpfin Trend Report - A compass for the digital currents in Wealth management</h1>
                                 <p className="font-medium mb-5">Keeping up the pace in the ever-changing world of investment management is tricky considering the digital development across all sectors, but knowing what trends to watch may just be the simple answer.</p>
                                 <p className="font-medium mb-10">Find some guidance here, in the Sharpfin Trend Report 2022/2023 - your compass for the digital currents in wealth management. Download it now.</p>
                                 <div className="bg-sharpfin-gray text-white rounded p-5">

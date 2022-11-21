@@ -16,7 +16,7 @@ const ReadWhitepaper = ({ data, langKey }) => {
             <LayoutContainer title="Sharpfin Trend Report">
                 <div className="grid gap-10 md:grid-cols-2 items-center">
                     <div className="text-lg text-sharpfin-gray flex-col space-y-5 order-2 md:order-1">
-                        <p className="text-xl text-medium">Your compass for digital currents in wealth management</p>
+                        <p className="text-xl text-medium">A compass for the digital currents in Wealth management</p>
                         <p className="text-gray-500">Keeping up the pace in the ever-changing world of investment management is tricky considering the digital development across all sectors, but knowing what trends to watch may just be the simple answer.</p>
                         <div>
                             <LangLink className="" to="whitepaper">
