@@ -25,6 +25,9 @@ const translations =  {
       description: "Sharpfin hjälper dig att nå full utväxling med vår lättanvända och moderna lösning för kapitalförvaltare",
       home: "Hem"
     },
+    trusted: {
+      title: "Kunder"
+    },
     landing: {
       title: {
         top: "Släpp lös ",

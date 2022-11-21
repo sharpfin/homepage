@@ -25,6 +25,9 @@ const translations = {
     description: "Sharpfin will help you realize your full potential with the next generation of wealth management software. ",
     home: "Home"
   },
+  trusted: {
+    title: "Trusted by"
+  },
   landing: {
     title: {
       top: "Unleash the",
