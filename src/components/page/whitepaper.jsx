@@ -21,7 +21,7 @@ const Whitepaper = ({ data, langKey }) => {
                             <div className="flex-col z-20">
                                 <h1 className="text-4xl font-bold mb-10">Sharpfin Trend Report - A compass for the digital currents in Wealth management</h1>
                                 <p className="font-medium mb-5">Keeping up the pace in the ever-changing world of investment management is tricky considering the digital development across all sectors, but knowing what trends to watch may just be the simple answer.</p>
-                                <p className="font-medium mb-10">Find some guidance here, in the Sharpfin Trend Report 2022/2023 - your compass for the digital currents in wealth management. Download it now.</p>
+                                <p className="font-medium mb-10">Find some guidance here, in the Sharpfin Trend Report 2023 - your compass for the digital currents in wealth management. Download it now.</p>
                                 <div className="bg-sharpfin-gray text-white rounded p-5">
                                     <form className="grid gap-10 md:p-5" method="post" netlify-honeypot="bot-field" data-netlify="true" name="whitepaper" action="/whitepaper-success">
                                         <input type="hidden" name="bot-field" />
