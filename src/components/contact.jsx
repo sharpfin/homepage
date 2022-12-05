@@ -4,6 +4,7 @@ import LayoutContainer from "./layout-container";
 import { graphql, StaticQuery } from 'gatsby'
 import PersonContact from './PersonContact'
 import { path_start } from '../translations/translations';
+import HomeIcon from '../images/icons/home.svg'
 
 const Contact = ({ data }) => {
     const { t, langKey } = React.useContext(LangContext)
@@ -49,12 +50,15 @@ const Contact = ({ data }) => {
                     <div>
                         <PersonContact name="Sales" title="Stockholm" phone="+46 (0)10 585 82 77" email="sales@sharpfin.com" />
                         <PersonContact name="Support" title="Stockholm" phone="+46 (0)10 585 82 77" email="support@sharpfin.com" />
-                        <div className="border-b pb-5">
+                        <div className="border-b pb-5 grid grid-cols-2">
                             <p className="font-bold">Address</p>
-                            <p>c/o Katalysen Ventures AB</p>
-                            <p>c/o WeWork</p>
-                            <p>Malmskillnadsgatan 32</p>
-                            <p>111 51 Stockholm, Sweden</p>
+                            <div className="flex items-center">
+                                <HomeIcon className="w-6 h-6 mr-2" />
+                                <div>
+                                    <p>Vasagatan 10, 4tr</p>
+                                    <p>111 20 Stockholm</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
