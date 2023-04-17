@@ -13,7 +13,7 @@ import { MapPinIcon } from '@heroicons/react/24/outline'
 const Form = ({ t }) => {
     const inputClass = "block text-white bg-fondo p-2 border border-gray-500 border-2 border-white pl-4 rounded w-full placeholder:text-gray-500 roboto"
     return (
-        <form className="grid gap-5  mt-20 text-lg" method="post" netlify-honeypot="bot-field" data-netlify="true" name="event" action="/success-event">
+        <form className="grid gap-5  mt-20 text-lg" method="post" netlify-honeypot="bot-field" data-netlify="true" name="event" action="/event-success">
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="event" />
             <div>
@@ -112,6 +112,7 @@ const Success = ({ data, langKey }) => {
                             <span className="font-mono text-gray-500">{a.comment}</span>
                         </div>
                     ))}
+
 
                     <p className="text-2xl font-medium mt-20">Vi ser fram emot att ses!</p>
                     <p className="text-xl font-light mt-2">Sharpfin & Fondo</p>
