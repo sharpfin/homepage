@@ -69,6 +69,7 @@ const Success = ({ data, langKey }) => {
 
     return (
         <Context langKey={langKey}>
+            <Seo title={"Anmälan frukostseminarium"} />
             <div className="bg-fondo py-20 roboto">
 
                 <div className="px-5 mx-auto max-w-3xl text-white  ">
