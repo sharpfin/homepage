@@ -20,7 +20,7 @@ const Success = ({ data, langKey }) => {
                         <Fondo className="w-52 h-20" />
                     </div>
                     <h1 className="text-5xl font-medium">Tack för din anmälan!</h1>
-                    <h3 className="text-xl font-light mt-5">Vi ser fram mot att se dig på Vasagatan 10, Fredag den 12 maj kl 07:30 - 09:00.</h3>
+                    <h3 className="text-xl font-light mt-5">Vi ser fram emot att se dig på Vasagatan 10, Fredag den 12 maj kl 07:30 - 09:00.</h3>
                     <FondoHero className="mx-auto mt-40 w-80 md:w-full" />
                 </div>
             </div>
