@@ -8,6 +8,7 @@ import FondoHero from '../../images/fondo_hero.svg';
 import { ClockIcon } from '@heroicons/react/24/outline'
 import { CalendarIcon } from '@heroicons/react/24/outline'
 import { MapPinIcon } from '@heroicons/react/24/outline'
+import { Seo } from '../seo-thing'
 
 
 const Form = ({ t }) => {
