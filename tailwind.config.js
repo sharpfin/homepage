@@ -7,7 +7,8 @@ module.exports = {
         sharpfin: {
           blue: '#0094DD',
           gray: '#222731',
-        }
+        },
+        fondo: '#050C1F'
       }
     },
   },
