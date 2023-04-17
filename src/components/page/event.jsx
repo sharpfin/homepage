@@ -8,7 +8,6 @@ import FondoHero from '../../images/fondo_hero.svg';
 import { ClockIcon } from '@heroicons/react/24/outline'
 import { CalendarIcon } from '@heroicons/react/24/outline'
 import { MapPinIcon } from '@heroicons/react/24/outline'
-import { Seo } from '../seo-thing'
 
 
 const Form = ({ t }) => {
@@ -24,6 +23,10 @@ const Form = ({ t }) => {
             <div>
                 <label htmlFor="email" className="">{t.contact.email}</label>
                 <input placeholder="mail@example.com" id="email" pattern="^\S+@\S+$" name="email" required className={inputClass}></input>
+            </div>
+            <div>
+                <label htmlFor="message" className="">{"Allergier eller övrig information"}</label>
+                <textarea placeholder="Hej.." id="message" name="message" type="texarea" className={inputClass}></textarea>
             </div>
             <button type="submit" className="justify-self-end text-base bg-fondo border border-gray-500  text-white font-medium px-5 py-2 rounded hover:border-sharpfin-blue hover:bg-sharpfin-blue">Anmäl mig!</button>
         </form>
@@ -70,7 +73,6 @@ const Success = ({ data, langKey }) => {
 
     return (
         <Context langKey={langKey}>
-            <Seo title={"Anmälan frukostseminarium"} />
             <div className="bg-fondo py-20 roboto">
 
                 <div className="px-5 mx-auto max-w-3xl text-white  ">

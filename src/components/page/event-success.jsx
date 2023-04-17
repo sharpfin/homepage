@@ -1,14 +1,10 @@
-import { graphql, Link, StaticQuery } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 import React from "react";
-import Context from '../context';
-import translations from '../../translations/translations'
-import Sharpfin from '../../images/sharpfin-logo-white-2.svg';
 import Fondo from '../../images/fondo.svg';
 import FondoHero from '../../images/fondo_hero.svg';
-import { ClockIcon } from '@heroicons/react/24/outline'
-import { CalendarIcon } from '@heroicons/react/24/outline'
-import { MapPinIcon } from '@heroicons/react/24/outline'
-import { SparklesIcon } from '@heroicons/react/24/outline'
+import Sharpfin from '../../images/sharpfin-logo-white-2.svg';
+import translations from '../../translations/translations';
+import Context from '../context';
 
 
 const Success = ({ data, langKey }) => {
