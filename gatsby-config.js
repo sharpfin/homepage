@@ -16,8 +16,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown`,
-        path: `${__dirname}/src/markdown`,
+        name: `sharpfin_insider`,
+        path: `${__dirname}/src/sharpfin_insider`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `press_release`,
+        path: `${__dirname}/src/press_releases`,
       },
     },
     {
@@ -28,6 +35,7 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
+    'gatsby-plugin-mdx-source-name',
     'gatsby-plugin-postcss',
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",

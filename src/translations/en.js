@@ -38,7 +38,8 @@ const translations = {
     sub_title: "A modern solution that simplifies and empowers your Wealth Management"
   },
   header: {
-    customer: "Customers"
+    customer: "Customers",
+    insights: "Insights"
   },
   solutions: {
     title: "Features",
@@ -183,6 +184,9 @@ const translations = {
   success: {
     thanks: "Thanks for submitting!",
     go_back: "Go back"
+  },
+  press: {
+    title: "Press Releases"
   }
 
 }

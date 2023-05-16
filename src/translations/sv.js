@@ -39,6 +39,7 @@ const translations =  {
     },
     header: {
       customer: "Kunder",
+      insights: "Insikter"
     },
     solutions: {
       title: "Funktioner",
@@ -183,6 +184,9 @@ const translations =  {
     success: {
       thanks: "Tack för att du skickade in!",
       go_back: "Tillbaka"
+    },
+    press: {
+      title: "Pressreleaser"
     }
 
   }

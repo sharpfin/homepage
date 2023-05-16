@@ -1,24 +1,28 @@
 import { graphql, StaticQuery } from 'gatsby';
 import * as React from "react";
 import Blog from '../Blog';
+import translations from '../../translations/translations'
 
-const SharpfinInsider = ({ data, langKey }) => {
+
+const PressReleases = ({ data, langKey }) => {
+    const t = translations(langKey)
+
 
     const articles = data.allMdx.edges
         .filter(({ node }) => {
-            return (node.frontmatter.lang === langKey || node.frontmatter.lang === "all") && node.fields.source === "sharpfin_insider"
+            return (node.frontmatter.lang === langKey || node.frontmatter.lang === "all") && node.fields.source === "press_release"
         })
 
     return (
         <Blog
-            title="Sharpfin Insider"
+            title={t.press.title}
             articles={articles}
             langKey={langKey} />
     )
 }
 
 
-export default function SharpfinInsiderWrapper(props) {
+export default function PressReleasesWrapper(props) {
     return (
         <StaticQuery
             query={graphql`
@@ -49,7 +53,7 @@ export default function SharpfinInsiderWrapper(props) {
                 }
             }
         `}
-            render={data => <SharpfinInsider data={data} {...props} />}
+            render={data => <PressReleases data={data} {...props} />}
         />
     )
 }

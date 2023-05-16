@@ -54,8 +54,17 @@ const Header = ({ data, light }) => {
                 <li><LangLink to="financial-advisors" className="menu-item">{t.customer_page.financial_advisors.title}</LangLink></li>
               </div>
             </div>
+
             <li className="menu-item"><LangLink to="team">{t.team.title_short}</LangLink></li>
-            <li className="menu-item"><LangLink to="sharpfin-insider">{t.sharpfin_insider.title}</LangLink></li>
+
+            <div className="menu-dropdown cursor-pointer">
+              <li className="menu-item">{t.header.insights}</li>
+              <div className="menu-dropdown-content p-5 shadow-lg rounded text-black gap-2 bg-white">
+                <li><LangLink to="sharpfin-insider" className="menu-item">{"Sharpfin Insider"}</LangLink></li>
+                <li><LangLink to="press-releases" className="menu-item">{t.press.title}</LangLink></li>
+              </div>
+            </div>
+
             <li><button className="rounded py-1 px-4 text-white border hover:border-sharpfin-blue border-white hover:bg-sharpfin-blue bg-sharpfin-gray  font-medium block;" onClick={() => scrollTo('#contact')}>
               {t.general.contact}
             </button>
@@ -75,6 +84,7 @@ const Header = ({ data, light }) => {
                   <li><LangLink to="family-offices" className="menu-item-sm">{t.customer_page.family_offices.title}</LangLink></li>
                   <li><LangLink to="financial-advisors" className="menu-item-sm">{t.customer_page.financial_advisors.title}</LangLink></li>
                   <li><LangLink to="sharpfin-insider" className="menu-item-sm">{t.sharpfin_insider.title}</LangLink></li>
+                  <li><LangLink to="press-releases" className="menu-item-sm">{t.press.title}</LangLink></li>
                   <li><LangLink to="team" className="menu-item-sm">{t.team.title_short}</LangLink></li>
                   <li className="menu-item-sm"><Link to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link></li>
                   <button className="rounded mt-5 py-2 px-4 text-white bg-sharpfin-blue hover:bg-sharpfin-gray font-bold block;" onClick={() => scrollTo('#contact')}>
