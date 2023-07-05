@@ -4,9 +4,7 @@ import Context from '../context';
 import translations from '../../translations/translations'
 import Layout from '../layout';
 import LayoutContainer from '../layout-container'
-import Wave from '../../images/wave.png'
-import Pdf from '../../images/Sharpfin_Whitepaper_Trend-Report-2023.pdf'
-
+import Pdf from '../../images/Sharpfin_Whitepaper-IT-Upgrade.pdf'
 
 
 
@@ -16,7 +14,7 @@ const Whitepaper = ({ data, langKey }) => {
     return (
         <Context langKey={langKey} >
             <Layout>
-                <div className="bg-cover " style={{ backgroundImage: `url(${Wave})` }}>
+                <div>
                     <LayoutContainer title="Thanks for submitting!">
                         <div className="w-96">
                             <p className="font-medium mb-5">Download the Sharpfin Trend Report by clicking the button below.</p>
@@ -32,7 +30,6 @@ const Whitepaper = ({ data, langKey }) => {
         </Context>
     )
 }
-
 
 export default function WhitepaperWrapper(props) {
     return (

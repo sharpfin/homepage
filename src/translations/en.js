@@ -187,6 +187,9 @@ const translations = {
   },
   press: {
     title: "Press Releases"
+  },
+  whitepaper: {
+    title: "Whitepapers"
   }
 
 }

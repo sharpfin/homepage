@@ -62,6 +62,7 @@ const Header = ({ data, light }) => {
               <div className="menu-dropdown-content p-5 shadow-lg rounded text-black gap-2 bg-white">
                 <li><LangLink to="sharpfin-insider" className="menu-item">{"Sharpfin Insider"}</LangLink></li>
                 <li><LangLink to="press-releases" className="menu-item">{t.press.title}</LangLink></li>
+                <li><LangLink to="whitepaper" className="menu-item">{t.whitepaper.title}</LangLink></li>
               </div>
             </div>
 

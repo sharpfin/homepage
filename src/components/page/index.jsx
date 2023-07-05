@@ -12,7 +12,6 @@ import Seo from '../seo-thing'
 import Context from '../context'
 import translations from '../../translations/translations'
 import Subscribe from '../subscribe'
-import ReadWhitepaper from "../read-whitepaper"
 
 const IndexPage = ({ langKey }) => {
     const t = translations(langKey)
@@ -24,13 +23,11 @@ const IndexPage = ({ langKey }) => {
                 <main>
                     <Landing />
                     <Trusted />
-                    <ReadWhitepaper />
                     <CustomerTypes />
                     <Quotes />
                     <Solutions />
                     <Subscribe />
                     <Articles langKey={langKey} />
-
                     <Contact />
                     <Footer />
                 </main>
