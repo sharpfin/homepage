@@ -46,23 +46,23 @@ const Header = ({ data, light }) => {
           <ul className={`md:flex space-x-5 hidden  items-center ${light ? "text-black" : "text-white"}`}>
             <li className="menu-item"><LangLink to="solutions">{t.solutions.title}</LangLink></li>
 
-            <div className="menu-dropdown cursor-pointer">
+            <div className="menu-dropdown cursor-pointer z-30">
               <li className="menu-item">{t.header.customer}</li>
-              <div className="menu-dropdown-content p-5 shadow-lg rounded text-black gap-2 bg-white">
-                <li><LangLink to="asset-managers" className="menu-item">{t.customer_page.asset_managers.title}</LangLink></li>
-                <li><LangLink to="family-offices" className="menu-item">{t.customer_page.family_offices.title}</LangLink></li>
-                <li><LangLink to="financial-advisors" className="menu-item">{t.customer_page.financial_advisors.title}</LangLink></li>
+              <div className="menu-dropdown-content p-1 shadow-lg rounded text-black gap-2 bg-white">
+                <LangLink to="asset-managers" className="menu-item-dropdown">{t.customer_page.asset_managers.title}</LangLink>
+                <LangLink to="family-offices" className="menu-item-dropdown">{t.customer_page.family_offices.title}</LangLink>
+                <LangLink to="financial-advisors" className="menu-item-dropdown">{t.customer_page.financial_advisors.title}</LangLink>
               </div>
             </div>
 
             <li className="menu-item"><LangLink to="team">{t.team.title_short}</LangLink></li>
 
-            <div className="menu-dropdown cursor-pointer">
+            <div className="menu-dropdown cursor-pointer z-30">
               <li className="menu-item">{t.header.insights}</li>
-              <div className="menu-dropdown-content p-5 shadow-lg rounded text-black gap-2 bg-white">
-                <li><LangLink to="sharpfin-insider" className="menu-item">{"Sharpfin Insider"}</LangLink></li>
-                <li><LangLink to="press-releases" className="menu-item">{t.press.title}</LangLink></li>
-                <li><LangLink to="whitepaper" className="menu-item">{t.whitepaper.title}</LangLink></li>
+              <div className="menu-dropdown-content p-1 shadow-lg rounded text-black gap-2 bg-white">
+                <LangLink to="sharpfin-insider" className="menu-item-dropdown">{"Sharpfin Insider"}</LangLink>
+                <LangLink to="press-releases" className="menu-item-dropdown">{t.press.title}</LangLink>
+                <LangLink to="whitepaper" className="menu-item-dropdown">{t.whitepaper.title}</LangLink>
               </div>
             </div>
 
@@ -78,20 +78,21 @@ const Header = ({ data, light }) => {
             </button>
 
             {showMenu &&
-              <div ref={divRef} className="absolute z-30 bg-white p-5 rounded right-5 border">
-                <ul className={`grid gap-2 items-center ${light ? "text-black" : "text-white"}`}>
-                  <li><LangLink to="solutions" className="menu-item-sm">{t.solutions.title}</LangLink></li>
-                  <li><LangLink to="asset-managers" className="menu-item-sm">{t.customer_page.asset_managers.title}</LangLink></li>
-                  <li><LangLink to="family-offices" className="menu-item-sm">{t.customer_page.family_offices.title}</LangLink></li>
-                  <li><LangLink to="financial-advisors" className="menu-item-sm">{t.customer_page.financial_advisors.title}</LangLink></li>
-                  <li><LangLink to="sharpfin-insider" className="menu-item-sm">{t.sharpfin_insider.title}</LangLink></li>
-                  <li><LangLink to="press-releases" className="menu-item-sm">{t.press.title}</LangLink></li>
-                  <li><LangLink to="team" className="menu-item-sm">{t.team.title_short}</LangLink></li>
-                  <li className="menu-item-sm"><Link to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link></li>
+              <div ref={divRef} className="absolute z-30 bg-white p-1 rounded right-5 border">
+                <div className={`grid gap-2 items-center text-black`}>
+                  <LangLink to="solutions" className="menu-item-dropdown">{t.solutions.title}</LangLink>
+                  <LangLink to="asset-managers" className="menu-item-dropdown">{t.customer_page.asset_managers.title}</LangLink>
+                  <LangLink to="family-offices" className="menu-item-dropdown">{t.customer_page.family_offices.title}</LangLink>
+                  <LangLink to="financial-advisors" className="menu-item-dropdown">{t.customer_page.financial_advisors.title}</LangLink>
+                  <LangLink to="sharpfin-insider" className="menu-item-dropdown">{t.sharpfin_insider.title}</LangLink>
+                  <LangLink to="press-releases" className="menu-item-dropdown">{t.press.title}</LangLink>
+                  <LangLink to="whitepaper" className="menu-item-dropdown">{t.whitepaper.title}</LangLink>
+                  <LangLink to="team" className="menu-item-dropdown">{t.team.title_short}</LangLink>
+                  <Link className="menu-item-dropdown" to={langKey === "sv" ? "/" : "/sv"}>{inverseLangKey}</Link>
                   <button className="rounded mt-5 py-2 px-4 text-white bg-sharpfin-blue hover:bg-sharpfin-gray font-bold block;" onClick={() => scrollTo('#contact')}>
                     {t.general.contact}
                   </button>
-                </ul>
+                </div>
               </div>
             }
           </div>

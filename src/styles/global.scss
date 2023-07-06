@@ -16,12 +16,11 @@ html {
 }
 
 .menu-item {
-    @apply border-b-2 border-transparent hover:text-blue-400;
+    @apply hover:text-blue-400;
 }
 
-
-.menu-item-sm {
-    @apply text-gray-700 hover:text-blue-400 pb-2;
+.menu-item-dropdown {
+    @apply w-full hover:bg-sharpfin-blue hover:text-white py-1 px-2 rounded-sm;
 }
 
 .menu-dropdown-content {
