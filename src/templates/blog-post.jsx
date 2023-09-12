@@ -8,6 +8,9 @@ import Layout from '../components/layout'
 import LayoutContainer from "../components/layout-container"
 import Seo from '../components/seo-thing'
 import Subscribe from '../components/subscribe'
+import LangLink from '../components/LangLink'
+import ChevronRight from '../images/chevron-right.svg'
+
 
 const Template = (props) => {
   const mdx = props.data.mdx;
@@ -28,6 +31,20 @@ const Template = (props) => {
               <p className="text-lg leading-relaxed font-semibold">{mdx.frontmatter.intro}</p>
               <div className="blog-post leading-relaxed ">
                 <MDXRenderer>{mdx.body}</MDXRenderer>
+              </div>
+              <div className="border-2 rounded-lg border-sharpfin-blue py-10 grid place-items-center mt-10">
+                <h4 className="text-2xl font-bold text-center mb-1">Sharpfin Insights</h4>
+                <p className="text-lg text-center w-96 mb-8">What to consider when Implementing a new Wealth Management Software</p>
+                <div>
+                  <LangLink to="whitepaper" className="">
+                    <button className="bg-sharpfin-blue text-white font-medium px-4 py-2 rounded hover:bg-sharpfin-gray">
+                      <div className="flex">
+                        <span>Download Whitepaper</span>
+                        <ChevronRight className="" />
+                      </div>
+                    </button>
+                  </LangLink>
+                </div>
               </div>
             </div>
           </div>

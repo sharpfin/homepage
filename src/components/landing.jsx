@@ -1,12 +1,9 @@
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import * as React from "react";
 import translations from '../translations/translations';
 import { LangContext } from './context';
-import LayoutContainer from "./layout-container";
-import Img from 'gatsby-image'
-import { StaticQuery } from 'gatsby';
-import { graphql } from 'gatsby'
-import LangLink from './LangLink';
 
 const Landing = ({ data }) => {
   const { langKey } = React.useContext(LangContext)

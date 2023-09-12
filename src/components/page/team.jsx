@@ -60,7 +60,7 @@ const Team = ({ data, langKey }) => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                         {team.map((member, index) => (
                             <div>
-                                <div className="h-96"  onMouseEnter={() => active(index, false)} onMouseLeave={() => active(index, true)}>
+                                <div className="h-96" role="none" onMouseEnter={() => active(index, false)} onMouseLeave={() => active(index, true)}>
                                     {gray[index] ?
                                         <Img fluid={member.image} className="h-96" imgStyle={{objectPosition: `top`, filter: `grayscale(1)`}}/> :
                                         <Img fluid={member.image} className="h-96" imgStyle={{objectPosition: `top`}}/>}

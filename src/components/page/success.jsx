@@ -1,10 +1,10 @@
-import { graphql, Link, StaticQuery } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 import React from "react";
+import translations from '../../translations/translations';
 import Context from '../context';
-import translations from '../../translations/translations'
-import Layout from '../layout';
-import LayoutContainer from '../layout-container'
 import LangLink from '../LangLink';
+import Layout from '../layout';
+import LayoutContainer from '../layout-container';
 
 const Success = ({ data, langKey }) => {
     const t = translations(langKey)

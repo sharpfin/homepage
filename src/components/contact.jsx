@@ -1,13 +1,12 @@
-import * as React from "react"
+import { graphql, StaticQuery } from 'gatsby';
+import * as React from "react";
+import HomeIcon from '../images/icons/home.svg';
 import { LangContext } from './context';
 import LayoutContainer from "./layout-container";
-import { graphql, StaticQuery } from 'gatsby'
-import PersonContact from './PersonContact'
-import { path_start } from '../translations/translations';
-import HomeIcon from '../images/icons/home.svg'
+import PersonContact from './PersonContact';
 
 const Contact = ({ data }) => {
-    const { t, langKey } = React.useContext(LangContext)
+    const { t } = React.useContext(LangContext)
 
     return (
         <div>

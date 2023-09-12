@@ -1,11 +1,11 @@
-import { graphql, Link, StaticQuery } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 import React from "react";
+import TrendReportPDf from '../../images/Sharpfin_Whitepaper_Trend-Report-2023.pdf';
+import translations from '../../translations/translations';
 import Context from '../context';
-import translations from '../../translations/translations'
 import Layout from '../layout';
-import LayoutContainer from '../layout-container'
-import Img from 'gatsby-image'
-import TrendReportPDf from '../../images/Sharpfin_Whitepaper_Trend-Report-2023.pdf'
+import LayoutContainer from '../layout-container';
 
 const Whitepaper = ({ data, langKey }) => {
     const t = translations(langKey)
@@ -26,10 +26,21 @@ const Whitepaper = ({ data, langKey }) => {
                     <LayoutContainer>
                         <div className="grid gap-10 lg:gap-32  lg:grid-cols-2" >
                             <Img className="rounded w-96 place-self-center lg:w-full" fluid={data.whitepaper.childImageSharp.fluid} />
-                            <div className="flex-col z-20">
+                            <div className="flex-col z-20 ">
                                 <p className="text-sharpfin-blue font-medium mb-1">{"# Whitepaper"}</p>
                                 <h1 className="text-4xl font-bold mb-5">Boost your wealth management business</h1>
-                                <p className="font-medium text-lg text-gray-500 mb-10">Stay ahead of the competition and navigate increasing regulatory burdens by digitizing traditional practices. We've gathered valuable insights to guide you through the process of incorporating system support or upgrading your current system. </p>
+                                <div className="font-medium text-gray-500 mb-10 flex-col space-y-3">
+                                    <p>Today’s increasing competition in wealth management, along with a steadily rising regulatory burden, calls for a strong urge to digitalise the traditional wealth management business.</p>
+                                    <p>“50% of clients think their primary wealth managers should improve their digital capabilities” (Source: McKinsey & Company)</p>
+                                    <p>Learn valuable insights to guide you through the process of incorporating system support or upgrading your current system:</p>
+                                    <ul className='list-disc md:list-outside list-inside	'>
+                                        <li>Full-coverage solution or best-of-breed</li>
+                                        <li>Understanding the contradiction between flexibility and usability</li>
+                                        <li>Data quality is key</li>
+                                        <li>SaaS or on-premises solution</li>
+                                        <li>Choose a stable vendor with great support</li>
+                                    </ul>
+                                </div>
                                 <div className="bg-sharpfin-gray text-white rounded p-5">
                                     <form className="grid gap-10 md:p-5" method="post" netlify-honeypot="bot-field" data-netlify="true" name="whitepaper" action="/whitepaper-success">
                                         <input type="hidden" name="bot-field" />
