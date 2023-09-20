@@ -28,9 +28,9 @@ const Whitepaper = ({ data, langKey }) => {
                             <Img className="rounded w-96 place-self-center lg:w-full" fluid={data.whitepaper.childImageSharp.fluid} />
                             <div className="flex-col z-20 ">
                                 <p className="text-sharpfin-blue font-medium mb-1">{"# Whitepaper"}</p>
-                                <h1 className="text-4xl font-bold mb-5">Boost your wealth management business</h1>
+                                <h1 className="text-4xl font-bold mb-5">Automate Your Wealth Management Business</h1>
                                 <div className="font-medium text-gray-500 mb-10 flex-col space-y-3">
-                                    <p>Today’s increasing competition in wealth management, along with a steadily rising regulatory burden, calls for a strong urge to digitalise the traditional wealth management business.</p>
+                                    <p>Today’s increasing competition in wealth management, along with a steadily rising regulatory burden, calls for a strong urge to automate the traditional wealth management business.</p>
                                     <p>Learn valuable insights:</p>
                                     <ul className='list-disc md:list-outside list-inside text-sharpfin-gray'>
                                         <li>Full-coverage solution or best-of-breed</li>
