@@ -1,6 +1,5 @@
 import { graphql, StaticQuery } from 'gatsby';
 import React from "react";
-import Pdf from '../../images/Sharpfin_Whitepaper-IT-Upgrade.pdf';
 import Context from '../context';
 import Layout from '../layout';
 import LayoutContainer from '../layout-container';

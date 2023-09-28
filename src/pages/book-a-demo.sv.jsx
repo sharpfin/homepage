@@ -6,4 +6,4 @@ const DemoPage = (props) => {
   return (<Demo langKey={langKey} />)
 }
 
-export default Demo
+export default DemoPage
