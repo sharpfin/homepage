@@ -170,7 +170,8 @@ const translations = {
     message: "Message",
     send: "Send",
     phone: "Phone",
-    know_more: "Do you want to know more? Send us a message below."
+    know_more: "Do you want to know more? Send us a message below.",
+    company_name: "Company Name"
   },
   footer: {
     sales: "Sales",

@@ -57,8 +57,6 @@ const Whitepaper = ({ data, langKey }) => {
                                 </div>
                             </div>
                         </div>
-
-
                     </LayoutContainer>
                 </div>
                 <LayoutContainer title="Previous Whitepapers" >
