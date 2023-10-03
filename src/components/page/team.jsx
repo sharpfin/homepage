@@ -18,9 +18,14 @@ const Team = ({ data, langKey }) => {
             image: data.markus.childImageSharp.fluid
         },
         {
-            name: "Peter Bäck",
+            name: "Helena Nabseth",
+            title: "CMO",
+            image: data.helena.childImageSharp.fluid
+        },
+        {
+            name: "Andreas Ullsten",
             title: "CRO",
-            image: data.peter.childImageSharp.fluid
+            image: data.andreas.childImageSharp.fluid
         },
         {
             name: "Kristina Ek",
@@ -28,20 +33,26 @@ const Team = ({ data, langKey }) => {
             image: data.kristina.childImageSharp.fluid
         },
         {
-            name: "Linnea Pihl Sandberg",
-            title: "Sales Representative",
-            image: data.linnea.childImageSharp.fluid
-        },
-        {
             name: "Simon Lindblom",
             title: "CTO",
             image: data.simon.childImageSharp.fluid
         },
+
+        {
+            name: "Linnea Pihl Sandberg",
+            title: "Sales Representative",
+            image: data.linnea.childImageSharp.fluid
+        },
+
         {
             name: "Emil Nilsson",
             title: "Software Engineer",
-            image: data.emil.childImageSharp.fluid,
-            email: "emil@sharpfin.com"
+            image: data.emil.childImageSharp.fluid
+        },
+        {
+            name: "Niklas Huhtala",
+            title: "Software Engineer",
+            image: data.niklas.childImageSharp.fluid
         }
     ]
 
@@ -62,8 +73,8 @@ const Team = ({ data, langKey }) => {
                             <div>
                                 <div className="h-96" role="none" onMouseEnter={() => active(index, false)} onMouseLeave={() => active(index, true)}>
                                     {gray[index] ?
-                                        <Img fluid={member.image} className="h-96" imgStyle={{objectPosition: `top`, filter: `grayscale(1)`}}/> :
-                                        <Img fluid={member.image} className="h-96" imgStyle={{objectPosition: `top`}}/>}
+                                        <Img fluid={member.image} className="h-96" imgStyle={{objectPosition: `top`, /*filter: `grayscale(1)` */}}/> :
+                                        <Img fluid={member.image} className="h-96" imgStyle={{objectPosition: `top`, filter: `grayscale(1)`}}/>}
                                 </div>
                                 <div className="px-5 py-2 bg-sharpfin-blue">
                                     <p className="text-xl text-white">{member.name}</p>
@@ -93,7 +104,21 @@ export default function TeamWrapper(props) {
                       }
                   }
               }
-              markus: file(relativePath: { eq: "team/markus.jpg" }) {
+              niklas: file(relativePath: { eq: "team/niklas.png" }) {
+                childImageSharp {
+                    fluid(quality: 70) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            helena: file(relativePath: { eq: "team/helena.png" }) {
+                childImageSharp {
+                    fluid(quality: 70) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+              markus: file(relativePath: { eq: "team/markus.png" }) {
                 childImageSharp {
                     fluid(quality: 70) {
                         ...GatsbyImageSharpFluid
@@ -107,14 +132,14 @@ export default function TeamWrapper(props) {
                     }
                 }
             }
-            linnea: file(relativePath: { eq: "team/linnea.jpg" }) {
+            linnea: file(relativePath: { eq: "team/linnea.png" }) {
                 childImageSharp {
                     fluid(quality: 70) {
                         ...GatsbyImageSharpFluid
                     }
                 }
             }
-              peter: file(relativePath: { eq: "team/peter.jpg" }) {
+              andreas: file(relativePath: { eq: "team/andreas.png" }) {
                 childImageSharp {
                     fluid(quality: 70) {
                         ...GatsbyImageSharpFluid
