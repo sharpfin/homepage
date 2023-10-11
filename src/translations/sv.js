@@ -191,6 +191,9 @@ const translations =  {
     },
     whitepaper: {
       title: "Whitepapers"
+    },
+    video: {
+      title: "Se Sharpfin in Action"
     }
 
   }

@@ -4,6 +4,8 @@ import translations from '../../translations/translations';
 import Context from '../context';
 import Layout from '../layout';
 import LayoutContainer from '../layout-container';
+import Quotes from '../quotes'
+import Video from '../video';
 
 const Demo = ({ data, langKey }) => {
     const t = translations(langKey)
@@ -17,14 +19,13 @@ const Demo = ({ data, langKey }) => {
                         <div className="grid gap-10 lg:gap-20  lg:grid-cols-2" >
                             <div>
                                 <div className="font-medium text-gray-500 mb-10 flex-col space-y-3 text-lg">
-                                    <p>Curious about the latest innovations from our development team to keep you ahead of the competition?</p>
+                                    <p>Curious about the latest innovations by our development team?</p>
                                     <p>Schedule a demo to experience Sharpfin’s customer centric, interactive, and scalable Wealth Management System in action.</p>
-                                    <p>As your business evolves, so do your customers, and your systems should too.</p>
-                                    <p> What to anticipate in the demo:</p>
+                                    <p>Your business evolves, so do your customers, and so should your systems.</p>
+                                    <p>What to anticipate in the demo:</p>
                                     <ul className='list-disc text-xl list-inside text-sharpfin-gray font-semibold '>
                                         <li>System Overview</li>
                                         <li>Back & Front Office Solution</li>
-                                        <li>System ROI</li>
                                         <li>Price Point </li>
                                     </ul>
                                 </div>
@@ -54,12 +55,22 @@ const Demo = ({ data, langKey }) => {
                                             <input placeholder="Fidelity Investments" id="company_name" name="company_name" required className="block text-black p-2  pl-4 rounded w-full"></input>
                                         </div>
                                         <div>
-                                            <label htmlFor="area_of_interest" className="">Area of interest*</label>
+                                            <label htmlFor="area_of_interest" className="">Area of Interest*</label>
                                             <select id="area_of_interest" name="area_of_interest" required className="block text-black py-2 border-r-5 px-4 rounded w-full">
                                                 <option value="wealth_manager">Wealth Manager</option>
                                                 <option value="family_office">Family Office</option>
                                                 <option value="financial_advisor">Financial Advisor</option>
+                                                <option value="mutual_fund_manager">Mutual Fund Managert</option>
                                                 <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label htmlFor="role" className="">Role*</label>
+                                            <select id="role" name="role" required className="block text-black py-2 border-r-5 px-4 rounded w-full">
+                                                <option value="other">Other</option>
+                                                <option value="ceo">CEO</option>
+                                                <option value="coo">COO</option>
+                                                <option value="cto">CTO</option>
                                             </select>
                                         </div>
                                         <button type="submit" className="justify-self-end hover:bg-sharpfin-gray border hover:border-white text-white font-medium px-5 py-2 rounded border-sharpfin-blue bg-sharpfin-blue">Book a demo</button>
@@ -68,6 +79,8 @@ const Demo = ({ data, langKey }) => {
                             </div>
                         </div>
                     </LayoutContainer>
+                    <Video />
+                    <Quotes />
                 </div>
             </Layout>
         </Context>
