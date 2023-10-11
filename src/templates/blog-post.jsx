@@ -34,6 +34,7 @@ const Template = (props) => {
               </div>
               <div className="border-2 rounded-lg border-sharpfin-blue py-10 grid place-items-center mt-10">
                 <h4 className="text-2xl font-bold text-center mb-1">See Sharpfin in Action</h4>
+                <p className="text-center">For sharper Wealth Management</p>
                 <div className="mt-8">
                   <LangLink to="book-a-demo" className="">
                     <button className="bg-sharpfin-blue text-white font-medium px-4 py-2 rounded hover:bg-sharpfin-gray">

@@ -60,7 +60,7 @@ const Demo = ({ data, langKey }) => {
                                                 <option value="wealth_manager">Wealth Manager</option>
                                                 <option value="family_office">Family Office</option>
                                                 <option value="financial_advisor">Financial Advisor</option>
-                                                <option value="mutual_fund_manager">Mutual Fund Managert</option>
+                                                <option value="mutual_fund_manager">Mutual Fund Manager</option>
                                                 <option value="other">Other</option>
                                             </select>
                                         </div>
