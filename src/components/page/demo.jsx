@@ -1,10 +1,9 @@
 import { graphql, StaticQuery } from 'gatsby';
 import React from "react";
+import translations from '../../translations/translations';
 import Context from '../context';
-import translations from '../../translations/translations'
 import Layout from '../layout';
-import LayoutContainer from '../layout-container'
-import Img from 'gatsby-image'
+import LayoutContainer from '../layout-container';
 
 const Demo = ({ data, langKey }) => {
     const t = translations(langKey)
@@ -12,22 +11,28 @@ const Demo = ({ data, langKey }) => {
     return (
         <Context langKey={langKey} >
             <Layout>
-                <div className="bg-cover  bg-blue-50"  >
-                    <LayoutContainer>
-                        <div className="grid gap-10 lg:gap-32  lg:grid-cols-2" >
-                            <Img className="rounded w-96 place-self-center lg:w-full" fluid={data.whitepaper.childImageSharp.fluid} />
-                            <div className="flex-col z-20 ">
-                                <h1 className="text-4xl font-bold mb-5">See Sharpfin in action: 1-on-1 demo</h1>
-                                <div className="font-medium text-gray-500 mb-10 flex-col space-y-3">
-                                    <p>Want to know what our tech team has been working on lately? Book a demo to see our automated, interactive and scalable Wealth Management System - in action.</p>
-                                    <p>Your business is evolving, so are you customers, so should your systems.</p>
-                                    <p>What you can expect:</p>
-                                    <ul className='list-disc md:list-outside list-inside text-sharpfin-gray'>
-                                        <li>System overview</li>
-                                        <li>Q&A on customizations</li>
-                                        <li>Price point </li>
+                <div className="bg-cover  bg-blue-50">
+                    <LayoutContainer title={"Sharpfin in Action"}>
+                        <h1 className="text-4xl font-bold mb-5"></h1>
+                        <div className="grid gap-10 lg:gap-20  lg:grid-cols-2" >
+                            <div>
+                                <div className="font-medium text-gray-500 mb-10 flex-col space-y-3 text-lg">
+                                    <p>Curious about the latest innovations from our development team to keep you ahead of the competition?</p>
+                                    <p>Schedule a demo to experience Sharpfin’s customer centric, interactive, and scalable Wealth Management System in action.</p>
+                                    <p>As your business evolves, so do your customers, and your systems should too.</p>
+                                    <p> What to anticipate in the demo:</p>
+                                    <ul className='list-disc text-xl list-inside text-sharpfin-gray font-semibold '>
+                                        <li>System Overview</li>
+                                        <li>Back & Front Office Solution</li>
+                                        <li>System ROI</li>
+                                        <li>Price Point </li>
                                     </ul>
                                 </div>
+                            </div>
+
+                            <div className="flex-col z-20 ">
+
+
                                 <div className="bg-sharpfin-gray text-white rounded p-5">
                                     <form className="grid gap-10 md:p-5" method="post" netlify-honeypot="bot-field" data-netlify="true" name="book-a-demo" action="/book-a-demo-success">
                                         <input type="hidden" name="bot-field" />
@@ -49,15 +54,15 @@ const Demo = ({ data, langKey }) => {
                                             <input placeholder="Fidelity Investments" id="company_name" name="company_name" required className="block text-black p-2  pl-4 rounded w-full"></input>
                                         </div>
                                         <div>
-                                            <label htmlFor="area" className="">Area of interest*</label>
-                                            <select id="company_name" name="company_name" required className="block text-black py-2 border-r-5 px-4 rounded w-full">
-                                                <option value="asset_manager">Asset Manager</option>
+                                            <label htmlFor="area_of_interest" className="">Area of interest*</label>
+                                            <select id="area_of_interest" name="area_of_interest" required className="block text-black py-2 border-r-5 px-4 rounded w-full">
+                                                <option value="wealth_manager">Wealth Manager</option>
                                                 <option value="family_office">Family Office</option>
                                                 <option value="financial_advisor">Financial Advisor</option>
                                                 <option value="other">Other</option>
                                             </select>
                                         </div>
-                                        <button type="submit" className="justify-self-end hover:bg-sharpfin-gray border hover:border-white text-white font-medium px-5 py-2 rounded border-sharpfin-blue bg-sharpfin-blue">Download Now</button>
+                                        <button type="submit" className="justify-self-end hover:bg-sharpfin-gray border hover:border-white text-white font-medium px-5 py-2 rounded border-sharpfin-blue bg-sharpfin-blue">Book a demo</button>
                                     </form>
                                 </div>
                             </div>

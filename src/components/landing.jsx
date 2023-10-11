@@ -4,6 +4,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import * as React from "react";
 import translations from '../translations/translations';
 import { LangContext } from './context';
+import LangLink from './LangLink';
 
 const Landing = ({ data }) => {
   const { langKey } = React.useContext(LangContext)
@@ -26,9 +27,11 @@ const Landing = ({ data }) => {
             <button className="rounded py-2 px-4 text-white hover:bg-sharpfin-blue bg-transparent border-white border hover:border-sharpfin-blue font-medium block" onClick={() => scrollTo('#solutions')}>
               {translation.general.learn_more}
             </button>
-            <button className="rounded py-2 px-4 text-white hover:bg-sharpfin-blue hover:border-sharpfin-blue border-2 border-green-500 bg-green-500 font-medium block" onClick={() => scrollTo('#contact')}>
-              {translation.general.request_demo}
-            </button>
+            <LangLink to="book-a-demo" >
+              <button className="rounded py-2 px-4 text-white hover:bg-sharpfin-blue hover:border-sharpfin-blue border-2 border-green-500 bg-green-500 font-medium block">
+                {translation.general.request_demo}
+              </button>
+            </LangLink>
           </div>
         </div>
       </div>

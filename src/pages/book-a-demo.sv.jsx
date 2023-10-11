@@ -1,5 +1,5 @@
 import * as React from "react"
-import Demo from '../components/page/whitepaper'
+import Demo from '../components/page/demo'
 
 const DemoPage = (props) => {
   const langKey = props.pageContext.langKey;
