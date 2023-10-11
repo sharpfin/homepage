@@ -53,6 +53,9 @@ html {
     ol {
         @apply list-decimal list-inside;
     }
+    ul {
+        @apply list-disc list-inside;
+    }
 
 
     h2, h1 {
