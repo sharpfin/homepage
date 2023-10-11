@@ -117,10 +117,10 @@ const translations = {
     modules: "Commonly used features",
     what: "What do you do?",
     asset_managers: {
-      title: "Asset Manager",
+      title: "Wealth Manager",
       short: "Wealth management is possible with only one tool for customer onboarding, constant monitoring of KYC and AML, flexible portfolio management and branded customer reporting. Sharpfin is the proof.",
       item_1: "Does your firm have an optimal balance of human and system capital to meet the increased pressure from regulations while providing the best service towards your clients?",
-      item_2: "Sharpfins SaaS solution serves Independent Asset Managers with technology that supports new client acquisition, automates reporting and free time up to provide even better investment advice for your clients.",
+      item_2: "Sharpfins SaaS solution serves Independent Wealth Managers with technology that supports new client acquisition, automates reporting and free time up to provide even better investment advice for your clients.",
       item_3: "Don't stand the risk of losing business entirely or being stuck in a non-profit waste land. Contact Sharpfin for a consultation, how our cloud-based technology can serve your continued growth for the future."
     },
     family_offices: {
@@ -170,7 +170,8 @@ const translations = {
     message: "Message",
     send: "Send",
     phone: "Phone",
-    know_more: "Do you want to know more? Send us a message below."
+    know_more: "Do you want to know more? Send us a message below.",
+    company_name: "Company Name"
   },
   footer: {
     sales: "Sales",
@@ -190,6 +191,9 @@ const translations = {
   },
   whitepaper: {
     title: "Whitepapers"
+  },
+  video: {
+    title: "See Sharpfin in Action"
   }
 
 }

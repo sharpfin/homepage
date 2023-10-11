@@ -170,7 +170,8 @@ const translations =  {
         message: "Meddelande",
         send: "Skicka",
         phone: "Telefon",
-        know_more: "Vill du veta mer? Skicka gärna ett meddelande nedan."
+        know_more: "Vill du veta mer? Skicka gärna ett meddelande nedan.",
+        company_name: "Företagsnamn"
     },
     footer: {
         sales: "Sälj",
@@ -190,6 +191,9 @@ const translations =  {
     },
     whitepaper: {
       title: "Whitepapers"
+    },
+    video: {
+      title: "Se Sharpfin in Action"
     }
 
   }

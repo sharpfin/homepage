@@ -33,13 +33,12 @@ const Template = (props) => {
                 <MDXRenderer>{mdx.body}</MDXRenderer>
               </div>
               <div className="border-2 rounded-lg border-sharpfin-blue py-10 grid place-items-center mt-10">
-                <h4 className="text-2xl font-bold text-center mb-1">Sharpfin Insights</h4>
-                <p className="text-lg text-center w-96 mb-8">What to consider when Implementing a new Wealth Management Software</p>
-                <div>
-                  <LangLink to="whitepaper" className="">
+                <h4 className="text-2xl font-bold text-center mb-1">See Sharpfin in Action</h4>
+                <div className="mt-8">
+                  <LangLink to="book-a-demo" className="">
                     <button className="bg-sharpfin-blue text-white font-medium px-4 py-2 rounded hover:bg-sharpfin-gray">
                       <div className="flex">
-                        <span>Download Whitepaper</span>
+                        <span>Book a demo</span>
                         <ChevronRight className="" />
                       </div>
                     </button>

@@ -16,6 +16,7 @@ const Contact = ({ data }) => {
                 bgColorClass="bg-sharpfin-blue"
             />
 
+
             <LayoutContainer
                 id="contact"
                 title={t.general.contact}
