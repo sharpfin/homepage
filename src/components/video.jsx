@@ -2,7 +2,7 @@ import React from "react";
 import LayoutContainer from './layout-container';
 import { LangContext } from './context'
 
-export default function () {
+const Video = function () {
     const { t } = React.useContext(LangContext);
 
     return (
@@ -17,3 +17,5 @@ export default function () {
         </LayoutContainer>
     )
 }
+
+export default Video;

@@ -1,15 +1,19 @@
 const path = require(`path`)
 
-exports.createPages = async({ actions, graphql, reporter }) => {
+exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogPostTemplate = path.resolve(`src/templates/blog-post.jsx`)
+  const pressReleaseTemplate = path.resolve(`src/templates/press-release.jsx`)
 
   const result = await graphql(`
   {
     allMdx {
       edges {
         node {
+          fields {
+            source
+          }
           frontmatter {
             path
             lang
@@ -25,29 +29,33 @@ exports.createPages = async({ actions, graphql, reporter }) => {
     return
   }
 
+  const createPageWithLang = (node, lang, createPage) => {
+    let path;
+    if (lang === "en") {
+      path = node.frontmatter.path
+    } else {
+      path = "/" + lang + "/" + node.frontmatter.path
+    }
+
+    createPage({
+      path: path,
+      component: node.fields.source === "press_release" ? pressReleaseTemplate : blogPostTemplate,
+      context: {
+        id: node.frontmatter.path,
+        langKey: lang
+      },
+    })
+  }
+
 
   result.data.allMdx.edges.forEach(({ node }) => {
     if (node.frontmatter.lang === "all") {
-      ["sv", "en"].forEach(lang => { createPageWithLang(node, lang, createPage, blogPostTemplate) })
+      ["sv", "en"].forEach(lang => { createPageWithLang(node, lang, createPage) })
     } else {
-      createPageWithLang(node, node.frontmatter.lang, createPage, blogPostTemplate)
+      createPageWithLang(node, node.frontmatter.lang, createPage)
     }
   })
+
+
 }
 
-const createPageWithLang = (node, lang, createPage, blogPostTemplate) => {
-  let path;
-  if (lang === "en") {
-    path = node.frontmatter.path
-  } else {
-    path = "/" + lang + "/" + node.frontmatter.path
-  }
-  createPage({
-    path: path,
-    component: blogPostTemplate,
-    context: {
-      id: node.frontmatter.path,
-      langKey: lang
-    },
-  })
-}

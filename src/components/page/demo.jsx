@@ -4,7 +4,7 @@ import translations from '../../translations/translations';
 import Context from '../context';
 import Layout from '../layout';
 import LayoutContainer from '../layout-container';
-import Quotes from '../quotes'
+import Quotes from '../quotes';
 import Video from '../video';
 
 const Demo = ({ data, langKey }) => {
@@ -14,7 +14,7 @@ const Demo = ({ data, langKey }) => {
         <Context langKey={langKey} >
             <Layout>
                 <div className="bg-cover  bg-blue-50">
-                    <LayoutContainer title={"Sharpfin in Action"}>
+                    <LayoutContainer title={"Sharpfin in action"}>
                         <h1 className="text-4xl font-bold mb-5"></h1>
                         <div className="grid gap-10 lg:gap-20  lg:grid-cols-2" >
                             <div>

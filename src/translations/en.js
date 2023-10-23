@@ -1,6 +1,6 @@
 const translations = {
   month: (monthOfYear) => {
-    switch(monthOfYear) {
+    switch (monthOfYear) {
       case 1: return "January"
       case 2: return "February"
       case 3: return "March"
@@ -193,7 +193,19 @@ const translations = {
     title: "Whitepapers"
   },
   video: {
-    title: "See Sharpfin in Action"
+    title: "See Sharpfin in action"
+  },
+  blog: {
+    press_releases_cta: {
+      title: "See Sharpfin in action",
+      description: "For sharper Wealth Management",
+      cta: "Book a demo"
+    },
+    insider_cta: {
+      title: "Sharpfin Insights",
+      description: "What to consider when Implementing a new Wealth Management Software",
+      cta: "Download Whitepaper"
+    }
   }
 
 }
