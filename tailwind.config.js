@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         sharpfin: {
-          blue: '#0094DD',
+          blue: '#0095DA',
           gray: '#222731',
         },
         fondo: '#050C1F'
